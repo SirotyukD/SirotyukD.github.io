@@ -45,7 +45,7 @@ div{
 }
 
 .nav_list{
-	margin-left: 50px;
+	margin-left: 35px;
 	padding-top: 25px;
 }
 
@@ -71,7 +71,7 @@ div{
 .header_contact{
 	float: left;
 	color: #2F1059;
-	margin-left: 10px;
+	/* margin-left: 5px; */
 	margin-top: 10px;
 }
 
@@ -88,6 +88,7 @@ div{
 	background-position: top center;
 	padding-top: 20px;
 	margin-top: 10px;
+	position: relative;
 }
 
 .header_title{
@@ -127,13 +128,15 @@ div{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
-	height: 370px;
-	width: 78%;
+	height: 378px;
+	width: 920px;
 	text-align: center;
 	color: #FBFAFA;
-	margin-top: 125px;
-    margin-left: 11%;
-
+	/* margin-left: 11%; */
+	position: absolute;
+	bottom: -95px;
+	left: 50%;
+	margin-left: -470px;
 }
 
 .header_form-title{
@@ -350,10 +353,12 @@ div{
 					/* section infrastructure */
 
 #infrastructure{
-	background: url(../img/bg9.png);
-	background-repeat: no-repeat;
-	background-size: cover;
+	background: url(../img/bg9.png), url(../img/bg4.png);
+	background-repeat: no-repeat, no-repeat;
+	background-size: cover, 100% 56%;
+	background-position: center, bottom;
 	padding-top: 80px;
+	position: relative;
 }
 
 /* .infrastructure_bacground{
@@ -363,10 +368,15 @@ div{
 	height: 280px;
 	z-index: -1;
 	margin-top: 200px; 
-}*/
+	position: absolute;
+} */
 .infrastructure_item{
-	width: 33%;
+	width: 31%;
 	float: left;
+	margin-right: 40px;
+}
+.infrastructure_item:nth-child(3){
+	margin-right: 0;
 }
 
 .infrastructure_item-title{
@@ -383,3 +393,97 @@ div{
 	line-height: 40px;
 }
 
+.infrastructure_footer{
+	background: url(../img/bg5.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 80px;
+}
+
+.infrastructure_box{
+	float: left;
+	width: 31%;
+	padding: 30px 0;
+	margin-left: 40px;
+}
+.infrastructure_box:nth-child(1){
+	margin-left: 0;
+}
+
+.infrastructure_box-img{
+	float: left;
+}
+
+.infrastructure_box-text{
+	font-size: 17px;
+	color: #fff;
+	margin: 15px 0 0 75px;
+}
+
+.infrastructure_box-text span{
+	font-weight: bold;
+}
+
+
+							/* section design */
+
+
+
+.design_title{
+	margin: 80px 0 60px 0;
+}
+
+.design_items{
+	margin-bottom: 70px;
+}
+.design_item{
+	width: 300px;
+	float: left;
+	margin-right: 70px;
+}
+
+.design_item:last-child{
+	margin-right: 0;
+}
+
+.design_item-title{
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.design_item-text{
+	margin-top: 25px;
+	line-height: 1.5;
+}
+
+
+								/* section equipment */
+
+
+#equipment{
+	background: url(../img/bg6.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	padding-top: 75px;
+}
+
+.equipment_title{
+	margin-bottom: 60px;
+}
+
+.equipment_items-title{
+	font-size: 19px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.equipment_item-row{
+	font-weight: lighter;
+	font-size: 16px;
+	color: #fff;
+	line-height: 40px;
+
+}
