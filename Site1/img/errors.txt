@@ -1,0 +1,4 @@
+[2018-10-26 10:23:17] layer "+7 (495) 544-23-12": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2018-10-26 10:23:17] layer "E-mail: info@sitename.ru": Unsupported extension: ru
+[2018-10-26 10:23:17] layer "pic3.png": Duplicate path: pic3.png
+[2018-10-26 10:23:17] layer "+7 (495) 544-23-12": Expected Either a default asset specification or a layer asset specification but "+" found.
