@@ -468,6 +468,8 @@ div{
 	background-size: cover;
 	background-position: top center;
 	padding-top: 75px;
+	color: #fff;
+	padding-bottom: 65px;
 }
 
 .equipment_title{
@@ -477,13 +479,103 @@ div{
 .equipment_items-title{
 	font-size: 19px;
 	font-weight: bold;
-	color: #fff;
+}
+
+.equipment_item-list{
+	width: 30%;
+	margin-top: 36px;
+	float: left;
+	margin-right: 40px;
+}
+
+.equipment_item-list:last-child {
+	margin-right: 0;
 }
 
 .equipment_item-row{
 	font-weight: lighter;
 	font-size: 16px;
-	color: #fff;
 	line-height: 40px;
+	border-bottom: 1px solid #48A746;
+}
 
+.equipment_item-row img{
+	margin-right: 7px;
+}
+
+
+				/* section documents */
+
+
+
+#documents{
+	background: url(../img/bg7.png);
+	text-align: center;
+	padding: 85px 0 65px 0;
+}
+
+.documents_title{
+	margin-bottom: 25px;
+}
+
+.documents_subtitle{
+	font-size: 21px;
+	font-weight: lighter;
+	margin-bottom: 45px;
+}
+.documents_item{
+	float: left;
+	width: 25%;
+}
+
+
+							/* footer */
+
+#footer{
+	color: #fff;
+	background-color: #080808;
+	padding: 20px 0;
+	line-height: 1.25;
+}
+
+.footer_inner{
+	width: 100%;
+}
+.footer_item{
+	float: left;
+	width: 25%;
+}
+
+.footer_project{
+	font-size: 13px;
+	font-weight: lighter;
+	height: 75px;
+}
+
+.footer_project-text{
+	display: table-cell;
+	vertical-align: middle;
+	height: 75px;
+}
+
+.footer_project span{
+	border-bottom: 1px solid #fff;
+}
+
+.footer_location{
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+.footer_location span{
+	font-weight: bold;
+}
+.footer_contact{
+	float: right;
+	text-align: right;
+}
+
+.footer_link{
+	color: #fff;
+	border: 1px solid #fff;
 }
