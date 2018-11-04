@@ -131,10 +131,61 @@
 		width: 100%;
 	}
 
-
-
-
-
-
 }
+
+@media screen and (max-width: 560px){
+	.header-logo{
+		width: 100%;
+	}
+
+	.header-email{
+		display: none;
+	}
+
+	.header-wrap{
+		margin-left: -167px;
+	}
+	
+	.header-title{
+		font-size: 22px;
+		letter-spacing: 3px;
+	}
+
+	.header-logo{
+		font-size: 18px;
+	}
+
+	.header-subtitle {
+		font-size: 20px;
+		letter-spacing: 1.48px;
+	}
+
+	.about-skill__text {
+		font-size: 10px;
+	}
+
+	.about-connection__list{ 
+		display: block;
+		width: 100%;
+	}
+
+	.about-connection__item {
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 30px;
+	}
+	
+	.about-connection__icon{
+		width: 100%;
+		display: block;
+		margin-top: 20px;
+	}
+
+	.about-connection__text {
+		margin-top: 15px;
+	}
+}
+
+
 

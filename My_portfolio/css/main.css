@@ -223,6 +223,12 @@ body{
 	font-family: 'MuseoSansCyrl-300', Arial, serif;
 }
 
+.about-connection__link{
+	text-decoration: none;
+	color: #22241b;
+
+}
+
 .about-connection__item::after{
 	content: '';
 	height: 1px;
@@ -230,6 +236,8 @@ body{
 	display: block;
 	background-color: #BECBBB;
 }
+
+
 
 .about-connection__icon{
 	margin-left: 200px;
@@ -349,5 +357,6 @@ body{
 	color: #22241b;
 	font-size: 11px;
 }
+
 
 
