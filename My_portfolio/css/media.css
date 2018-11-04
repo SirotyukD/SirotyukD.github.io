@@ -143,11 +143,11 @@
 	}
 
 	.header-wrap{
-		margin-left: -167px;
+		margin-left: -155px;
 	}
 	
 	.header-title{
-		font-size: 22px;
+		font-size: 20px;
 		letter-spacing: 3px;
 	}
 
@@ -184,6 +184,14 @@
 
 	.about-connection__text {
 		margin-top: 15px;
+	}
+
+	.title-h3{
+		text-align: center;
+	}
+
+	.title-h2{
+		text-align: center;
 	}
 }
 

@@ -70,7 +70,6 @@ body{
 	font-size: 15px;
 	letter-spacing: 1.8px;
 	font-family: 'MuseoSansCyrl-900', Arial, serif;
-
 }
 
 .header-link:hover{
@@ -129,8 +128,11 @@ body{
 }
 
 .header-arrow:hover{
-	border: 2px solid #fff;
-	
+	border: 2px solid #fff;	
+}
+
+.header-arrow__link{
+	color: #fff;
 }
 
 
