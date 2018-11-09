@@ -1,0 +1,248 @@
+/* Спецификация */
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: 'MuseoSansCyrl-300', sans-serif;
+	color: #2c3f55;
+	overflow-x: hidden;
+}
+
+ul, li {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+}
+
+section {
+	padding: 90px 0;
+}
+
+* {
+	-moz-transition: all 0.3s ease;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease;
+}
+
+.title-h2 {
+	text-transform: uppercase;
+	font-size: 4.2rem;
+	font-family: 'MuseoSansCyrl-900', sans-serif;
+	color: #000;
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 0;
+
+}
+
+
+a, a:hover, a:active, a:focus,
+button, input, button:hover, button:active, button:focus,
+input:focus, input:active {
+	text-decoration: none;
+	outline: none;
+}
+
+/* .upper {
+	text-transform: uppercase;
+} */
+
+/* .act {
+	background: #d84d4d;
+	color: #fff;
+	border: 0;
+	border-radius: 70px;
+	text-transform: uppercase;
+	font-weight: 800;
+	display: block;
+	width: 100%;
+	padding: 19px 0px;
+	font-size: 1.2rem;
+	letter-spacing: 0.15em;
+}
+
+.act:hover {
+	background: #c53636;
+	color: #fff;
+}
+
+.act:active {
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.3) inset;
+	url(../img/mlntours.ru_bulgaria_16.png) no-repeat center center fixed
+	linear-gradient(-40deg, #000000 0%, #005071 100%), 
+} */
+
+/* Шапка */
+
+#header{
+	background: linear-gradient(-40deg, rgba(0, 0, 0, 0.69) 0%, rgba(0, 80, 113, 0.69) 100%), 	url(../img/mlntours.ru_bulgaria_16.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 100vh;
+	color: #ffffff;
+	position: relative;
+	text-transform: uppercase;
+	text-align: center;
+	z-index: 0;
+	font-family: 'MuseoSansCyrl-900', sans-serif;
+
+
+}
+
+.header{
+	background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .nav__item{
+	float: left;
+  }
+
+  .nav__item{
+	line-height: 5.8rem;
+  }
+
+.nav__link{
+	color: #fff;
+	font-size: 1.1rem;
+	padding: 10px 8px;
+	border-radius: 5px;
+	letter-spacing: 1.1px;
+  }
+
+.nav__link:hover{
+	color: #fff;
+	background-color: #3E6377;
+}
+
+.nav__link:active{
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.5) inset;
+}
+
+.contact-icon{
+	transform: rotate(90deg);
+	float: right;
+	color: #23AAE2;
+	border: 1px dashed #23AAE2;
+	border-radius: 50%;
+	font-size: 1.3rem;
+	margin-top: 12px;
+	padding: 7px;
+	margin-right: -15px;	
+}
+
+.contact-phone{
+	font-size: 1.6rem;
+	letter-spacing: 0.32px;
+	text-align: left;
+	margin-top: 5px;
+}
+
+.header-title__title{
+	font-size: 5.1rem;
+	letter-spacing: 10px;
+	margin-top: 200px;
+	
+}
+
+.header-title__title span{
+	font-size: 9.1rem;
+	letter-spacing: 41.4px;
+}
+
+.header-arrow{
+	position: absolute;
+	bottom: 15%;
+	left: 50%;
+	margin-left: -21px;
+	border: 1px dashed #fff;
+	border-radius: 50%;
+}
+
+.header-arrow:hover{
+	cursor: pointer;
+	color: #23AAE2;
+}
+
+.header-arrow:active{
+	border: 1px dashed #23AAE2;
+}
+
+.fa-angle-down{
+	font-size: 3.2rem;
+	font-weight: 200;
+	padding: 5px 10px;	
+}
+
+
+/* section advantages */
+
+.advantages-items{
+	margin-top: 62px;
+}
+
+.advantages-item{
+	text-align: center;
+	background-color: #F4F4F4;
+	height: 357px;
+	padding: 60px 27px;
+}
+
+.advantages-item__img{
+	height: 80px;
+	width: 92px;
+	margin: 0 auto;
+
+}
+
+.advantages-item__img_first {
+	background: url(../img/Helping_Hand-96.png) no-repeat center center;
+}
+.advantages-item__img_second {
+	background: url(../img/Edit_Property-96.png) no-repeat center center;
+}
+.advantages-item__img_third {
+	background: url(../img/Conference-96.png) no-repeat center center;
+}
+
+.advantages-item__title{
+	margin-top: 28px;
+	font-size: 2rem;
+	font-family: 'MuseoSansCyrl-900', sans-serif;
+	letter-spacing: 2px;
+}
+
+.advantages-item__text{
+	font-size: 1.7rem;
+	margin-top: 38px;
+	font-family: 'MuseoSansCyrl-100', sans-serif;
+}
+
+
+/* section moving */
+
+#moving{
+	color: #fff;
+	text-align: center;
+	background: linear-gradient( rgba(14, 42, 65, 0.86), rgba(14, 42, 65, 0.86)), 	url(../img/pesok_rakushki_makro_2592x1944.png) no-repeat center center ;
+}
+
+.moving-title{
+	color: #fff;;
+}
+
+.moving-citation{
+	font-size: 1.8rem;
+	margin-top: 29px;
+	font-family: 'MuseoSansCyrl-100Italic', sans-serif;
+
+
+}
+
+
+
+
+
