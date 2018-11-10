@@ -45,6 +45,25 @@ input:focus, input:active {
 	outline: none;
 }
 
+.act{
+	display: block;
+	padding: 15px;
+	border: 2px solid #fff;
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'MuseoSansCyrl-900', sans-serif;
+}
+
+.act:hover {
+	box-shadow: 0px 0px 10px rgba(255,255,255,0.3) inset;
+}
+
+.act:active {
+	box-shadow: 0px 0px 20px rgba(255,255,255,0.4) inset;
+}
+
 /* .upper {
 	text-transform: uppercase;
 } */
@@ -63,6 +82,8 @@ input:focus, input:active {
 	letter-spacing: 0.15em;
 }
 
+
+
 .act:hover {
 	background: #c53636;
 	color: #fff;
@@ -70,8 +91,6 @@ input:focus, input:active {
 
 .act:active {
 	box-shadow: 0px 0px 15px rgba(0,0,0,0.3) inset;
-	url(../img/mlntours.ru_bulgaria_16.png) no-repeat center center fixed
-	linear-gradient(-40deg, #000000 0%, #005071 100%), 
 } */
 
 /* Шапка */
@@ -227,8 +246,9 @@ input:focus, input:active {
 #moving{
 	color: #fff;
 	text-align: center;
-	background: linear-gradient( rgba(14, 42, 65, 0.86), rgba(14, 42, 65, 0.86)), 	url(../img/pesok_rakushki_makro_2592x1944.png) no-repeat center center ;
-}
+	background: linear-gradient( rgba(14, 42, 65, 0.86), rgba(14, 42, 65, 0.86)), 	url(../img/pesok_rakushki_makro_2592x1944.png) no-repeat  center center;
+	background-size: cover;
+} 
 
 .moving-title{
 	color: #fff;;
@@ -238,11 +258,360 @@ input:focus, input:active {
 	font-size: 1.8rem;
 	margin-top: 29px;
 	font-family: 'MuseoSansCyrl-100Italic', sans-serif;
+}
 
+.moving-citation span{
+	font-size: 1.4rem;
+	font-family: 'MuseoSansCyrl-900', sans-serif;
+	letter-spacing: 2.52px;
+	line-height: 29px;
 
 }
 
+.moving-question{
+	font-size: 1.9rem;
+	font-family: 'MuseoSansCyrl-100', sans-serif;
+	text-transform: uppercase;
+	margin: 57px 0 70px 0;
+	border: 1px dashed #fff;
+	padding: 58px 0;
+	position: relative;
+}
 
+.moving-question span{
+	font-family: 'MuseoSansCyrl-900', sans-serif;
+	font-size: 2.3rem;
+}
+
+.moving-question__arrow{
+	width: 33px;
+	height: 33px;
+	border: 1px dashed #fff;
+	border-radius: 50%;
+	position: absolute;
+	left: 50%;
+	margin-left: -16px;
+	background-color: #213646;
+}
+
+.arrow-top{
+	top: 0;
+	margin-top: -16px;
+
+}
+
+.arrow-bottom{
+	bottom: 0;
+	margin-bottom: -16px;	
+}
+
+.moving-answer{
+	font-size: 1.8rem;
+	font-family: 'MuseoSansCyrl-100', sans-serif;
+}
+
+.moving-answer span{
+	font-size: 3.7rem;
+	font-family: 'MuseoSansCyrl-900', sans-serif;
+	text-transform: uppercase;
+}
+
+.moving-but{
+	margin: 0 auto;
+	width: 215px;
+	margin-top: 46px; 
+}
+
+
+/* section representation */
+
+#representation{
+	background: url(../img/city.png);
+}
+
+.representation-box{
+	text-align: center;
+}
+
+.representation-header{
+	display: inline;
+	bottom: 0;
+	position: absolute;	
+}
+
+.representation-wrap{
+	margin-top: 200px;
+}
+
+.representation-header:nth-child(1){
+	left: 50%;
+	margin-left: -170px;
+	margin-bottom: -70px;
+	z-index: 0;	
+
+}
+.representation-header:nth-child(2){
+	left: 50%;
+	margin-left: -94px;
+	margin-bottom: -60px;
+	z-index: 1;
+}
+.representation-header:nth-child(3){
+	left: 50%;
+	
+	margin-bottom: -60px;
+	z-index: 0;	
+}
+
+
+
+.representation-box__title{
+	background-color: #f4f4f4;
+	font-size: 2rem;
+	font-family: 'MuseoSansCyrl-900', sans-serif;
+	padding-top: 70px;
+}
+
+.representation-box__text{
+	background-color: #f4f4f4;
+	padding: 15px 33px 42px 57px;
+	font-size: 1.7rem;
+	font-family: 'MuseoSansCyrl-100', sans-serif;
+	position: relative;
+}
+.representation-box__text:last-child{
+	margin-top: 7px;
+	background-color: #f4f4f4;
+	padding: 42px 10px 40px 15px;
+}
+
+.representation-box__ball{
+	width: 62px;
+	height: 62px;
+	background-color: #23aae2;
+	border-radius: 50%;
+	line-height: 69px;
+	position: absolute;
+	bottom: 0;
+	margin-bottom: -31px;
+	left: 50%;
+	margin-left: -31px;
+	z-index: 1;
+}
+
+.fa-futbol{
+	font-size: 2.6rem;
+	color: #fff;
+}
+
+
+
+/* section reviews */
+
+
+
+.reviews-wrap{
+	/* border: 0.1px solid #959393; */
+	box-shadow: 1px 1px 1px #959393;
+	width: 65%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.reviews-wrap__item{
+	padding: 42px 35px 46px 127px;
+	margin-top: 66px;
+}
+
+.reviews-wrap__img{
+	position: absolute;
+	left: 0;
+	margin-left: -66px;
+	top: 50%;
+	margin-top: -66px;
+}
+
+.reviews-wrap__header_left {
+	float: left;
+	display: block;
+	font-family: 'MuseoSansCyrl-900', sans-serif;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+.reviews-wrap__name{
+	font-size: 1.6rem;
+}
+
+.reviews-wrap__link{
+	color: #5ec1ea;
+	margin-left: 40px;
+	border-bottom: 1px solid #9edaf2;
+}
+
+.reviews-wrap__location{
+	float: right;
+	font-family: 'MuseoSansCyrl-100', sans-serif;
+	color: #5ec1ea;
+}
+
+.reviews-wrap__text{
+	font-size: 1.4rem;
+	font-family: 'MuseoSansCyrl-100Italic', sans-serif;
+	margin-top: 25px;
+}
+
+.reviews-wrap__arrow{
+	font-size: 4.5rem;
+	color: #23aae2;
+	position: absolute;
+	cursor: pointer;
+}
+
+.reviews-wrap__arrow_left{
+	left: 0;
+	top: 50%;
+	margin-left: -157px;
+	margin-top: -22px;
+}
+
+.reviews-wrap__arrow_right{
+	right: 0;
+	top: 50%;
+	margin-top: -22px;
+	margin-right: -107px;
+}
+
+.reviews-dots{
+	width: 80px;
+	margin: 0 auto;
+	margin-top: 51px;
+}
+
+.reviews-dot{
+	width: 19px;
+	height: 19px;
+	border: 1px dashed #23aae2;
+	border-radius: 50%;
+	float: left;
+	margin-right: 10px;
+}
+
+.reviews-dot:last-child{
+	margin-right: 0;
+}
+
+.reviews-dot_active{
+	background-color: #23aae2;
+}
+
+
+
+/* section   consultation */
+
+
+#consultation{
+	background: url(../img/2-layers.png) no-repeat center center;
+	background-size: cover;
+}
+.consultation-title{
+	color: #fff;
+}
+
+.consultation-subtitle{
+	font-size: 2.1rem;
+	font-family: 'MuseoSansCyrl-100', sans-serif;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 25px;
+}
+
+.consultation-arrow{
+	width: 33px;
+	height: 33px;
+	border: 1px dashed #fff;
+	border-radius: 50%;
+	font-size: 1.5rem;
+	color: #fff;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 3px;
+	margin-top: 35px;
+}
+
+.consultation-form{
+	margin-top: 30px;
+}
+
+.consultation-form__input{
+	width: 100%;
+	line-height: 61px;
+	background-color: #30c2ff;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	padding-left: 35px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+input::-webkit-input-placeholder { color: #fff; };
+input::-moz-placeholder { color: #fff;}
+input:-ms-input-placeholder { color: #fff; }
+input::-ms-input-placeholder { color: #fff; }
+input::placeholder { color: #fff; } 
+	
+.consultation-form__input:nth-child(2){
+	margin: 10px 0;
+	box-shadow: 0px 0px 20px #127099;
+
+	
+}
+
+.consultation-form__input:nth-child(3){
+	margin-bottom: 20px;
+}
+
+.consultation-form__button{
+	background: none;
+	font-size: 1.5rem;
+	border: 2px solid #fff;
+	font-family: 'MuseoSansCyrl-900', sans-serif;
+}
+
+.consultation-form__button:active {
+	box-shadow: 1px 1px 15px rgba(255, 255, 255, 1) inset;
+}
+
+
+/* footer */
+
+#footer{
+	background-color: #23aae2;
+	color: #fff;
+	height: 90px;
+}
+
+.footer-logo{
+	margin-top: 18px;
+}
+
+.footer-box{
+	padding-top: 35px;
+	color: #faf7f7;
+}
+
+.footer-icon{
+	color: #fff;
+	border: 1px dashed #fff;	
+	margin-top: 28px;
+}
+
+.footer-phone{
+	font-size: 1.6rem;
+	margin-top: 22px;
+	font-family: 'MuseoSansCyrl-900', sans-serif;
+}
 
 
 
