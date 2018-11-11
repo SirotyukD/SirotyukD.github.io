@@ -116,6 +116,9 @@ input:focus, input:active {
 	background-color: rgba(0, 0, 0, 0.3);
   }
 
+  .h-logo{
+	  text-align-last: left;
+  }
   .nav__item{
 	float: left;
   }
@@ -127,7 +130,7 @@ input:focus, input:active {
 .nav__link{
 	color: #fff;
 	font-size: 1.1rem;
-	padding: 10px 8px;
+	padding: 10px 6px;
 	border-radius: 5px;
 	letter-spacing: 1.1px;
   }
@@ -143,20 +146,20 @@ input:focus, input:active {
 
 .contact-icon{
 	transform: rotate(90deg);
-	float: right;
+	float: left;
 	color: #23AAE2;
 	border: 1px dashed #23AAE2;
 	border-radius: 50%;
 	font-size: 1.3rem;
 	margin-top: 12px;
 	padding: 7px;
-	margin-right: -15px;	
+	margin-left: 45px;	
 }
 
 .contact-phone{
 	font-size: 1.6rem;
 	letter-spacing: 0.32px;
-	text-align: left;
+	text-align: right;
 	margin-top: 5px;
 }
 
@@ -327,6 +330,8 @@ input:focus, input:active {
 
 #representation{
 	background: url(../img/city.png);
+	background-position-y: bottom;
+	background-repeat: no-repeat;
 }
 
 .representation-box{
@@ -358,7 +363,6 @@ input:focus, input:active {
 }
 .representation-header:nth-child(3){
 	left: 50%;
-	
 	margin-bottom: -60px;
 	z-index: 0;	
 }
@@ -446,7 +450,17 @@ input:focus, input:active {
 .reviews-wrap__link{
 	color: #5ec1ea;
 	margin-left: 40px;
-	border-bottom: 1px solid #9edaf2;
+	padding-bottom: 2px;
+	/* border-bottom: 1px solid #9edaf2; */
+}
+
+.reviews-wrap__link::after{
+	content: "";
+	display: block;
+	width: 110px;
+	height: 1px;
+	background: #9edaf2;
+
 }
 
 .reviews-wrap__location{
@@ -596,6 +610,8 @@ input::placeholder { color: #fff; }
 	margin-top: 18px;
 }
 
+
+
 .footer-box{
 	padding-top: 35px;
 	color: #faf7f7;
@@ -605,6 +621,9 @@ input::placeholder { color: #fff; }
 	color: #fff;
 	border: 1px dashed #fff;	
 	margin-top: 28px;
+	width: 33px;
+	height: 33px;
+	text-align: center;
 }
 
 .footer-phone{

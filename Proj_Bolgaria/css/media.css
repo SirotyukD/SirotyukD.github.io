@@ -1,3 +1,188 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
+  .nav{
+	display: none;
+  }
+
+  .contact-icon{
+	margin-left: 5px;	
+  }
+
 
 }
+
+@media screen and (max-width: 991px) {
+	
+	.contact-icon{
+	  margin-left: 145px;	
+	}
+
+	.footer-icon{
+		display: none;
+	}
+	.footer-phone{
+		display: none;
+	}
+	.advantages-item:last-child{
+		margin-top: 20px;
+	}
+
+	.reviews-wrap__header {
+		position: relative;
+	}
+	.reviews-wrap__location {
+		position: absolute;
+		top: 25px;
+	}
+	.reviews-wrap__item {
+		padding: 35px 0px 35px 90px;
+		margin-top: 66px;
+	}
+
+	.reviews-wrap__arrow_left{
+		margin-left: -120px;
+	}
+	
+	.reviews-wrap__arrow_right{
+		margin-right: -60px;
+	}
+  	
+  }
+
+  @media screen and (max-width: 850px) {
+	.header-title__title span {
+		font-size: 8.5rem;
+		letter-spacing: 35px;
+	
+	}
+	
+  }
+
+  @media screen and (max-width: 768px) {
+	
+	.header-title__title span {
+		font-size: 4.7rem;
+		letter-spacing: 29px;
+	}
+
+	.header-title__title{
+		font-size: 3.3rem;
+		letter-spacing: 9px;
+	}
+
+	#moving{
+		background: #2b4458;
+	}
+
+	.reviews-wrap__arrow {
+		display: none;
+	}
+
+	.reviews-wrap{
+		width: 95%;
+	}
+
+	.reviews-wrap__item{
+		padding: 42px 35px 46px 150px;
+		margin-top: 66px;
+	}
+
+	.reviews-wrap__img{
+		margin-left: -7px;
+	}
+  }
+
+  @media screen and (max-width: 576px) {
+	.reviews-wrap__img{
+		top: 0;
+		left: 50%;
+		margin-left: -80px;
+		margin-top: -66px;
+
+	}  
+
+	.reviews-wrap__item{
+		padding: 42px 35px 46px 10px;
+		margin-top: 114px;
+		
+	}
+
+	
+
+	.reviews-wrap__576{
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-left: 0;
+		margin: 0;
+		padding: 0;
+	}
+
+	.reviews-wrap__name{
+		margin-top: 45px;
+	}
+
+	.reviews-wrap__location{
+		position: relative;
+		top: 5px;
+		
+	}
+
+	.reviews-wrap__link::after{
+		padding-bottom: 2px;
+		margin: 0 auto;
+	
+	}
+
+	.reviews-wrap__text{
+		text-align: center;
+	}
+	
+  }
+
+@media screen and (max-width: 480px) {
+
+	.header-title__title span {
+		font-size: 3.8rem;
+		letter-spacing: 12px;
+	}
+
+	.header-title__title{
+		font-size: 3rem;
+		letter-spacing: 8px;
+	}
+	.title-h2{
+		font-size: 3.3rem;
+	}
+  }
+
+@media screen and (max-width: 380px) {
+
+	.representation-wrap{
+		margin-top: 100px;
+	}
+
+	.representation-header__image_mod{
+		width: 80px;
+		height: 80px;
+	}
+
+	.representation-header__image_mod1{
+		width: 130px;
+		height: 130px;
+	}
+	
+	.representation-header:nth-child(1){
+		margin-left: -100px;
+		margin-bottom: -36px;
+	}
+	.representation-header:nth-child(2){
+		margin-left: -65px;
+		margin-bottom: -50px;
+	}
+	.representation-header:nth-child(3){
+		margin-bottom: -37px;
+		margin-left: 15px;
+	}
+}
+
+
