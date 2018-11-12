@@ -1,0 +1,138 @@
+/* section header */
+
+body{
+	color: #000;
+}
+#header{
+	height: 330px;
+	color: #fff;
+}
+
+.header-title{
+	height: 270px;
+	align-items: baseline;
+}
+
+.header-arrow{
+	bottom: 30%;
+}
+
+/* section first */
+
+#first{
+	background-color: #f7f7f7;
+	margin-top: -170px;
+}
+
+.first-wrap{
+	padding: 49px 65px 72px 65px;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	background-color: #fff;
+	font-family: 'MuseoSansCyrl-900', sans-serif;
+}
+
+.first-principle{
+	font-size: 1.8rem;
+}
+
+.first-principle span{
+	font-family: 'MuseoSansCyrl-100', sans-serif;
+}
+
+.first-clients{
+	margin-top: 65px;
+}
+
+.first-clients__item{
+	float: left;
+	text-transform: uppercase;
+	width: 30%;
+}
+
+.first-clients__item:nth-child(1){
+	font-size: 1.5rem;
+	letter-spacing: 1.2px;
+	margin-left: 50px;
+}
+
+.first-clients__item:nth-child(1) span{
+	font-size: 3.9rem;
+	color: #23aae2;
+}
+
+.first-clients__item:nth-child(2){
+	font-size: 1.9rem;
+	letter-spacing: 6.9px;
+	color: #bdbdbd;
+	font-family: 'MuseoSansCyrl-100', sans-serif;
+	line-height: 76px
+}
+
+.first-clients__item:nth-child(3){
+	font-size: 3rem;
+	
+}
+
+.first-clients__item:nth-child(3) span{
+	color: #23aae2;
+}
+
+.first-ready{
+	background-color: #23aae2;
+	color: #fff;
+	margin-top: 55px;
+	font-size: 2.3rem;
+	letter-spacing: 2.76px;
+	line-height: 76px;
+	
+}
+
+.first-partner__wrap{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+
+	
+}
+
+.first-partners__title{
+	font-size: 2.9rem;
+	text-transform: uppercase;
+	margin-top: 65px;
+	margin-bottom: 50px;
+}
+
+.first-partner{
+	width: 45%;
+	background-color: #f4f4f4;
+	padding: 35px 31px 40px 31px;
+}
+
+
+
+.first-partner__name{
+	font-size: 2.1rem;
+	margin-top: 30px;
+	padding-bottom: 15px;
+}
+
+.first-partner__name::after{
+	content: "";
+	display: block;
+	width: 37px;
+	height: 1px;
+	background-color: #c6c6c6;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.first-partner__text{
+	font-size: 1.6rem;
+	font-family: 'MuseoSansCyrl-100', sans-serif;
+	text-align: justify;
+	letter-spacing: 0.3px;
+}
+

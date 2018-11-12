@@ -4,8 +4,13 @@
   }
 
   .contact-icon{
-	margin-left: 5px;	
+	  width: 10%;
   }
+
+  .contact-phone{
+	  width: 90%;
+  }
+ 
 
 
 }
@@ -13,7 +18,11 @@
 @media screen and (max-width: 991px) {
 	
 	.contact-icon{
-	  margin-left: 145px;	
+		width: 50%;
+	}
+  
+	.contact-phone{
+		width: 50%;
 	}
 
 	.footer-icon{
@@ -45,7 +54,26 @@
 	.reviews-wrap__arrow_right{
 		margin-right: -60px;
 	}
-  	
+
+	#first{
+		background-color: #fff;
+		margin-top: 0;
+		padding-top: 0;
+	}
+	.first-wrap{
+		width: 100%;
+		padding: 49px 0px 72px 0px;
+	}
+	.first-clients{
+		margin-top: 50px;
+	}
+
+	.first-clients__item{
+		width: 33%;
+	}
+	.first-clients__item:nth-child(1){
+		margin-left: 0px;
+	}	
   }
 
   @media screen and (max-width: 850px) {
@@ -58,6 +86,14 @@
   }
 
   @media screen and (max-width: 768px) {
+
+	.contact-icon{
+		width: 30%;
+	}
+  
+	.contact-phone{
+		width: 70%;
+	}
 	
 	.header-title__title span {
 		font-size: 4.7rem;
@@ -67,6 +103,12 @@
 	.header-title__title{
 		font-size: 3.3rem;
 		letter-spacing: 9px;
+	}
+
+	.header-arrow{
+		
+		bottom: 15%;
+		
 	}
 
 	#moving{
@@ -89,16 +131,32 @@
 	.reviews-wrap__img{
 		margin-left: -7px;
 	}
+	
   }
 
+  @media screen and (max-width: 690px){
+	.first-clients__item{
+		width: 100%;
+	}
+  }
+ 
+
+
+
+
   @media screen and (max-width: 576px) {
+
+	.contact-wrap{
+		display: none;
+	}
 	.reviews-wrap__img{
 		top: 0;
 		left: 50%;
 		margin-left: -80px;
 		margin-top: -66px;
 
-	}  
+	} 
+	
 
 	.reviews-wrap__item{
 		padding: 42px 35px 46px 10px;
@@ -136,10 +194,21 @@
 	.reviews-wrap__text{
 		text-align: center;
 	}
+
+	.about-title{
+		font-size: 5.1rem;
+	}
+
+	.first-partner{
+		width: 80%;
+
+	}
 	
   }
 
 @media screen and (max-width: 480px) {
+
+	
 
 	.header-title__title span {
 		font-size: 3.8rem;
@@ -153,9 +222,15 @@
 	.title-h2{
 		font-size: 3.3rem;
 	}
+
+	.about-title{
+		font-size: 5.1rem;
+	}
   }
 
 @media screen and (max-width: 380px) {
+
+	
 
 	.representation-wrap{
 		margin-top: 100px;
@@ -182,6 +257,10 @@
 	.representation-header:nth-child(3){
 		margin-bottom: -37px;
 		margin-left: 15px;
+	}
+
+	.about-title{
+		font-size: 5.1rem;
 	}
 }
 
