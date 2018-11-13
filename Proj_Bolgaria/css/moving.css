@@ -1,0 +1,91 @@
+/* section header */
+
+body{
+	color: #000;
+}
+#header{
+	height: 330px;
+	color: #fff;
+}
+
+.header-title{
+	height: 270px;
+	align-items: baseline;
+}
+
+.header-arrow{
+	bottom: 30%;
+}
+
+/* section first */
+
+#first{
+	background-color: #f7f7f7;
+	margin-top: -170px;
+}
+
+.first-wrap{
+	padding: 49px 65px 72px 65px;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	background-color: #fff;
+	font-family: 'MuseoSansCyrl-100', sans-serif;
+}
+
+.mf-title{
+	font-size: 1.7rem;
+}
+
+.mf-title span{
+	font-family: 'MuseoSansCyrl-900', sans-serif;
+}
+
+.mf-items{
+	margin-top: 40px;
+	
+}
+
+.mf-item{
+	margin-top: 15px;
+	float: left;
+	width: 45%;
+	font-size: 1.6rem;
+}
+
+.mf-item__img1{
+	background: url(../img/00642f.png);
+	height: 148px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+.mf-item__img2{
+	background: url(../img/Package.png);
+	height: 300px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+	background-position: center;
+
+}
+
+.mf-item p{
+	text-align: left;
+}
+
+.mf-item__text1{
+	margin-top: 30px;
+	float: right;
+	margin-left: 20px;
+}
+
+.mf-item__text2{
+	margin-top: 90px;
+}
+
+
+
+

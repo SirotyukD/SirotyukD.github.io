@@ -64,6 +64,9 @@
 		width: 100%;
 		padding: 49px 0px 72px 0px;
 	}
+	.cf-wrap{
+		padding: 49px 0px 0px 0px;
+	}
 	.first-clients{
 		margin-top: 50px;
 	}
@@ -106,7 +109,6 @@
 	}
 
 	.header-arrow{
-		
 		bottom: 15%;
 		
 	}
@@ -131,12 +133,45 @@
 	.reviews-wrap__img{
 		margin-left: -7px;
 	}
+
+	.mf-item__text1, .mf-item__text2{
+		margin-top: 0;
+	}
+
+	.mf-item p{
+		text-align: center;
+	}
 	
   }
 
   @media screen and (max-width: 690px){
 	.first-clients__item{
 		width: 100%;
+	}
+
+	.cf-item{
+		width: 100%;
+		float: none;
+	}
+
+	.cf-box{
+		text-align: center;
+		margin-top: 40px;
+		background-image: url(../img/Email-48.png);
+		background-repeat: no-repeat;
+		background-position-x: center;
+		padding-top: 60px;
+		padding-left: 0;
+		
+	}
+
+	.cf-box:first-child{
+		margin-top: 0px;
+	}
+
+	.cf-box:last-child{
+		margin-top: 40px;
+		margin-bottom: 65px;
 	}
   }
  
@@ -200,9 +235,19 @@
 	}
 
 	.first-partner{
-		width: 80%;
-
+		width: 100%;
 	}
+
+	.first-partner:first-child{
+		margin-bottom: 30px;
+	}
+
+	.mf-item{
+		width: 100%;
+		float: none;
+	}
+
+	
 	
   }
 
