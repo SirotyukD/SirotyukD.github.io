@@ -42,9 +42,13 @@
 		position: absolute;
 		top: 25px;
 	}
-	.reviews-wrap__item {
-		padding: 35px 0px 35px 90px;
-		margin-top: 66px;
+
+
+	.reviews-wrap__item{
+		padding: 170px 0px 35px 20px;
+		background: url(../img/4isbjanWnf0.png) no-repeat;
+		background-position: top center;
+		margin-top: 10px;
 	}
 
 	.reviews-wrap__arrow_left{
@@ -125,10 +129,7 @@
 		width: 95%;
 	}
 
-	.reviews-wrap__item{
-		padding: 42px 35px 46px 150px;
-		margin-top: 66px;
-	}
+
 
 	.reviews-wrap__img{
 		margin-left: -7px;
@@ -194,9 +195,7 @@
 	
 
 	.reviews-wrap__item{
-		padding: 42px 35px 46px 10px;
-		margin-top: 114px;
-		
+		padding: 100px 10px 46px 10px;		
 	}
 
 	

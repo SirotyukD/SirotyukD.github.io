@@ -442,20 +442,19 @@ input:focus, input:active {
 	width: 65%;
 	margin: 0 auto;
 	position: relative;
+	
+}
+
+.reviews-title{
+	margin-bottom: 50px;
 }
 
 .reviews-wrap__item{
-	padding: 42px 35px 46px 127px;
-	margin-top: 66px;
+	padding: 42px 35px 46px 150px;
+	background: url(../img/4isbjanWnf0.png) no-repeat;
+	background-position-y: 40%;
 }
 
-.reviews-wrap__img{
-	position: absolute;
-	left: 0;
-	margin-left: -66px;
-	top: 50%;
-	margin-top: -66px;
-}
 
 .reviews-wrap__header_left {
 	float: left;
@@ -507,7 +506,7 @@ input:focus, input:active {
 .reviews-wrap__arrow_left{
 	left: 0;
 	top: 50%;
-	margin-left: -157px;
+	margin-left: -100px;
 	margin-top: -22px;
 }
 
@@ -515,14 +514,83 @@ input:focus, input:active {
 	right: 0;
 	top: 50%;
 	margin-top: -22px;
+	margin-right: -100px;
+}
+
+
+.slick-list{
+	
+	margin: 20px;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.slick-arrow{
+	
+	position: absolute;
+	
+}
+
+.slick-next:before, .slick-prev:before{
+	color: #000;
+	content: '';
+	background-image: url(../img/arrow-right.png);
+	background-size: cover;
+	width: 15px;
+	height: 25px;
+	display: block;
+}
+
+.slick-prev:before{
+	background-image: url(../img/arrow-left.png);
+
+}
+
+.slick-next{
+	right: 0;
+	top: 50%;
+	margin-top: -22px;
 	margin-right: -107px;
 }
+
+.slick-prev{
+	left: 0;
+	top: 50%;
+	margin-left: -157px;
+	margin-top: -22px;
+}
+
+.slick-dots{
+	margin-bottom: -55px;
+	
+}
+
+.slick-dots li button:before{
+	content: '';
+	
+}
+
+.slick-dots li button{
+	border: 1px dashed #23AAE2;
+	border-radius: 50%;
+	
+}
+
+.slick-dots li.slick-active button:before{
+	background-color: #23AAE2;
+	border-radius: 50%;
+	border: none;
+	
+}
+
+
 
 .reviews-dots{
 	width: 80px;
 	margin: 0 auto;
 	margin-top: 51px;
 }
+
 
 .reviews-dot{
 	width: 19px;
@@ -531,6 +599,7 @@ input:focus, input:active {
 	border-radius: 50%;
 	float: left;
 	margin-right: 10px;
+	display: none;
 }
 
 .reviews-dot:last-child{
@@ -645,13 +714,11 @@ input::placeholder { color: #fff; }
 	margin-top: 28px;
 	width: 33px;
 	height: 33px;
-	text-align: center;
 	border-radius: 50%;
-	line-height: 33px;
 	transform: rotate(90deg);
 	margin-left: -10px;
-
 }
+
 
 .footer-phone{
 	font-size: 1.6rem;
