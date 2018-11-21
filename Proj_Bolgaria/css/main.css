@@ -130,7 +130,7 @@ input:focus, input:active {
 .nav__link{
 	color: #fff;
 	font-size: 1.1rem;
-	padding: 10px 6px;
+	padding: 10px 10px;
 	border-radius: 5px;
 	letter-spacing: 1.1px;
   }
@@ -231,7 +231,7 @@ input:focus, input:active {
 .advantages-item{
 	text-align: center;
 	background-color: #F4F4F4;
-	height: 357px;
+	height: 410px;
 	padding: 60px 27px;
 }
 

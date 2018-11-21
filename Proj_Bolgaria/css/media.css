@@ -1,7 +1,10 @@
 @media screen and (max-width: 1199px) {
-  .nav{
-	display: none;
-  }
+ 
+
+	.nav__list{
+		margin-left: 10px;
+	}
+	
 
   .contact-icon{
 	  width: 10%;
@@ -16,6 +19,18 @@
 }
 
 @media screen and (max-width: 991px) {
+
+	.header-title__title span {
+		font-size: 7.5rem;
+		letter-spacing: 41px;
+	}
+
+	.nav{
+		display: none;
+	  }
+	  .header-nav{
+		  display: none;
+	  }
 	
 	.contact-icon{
 		width: 50%;
@@ -33,6 +48,10 @@
 	}
 	.advantages-item:last-child{
 		margin-top: 20px;
+	}
+	.advantages-item {
+		height: 270px;
+		padding: 27px 27px;
 	}
 
 	.reviews-wrap__header {
@@ -81,6 +100,12 @@
 	.first-clients__item:nth-child(1){
 		margin-left: 0px;
 	}	
+  }
+
+  @media screen and (max-width: 992px) {
+	.nav-index{
+		display: none;
+	}
   }
 
   @media screen and (max-width: 850px) {
