@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<title>Контакты</title>
 	
 	<!-- Latest compiled and minified CSS -->
@@ -10,6 +12,7 @@
 	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
 
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/contacts.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -52,7 +55,7 @@
 						<div class="contact-wrap clearfix">
 							<div class="contact-icon">
 								<div class="contact-icon__img">
-									<i class="fas fa-phone"></i>
+									<a class="popup-with-form" href="#form-popup"><i class="fas fa-phone"></i></a>
 								</div>
 							</div>
 							<div class="contact-phone">
@@ -73,7 +76,7 @@
 						</h1>
 					</div>
 					<div class="header-arrow">
-						<i class="fas fa-angle-down"></i>
+						<a href="#first"><i class="fas fa-angle-down"></i></a>
 					</div>
 				</div>				
 			</div>			
@@ -170,7 +173,7 @@
 				<div class="col-md-3  hidden-xs hidden-sm">
 				<div class="contact-icon">
 					<div class="contact-icon__img footer-icon">
-						<i class="fas fa-phone"></i>
+						<a class="popup-with-form" href="#form-popup"><i class="fas fa-phone"></i></a>
 					</div>
 				</div>
 				<div class="contact-phone footer-phone">
@@ -182,6 +185,24 @@
 		</div>
 	</footer>
 
+	
+<!-- form itself -->
+<div id="form-popup"  class="mfp-header white-popup-block mfp-hide">Закажите консультацию прямо сейчас!
+	<form id="form-modal" class=" consultation-form mfp-custom">
+
+		<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Заявка с сайта Болгария">
+		<input type="hidden" name="admin_email" value="mail@sirotuk.top">
+		<input type="hidden" name="form_subject" value="Заявка с сайта Болгария">
+		<!-- END Hidden Required Fields -->
+		
+		<input type="text" name="Имя" id="" placeholder="Имя" class="consultation-form__input">
+		<input type="mail" name="E-mail" id="" placeholder="E-mail" class="consultation-form__input">
+		<input type="tel" name="Телефон" id="" placeholder="Телефон" class="consultation-form__input">
+		<button type="submit" class="consultation-form__input consultation-form__button mfp-button">Заказать консультацию</button>
+	</form>
+	</div>
+
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
@@ -189,6 +210,8 @@
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+
 	<script src="js/main.js"></script>
 
 </body>
