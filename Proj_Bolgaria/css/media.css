@@ -20,6 +20,10 @@
 
 @media screen and (max-width: 991px) {
 
+	.m-menu{
+		display: block;	
+	}
+
 	.header-title__title span {
 		font-size: 7.5rem;
 		letter-spacing: 41px;
@@ -100,6 +104,9 @@
 	.first-clients__item:nth-child(1){
 		margin-left: 0px;
 	}	
+	.header-arrow {
+		bottom: 10%;
+	}
   }
 
   @media screen and (max-width: 992px) {
@@ -115,9 +122,12 @@
 	
 	}
 	
+	
   }
 
   @media screen and (max-width: 768px) {
+
+	
 
 	.contact-icon{
 		width: 30%;
@@ -138,7 +148,7 @@
 	}
 
 	.header-arrow{
-		bottom: 15%;
+		bottom: 5%;
 		
 	}
 
@@ -204,7 +214,7 @@
 		margin-bottom: 65px;
 	}
   }
- 
+  
 
 
 
@@ -212,6 +222,12 @@
   @media screen and (max-width: 576px) {
 
 	.contact-wrap{
+		display: none;
+	}
+	.menu-burger{
+		width: 70%;
+	}
+	.contact-wrap__wrapper{
 		display: none;
 	}
 	.reviews-wrap__img{
@@ -281,7 +297,7 @@
 
 	
 	
-  }
+  } 
 
 @media screen and (max-width: 480px) {
 
