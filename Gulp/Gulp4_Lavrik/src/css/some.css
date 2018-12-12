@@ -1,0 +1,20 @@
+body{
+	color: blue;
+}
+
+.row{
+	display: flex;
+}
+
+a{
+	color: #eee;
+}
+
+strong{
+	color: #eee;
+}
+@media screen and (max-width: 200px){
+	html{
+		font-size: 19px;
+	}
+}
