@@ -1,26 +1,24 @@
 {
-  "name": "gulp4_wayup",
+  "name": "newproviidence",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "bower": "^1.8.4",
-    "imagemin-pngquant": "^6.0.0",
-    "rimraf": "^2.6.2"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.26.3",
-    "gulp": "^4.0.0",
+    "browser-sync": "^2.2.3",
+    "gulp": "latest",
     "gulp-autoprefixer": "^6.0.0",
-    "gulp-clean-css": "^4.0.0",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-main-bower-files": "^1.7.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.4",
-    "gulp-uglify": "^3.0.1",
-    "gulp-watch": "^5.0.1",
-    "node-sass": "^4.11.0"
+    "gulp-clean-css": "latest",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-uglify": "^1.1.0",
+    "gulp-watch": "^4.1.1",
+    "imagemin-pngquant": "^4.0.0",
+    "main-bower-files": "^2.13.1",
+    "gulp-concat": "^2.6.1",
+    "rimraf": "^2.3.1"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
