@@ -6,13 +6,16 @@
 	color: #666;
 }
 
-::selection {
-	background-color: $accent;
-	color: #fff;
+// ::selection {
+// 	// background-color: $accent;
+// 	// color: #000;
+// }
+
+html{
+	font-size: 10px;
 }
 
 body {
-	font-size: 10px;
 	min-width: 320px;
 	position: relative;
 	line-height: 1.65;
@@ -62,7 +65,6 @@ ul, li {
 }
 
 //m-menu
-
 
 
 .m-menu{
@@ -171,26 +173,388 @@ ul, li {
 	   clip: rect(0, 0, 0, 0);
    }
 
+.btn{
+	width: 205px;
+	height: 50px;
+	background-color: #eef0f2;
+	border: 1px solid #dadcdf;
+	border-radius: 25px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.btn:hover{
+	background-color: #b9bbbd;
+
+}
+
+.btn:active{
+	box-shadow: inset  0 0 3px 3px rgba(0,0,0,0.3);
+}
+
+.btn-link{
+	text-decoration: none;
+	font-family: $Lato-Regular;
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: #26272d;
+	line-height: 50px;
+	width: 100%;
+	text-align: center;
+}
+
+.padding0{
+	padding: 0;
+}
+
 
 //Site
 
 //header
 
-.nav{
+.header{
+	position: absolute;
+	width: 100%;
+	z-index: 5;
+}
+
+.header-inner{
 	display: flex;
 	flex-direction: row;
-	margin-top: 56px;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.header-menu{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	font-size: 1.6rem;
+
 }
 .menu-link{
 	display: block;
-	font-size: 1.3em;
 	color: #26272d;
-	margin-left: 30px;
+	font-family: $Lato-Regular;
+}
+.menu-link:hover{
+	border-bottom: 1px solid rgb(129, 141, 145);
+	transition: all 0.08s ease-in-out;
+	color: rgb(129, 141, 145);
 }
 
-.menu-link{
-	margin-left: 30px;
+
+
+.logo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 }
+
+.h-right-link{
+	text-decoration: none;
+}
+
+.get-link{
+	display: flex;
+	background-color: #267df4;
+	width: 130px;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 30px;
+	cursor: pointer;
+	background-image: url(..\img\Apple_Icon.png);
+	background-repeat: no-repeat;
+	background-position: 10px 9px;
+	line-height: 40px;	
+}
+
+.get-link:active{
+	box-shadow: inset  0 0 3px 3px rgba(0,0,0,0.3);
+}
+
+
+
+.menu-link-get{
+	color: #fff;
+	width: 100%;
+	text-align: center;	
+}
+
+.menu-link-get:hover{
+	border: none;
+	color: rgb(223, 226, 39);
+}
+
+
+//first
+
+
+#first{
+	background-color: #f7f7f7;
+	background-image: url(..\img\Photo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.title{
+	text-align: center;	
+	padding-top: 200px;
+}
+
+.title-main{
+	font-size: 6rem;
+	font-weight: 400;
+}
+
+.title-subtitle{
+	font-size: 2rem;
+	color: #8c8f94;
+	font-family: $Lato-Regular;
+	font-weight: 400;
+	margin-top: 40px;
+}
+
+.header-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(..\img\Play_Icon.png);
+	background-repeat: no-repeat;
+	background-position: 30px 19px;
+	margin-top: 60px;
+}
+
+.header-link:hover{
+	color: rgb(234, 255, 214);
+}
+
+.iphone6{
+	display: flex;	
+	justify-content: center;
+	margin-top: 55px;
+}
+
+.iphone6_img{
+	margin-left: 10px;
+	overflow: hidden;
+}
+
+//features
+
+#features{
+	margin-top: 120px;
+	margin-bottom: 160px;
+}
+
+.feature_title{
+	font-size: 2.6rem;
+	font-family: $Lato-Light;
+	font-weight: 300;
+	margin: 45px 0;
+}
+
+.feature_text{
+	font-size: 1.8rem;
+	font-family: $Lato-Regular;
+	font-weight: 400;
+	color: #8c8f94;
+}
+
+.feature_text:last-child{
+	margin-top: 35px;
+	
+}
+
+// iphone-feature
+
+.if-iphone{
+	width: 100%;
+	min-height: 850px;
+	//margin-left: -135px;
+	background-image: url(../img/iPhone_6,1.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position-x: -135px;	
+}
+
+.if-content{
+	padding-right:calc(50vw - 585px);
+}
+
+.if-content_title, .title-s{
+	font-size: 4.2rem;
+	margin: 135px 0 70px 0;
+}
+
+.if-content_text, .text-s{
+	color: #8c8f94;
+	font-family: $Lato-Regular;
+	font-weight: 400;
+	font-size: 2rem;
+}
+
+.if-content_text:last-child, .text-s:last-child{
+	margin-top: 40px;
+}
+
+.if-content_btns{
+	display: flex;
+	justify-content: start;
+	
+}
+
+
+.if-content-btn_try{
+	width: 200px;
+	height: 40px;
+	background-color: #267df4;
+	margin: 0;
+	color: #fff;
+	background-image: url(..\img\Arrow_Icon.png);
+	background-repeat: no-repeat;	
+	background-position: 164px 16px;
+}
+
+.if-content-btn_link{
+	line-height: 40px;
+	margin-left: -50px;
+}
+
+.if-content-btn_link__try{
+	color: #fff;
+}
+
+.if-content-btn_learn{
+	height: 40px;
+	width: 140px;
+	text-align: center;
+	background-color: #fff;
+}
+
+.if-content-btn_link__learn{
+	margin: 0;
+}
+
+
+//map
+
+#map{
+	margin: 120px 0 224px 0;	
+}
+
+.map-wrap{
+	padding-left:calc(50vw - 585px);
+}
+
+.map-partners_title{
+	font-size: 1.2rem;
+	font-family: $Lato-Bold;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 66px;
+}
+
+.map-partners_img{
+	margin-right: 30px;
+	margin-top: 30px;
+}
+
+.map-image{
+	background-image: url(../img/Slice_1.png);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 520px;
+	//padding-right:calc(50vw - 300px);
+	background-size: cover;
+	margin-top: 160px;
+}
+
+
+
+
+
+//screen
+
+#screen{
+	background-color: #f5f5f8;
+}
+
+.screen-inner_title{
+	margin-top: 140px;
+	font-size: 4.2rem;
+	text-align: center;
+	font-weight: 400;
+}
+
+.screen-inner_title::after{
+	content: "";
+	display: block;
+	width: 50px;
+	height: 2px;
+	background-color: #267df4;
+	margin: 0 auto;
+	margin-top: 45px;
+}
+
+.screen-inner_text{
+	font-size: 1.2rem;
+	text-align: center;
+	color: #8c8f94;
+	text-transform: uppercase;
+	margin-top: 41px;
+}
+
+.screen-phones{
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+.screen-phone{
+	background-image: url(../img/iPhone_6_screen1.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 25%;
+	height: 863px;
+}
+
+.screen-phone:nth-child(1){
+	background-image: url(../img/Screen_1.png);
+	margin-left: -150px;
+}
+.screen-phone:nth-child(2){
+	background-image: url(../img/Screen_2.png);
+}
+.screen-phone:nth-child(4){
+	background-image: url(../img/Screen_3.png);
+}
+.screen-phone:nth-child(5){
+	background-image: url(../img/Screen_4.png);
+	margin-right: -200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
