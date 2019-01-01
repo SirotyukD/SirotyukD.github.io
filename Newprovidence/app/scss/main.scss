@@ -180,7 +180,10 @@ ul, li {
 	border: 1px solid #dadcdf;
 	border-radius: 25px;
 	margin: 0 auto;
+<<<<<<< HEAD
 	text-align: center;
+=======
+>>>>>>> d29d13951353b919dec6db4bb4a510141778dc0a
 }
 
 .btn:hover{
@@ -203,10 +206,13 @@ ul, li {
 	text-align: center;
 }
 
+<<<<<<< HEAD
 .padding0{
 	padding: 0;
 }
 
+=======
+>>>>>>> d29d13951353b919dec6db4bb4a510141778dc0a
 
 //Site
 
@@ -253,6 +259,7 @@ ul, li {
 	justify-content: center;
 	align-items: center;
 	height: 100%;
+<<<<<<< HEAD
 }
 
 .h-right-link{
@@ -333,6 +340,88 @@ ul, li {
 	color: rgb(234, 255, 214);
 }
 
+=======
+}
+
+.h-right-link{
+	text-decoration: none;
+}
+
+.get-link{
+	display: flex;
+	background-color: #267df4;
+	width: 130px;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 30px;
+	cursor: pointer;
+	background-image: url(..\img\Apple_Icon.png);
+	background-repeat: no-repeat;
+	background-position: 10px 9px;
+	line-height: 40px;	
+}
+
+.get-link:active{
+	box-shadow: inset  0 0 3px 3px rgba(0,0,0,0.3);
+}
+
+
+
+.menu-link-get{
+	color: #fff;
+	width: 100%;
+	text-align: center;	
+}
+
+.menu-link-get:hover{
+	border: none;
+	color: rgb(223, 226, 39);
+}
+
+
+//first
+
+
+#first{
+	background-color: #f7f7f7;
+	background-image: url(..\img\Photo.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.title{
+	text-align: center;	
+	padding-top: 200px;
+}
+
+.title-main{
+	font-size: 6rem;
+	font-weight: 400;
+}
+
+.title-subtitle{
+	font-size: 2rem;
+	color: #8c8f94;
+	font-family: $Lato-Regular;
+	font-weight: 400;
+	margin-top: 40px;
+}
+
+.header-btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(..\img\Play_Icon.png);
+	background-repeat: no-repeat;
+	background-position: 30px 19px;
+	margin-top: 60px;
+}
+
+.header-link:hover{
+	color: rgb(234, 255, 214);
+}
+
+>>>>>>> d29d13951353b919dec6db4bb4a510141778dc0a
 .iphone6{
 	display: flex;	
 	justify-content: center;
@@ -374,6 +463,7 @@ ul, li {
 
 .if-iphone{
 	width: 100%;
+<<<<<<< HEAD
 	min-height: 850px;
 	//margin-left: -135px;
 	background-image: url(../img/iPhone_6,1.png);
@@ -392,12 +482,28 @@ ul, li {
 }
 
 .if-content_text, .text-s{
+=======
+	height: 850px;
+	margin-left: -400px;	
+}
+
+
+
+.if-content_title{
+	font-size: 4.2rem;
+	margin: 135px 0 70px 0;
+
+}
+
+.if-content_text{
+>>>>>>> d29d13951353b919dec6db4bb4a510141778dc0a
 	color: #8c8f94;
 	font-family: $Lato-Regular;
 	font-weight: 400;
 	font-size: 2rem;
 }
 
+<<<<<<< HEAD
 .if-content_text:last-child, .text-s:last-child{
 	margin-top: 40px;
 }
@@ -543,6 +649,12 @@ ul, li {
 
 
 
+=======
+.if-content_text:last-child{
+	margin-top: 40px;
+}
+
+>>>>>>> d29d13951353b919dec6db4bb4a510141778dc0a
 
 
 
