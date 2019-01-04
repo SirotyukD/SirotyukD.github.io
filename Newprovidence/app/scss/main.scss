@@ -1,6 +1,8 @@
 @import "vars";
 @import "fonts";
 @import "libs";
+// @import "../libs/slick/slick.scss";
+// @import "../libs/slick/slick-theme.scss";
 
 ::placeholder {
 	color: #666;
@@ -180,10 +182,7 @@ ul, li {
 	border: 1px solid #dadcdf;
 	border-radius: 25px;
 	margin: 0 auto;
-<<<<<<< HEAD
 	text-align: center;
-=======
->>>>>>> d29d13951353b919dec6db4bb4a510141778dc0a
 }
 
 .btn:hover{
@@ -206,13 +205,11 @@ ul, li {
 	text-align: center;
 }
 
-<<<<<<< HEAD
+
 .padding0{
 	padding: 0;
 }
 
-=======
->>>>>>> d29d13951353b919dec6db4bb4a510141778dc0a
 
 //Site
 
@@ -259,7 +256,6 @@ ul, li {
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-<<<<<<< HEAD
 }
 
 .h-right-link{
@@ -334,94 +330,13 @@ ul, li {
 	background-repeat: no-repeat;
 	background-position: 30px 19px;
 	margin-top: 60px;
+	
 }
 
 .header-link:hover{
 	color: rgb(234, 255, 214);
 }
 
-=======
-}
-
-.h-right-link{
-	text-decoration: none;
-}
-
-.get-link{
-	display: flex;
-	background-color: #267df4;
-	width: 130px;
-	display: flex;
-	justify-content: space-around;
-	border-radius: 30px;
-	cursor: pointer;
-	background-image: url(..\img\Apple_Icon.png);
-	background-repeat: no-repeat;
-	background-position: 10px 9px;
-	line-height: 40px;	
-}
-
-.get-link:active{
-	box-shadow: inset  0 0 3px 3px rgba(0,0,0,0.3);
-}
-
-
-
-.menu-link-get{
-	color: #fff;
-	width: 100%;
-	text-align: center;	
-}
-
-.menu-link-get:hover{
-	border: none;
-	color: rgb(223, 226, 39);
-}
-
-
-//first
-
-
-#first{
-	background-color: #f7f7f7;
-	background-image: url(..\img\Photo.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.title{
-	text-align: center;	
-	padding-top: 200px;
-}
-
-.title-main{
-	font-size: 6rem;
-	font-weight: 400;
-}
-
-.title-subtitle{
-	font-size: 2rem;
-	color: #8c8f94;
-	font-family: $Lato-Regular;
-	font-weight: 400;
-	margin-top: 40px;
-}
-
-.header-btn{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-image: url(..\img\Play_Icon.png);
-	background-repeat: no-repeat;
-	background-position: 30px 19px;
-	margin-top: 60px;
-}
-
-.header-link:hover{
-	color: rgb(234, 255, 214);
-}
-
->>>>>>> d29d13951353b919dec6db4bb4a510141778dc0a
 .iphone6{
 	display: flex;	
 	justify-content: center;
@@ -463,13 +378,13 @@ ul, li {
 
 .if-iphone{
 	width: 100%;
-<<<<<<< HEAD
 	min-height: 850px;
 	//margin-left: -135px;
 	background-image: url(../img/iPhone_6,1.png);
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position-x: -135px;	
+	background-position-x: -135px;
+	background-position-y: 80%;	
 }
 
 .if-content{
@@ -482,28 +397,12 @@ ul, li {
 }
 
 .if-content_text, .text-s{
-=======
-	height: 850px;
-	margin-left: -400px;	
-}
-
-
-
-.if-content_title{
-	font-size: 4.2rem;
-	margin: 135px 0 70px 0;
-
-}
-
-.if-content_text{
->>>>>>> d29d13951353b919dec6db4bb4a510141778dc0a
 	color: #8c8f94;
 	font-family: $Lato-Regular;
 	font-weight: 400;
 	font-size: 2rem;
 }
 
-<<<<<<< HEAD
 .if-content_text:last-child, .text-s:last-child{
 	margin-top: 40px;
 }
@@ -645,16 +544,224 @@ ul, li {
 }
 
 
+//rtb
 
 
-
-
-=======
-.if-content_text:last-child{
-	margin-top: 40px;
+#rtb{
+	padding-bottom: 130px;
+	text-align: center;
+	background-color: #f5f5f8;
 }
 
->>>>>>> d29d13951353b919dec6db4bb4a510141778dc0a
+.rtb-logo{
+	font-family: $Lato-Regular;
+	opacity: 0.5;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1.2rem;
+}
+
+.rtb-logo span{
+	font-family: $Lato-Bold;
+
+}
+
+.rtb-title{
+	font-size: 4.2rem;
+	font-weight: 400;
+	margin-top: 37px;
+}
+
+.rtb-form{
+	width: 500px;
+	height: 50px;
+	border-radius: 25px;
+	border: 1px solid #cbcbce;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.6rem;
+	font-family: $Lato-Regular;
+	font-weight: 400;
+	margin: 47px auto 65px auto;
+
+}
+
+.rtb-form__email{
+	border: none;
+	background-color: #f5f5f8;
+	margin-left: 26px;
+
+}
+
+.rtb-form__btn{
+	height: 42px;
+	width: 162px;
+	background-color: #6fc754;
+	background-image: url(..\img\Arrow_Icon.png);
+	background-repeat: no-repeat;	
+	background-position: 122px 16px;
+	margin: 4px;
+	color: #fff;
+	text-align-last: left;
+	padding-left: 30px;
+}
+
+.rtb-dowload__title{
+	text-transform: uppercase;
+	font-family: $Lato-Regular;
+	font-weight: 400;
+	font-size: 1.3rem;
+	opacity: 0.3;
+	letter-spacing: 1.2px;
+}
+
+.rtb-dowload__btn{
+	width: 210px;
+	height: 60px;
+	background-color: #131315;
+	background-repeat: 30px;
+	color: #fff;
+	background-image: url(..\img\Apple_Icon.png);
+	background-repeat: no-repeat;
+	background-position: 27px 14px;
+	background-size: 24px 28px;
+	
+}
+
+.rtb-dowload__text{
+	width: 100px;
+	height: 36px;
+	margin-left: 68px;
+	display: block;
+	font-family: $Lato-Regular;
+	font-weight: 400;
+	font-size: 1.2rem;
+	line-height: 22px;
+	margin-top: 5px;
+}
+
+.rtb-dowload__btn span{
+	font-size: 2.2rem;
+	
+}
+
+
+//slider
+
+#slider{
+padding: 130px 0;
+text-align: center;
+}
+
+.slider-slick__window{
+	padding: 0 20px;
+}
+
+.slider-slick__image{
+	margin: 0 auto;
+}
+.slider-slick .slider-slick__image{
+	opacity: 0.2;
+	width: 90px;
+	height: 90px;
+}
+
+// .slider-slick .slick-center{
+// 	height: 190px;
+// 	background-image: url(..\img\Circle.png);
+// 	background-repeat: no-repeat;
+// 	background-size: contain;
+// 	background-position: center ;
+// }
+
+.slider-slick .slick-center .slider-slick__image {
+    color: #e67e22;
+	opacity: 1;
+	display: block;
+	width: 130px;
+	height: 130px;	
+}
+
+.slick-next:before, .slick-prev:before{
+    content: '';
+}
+
+
+
+.slick-next, .slick-prev{
+	content: "";
+	display: block;
+	width: 23px;
+	height: 42px;
+	position: absolute;
+	top: 55px;
+}
+
+.slick-next{
+	background-image: url(..\img\Arrow.svg);
+	right: -200px;
+}
+
+.slick-next:hover{
+	background-image: url(..\img\Arrow.svg);
+}
+
+.slick-prev {
+	background-image: url(..\img\Arrow1.svg);
+	left: -200px;
+}
+
+.slick-prev:hover{
+	background-image: url(..\img\Arrow1.svg);
+}
+
+.slider-slick__title{
+	margin-top: 25px;
+	font-family: $Lato-Light;
+	font-weight: 300;
+	font-size: 3.2rem;
+	
+}
+
+.slider-slick__text{
+	color: #8c8f94;
+	font-family: $Lato-Regular;
+	font-weight: 400;
+	font-size: 2rem;
+}
+.slider-slick__stars{
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+	margin-top: 30px;
+}
+
+.slider-slick__star{
+	height: 24px;
+	width: 24px;
+}
+
+.slider-slick__author{
+	font-size: 1.2rem;
+	font-family: $Lato-Bold;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 68px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

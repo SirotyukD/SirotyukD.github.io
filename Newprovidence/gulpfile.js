@@ -23,6 +23,7 @@
 		},
 		dist: { //Тут мы укажем куда складывать готовые после сборки файлы
 			html: 'dist/',
+			modules: 'dist/modules/',
 			js: 'dist/js/',
 			scss: 'dist/css/',
 			css: 'dist/css/',
@@ -31,6 +32,7 @@
 		},
 		app: { //Пути откуда брать исходники
 			html: 'app/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
+			modules: 'app/modules/**/*.*',
 			js: 'app/js/*.js',//В стилях и скриптах нам понадобятся только main файлы
 			scss: 'app/scss/*.scss',
 			css: 'app/css/*.css',
@@ -43,7 +45,8 @@
 			scss: 'app/scss/**/*.scss',
 			css: 'app/css/**/*.css',
 			img: 'app/img/**/*.*',
-			fonts: 'app/fonts/**/*.*'
+			fonts: 'app/fonts/**/*.*',
+			modules: 'app/modules/**/*.*'
 		},
 		clean: './dist'
 	};
@@ -75,8 +78,15 @@
 			.pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений
 	});
 
+	gulp.task('modules:build', function () {
+		return gulp.src(path.app.modules) //Выберем файлы по нужному пути
+			.pipe(gulp.dest(path.dist.modules)) //Выплюнем их в папку build
+			.pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений
+	});
+
 	gulp.task('js:build', function () {
 		return gulp.src(['app/libs/jquery/dist/jquery.min.js',
+						 'app/libs/slick/slick.min.js',
 			path.app.js]) //Найдем наш main файл
 			.pipe(concat('scripts.min.js'))
 			.pipe(sourcemaps.init()) //Инициализируем sourcemap
@@ -136,7 +146,7 @@
 	
 	gulp.task('build', gulp.series( 
 		//'vendorCss:build', 'vendorJs:build', 
-		'html:build', 'js:build', 'scss:build', 'css:build', 
+		'html:build', 'modules:build', 'js:build', 'scss:build', 'css:build', 
 		'fonts:build', 'image:build'
 	));
 
@@ -147,7 +157,8 @@
 				gulp.watch([path.watch.scss], gulp.parallel('scss:build'));
 				gulp.watch([path.watch.js], gulp.parallel('js:build'));
 				gulp.watch([path.watch.img], gulp.parallel('image:build'));
-				gulp.watch([path.watch.fonts], gulp.parallel('fonts:build'))
+				gulp.watch([path.watch.fonts], gulp.parallel('fonts:build'));
+				gulp.watch([path.watch.modules], gulp.parallel('modules:build'))
 	});
 	
 
@@ -161,7 +172,7 @@ gulp.task('clean', function (cb) {
 	});
 
 
-gulp.task('dev', gulp.series('build', gulp.parallel('watch', 'webserver')));
+gulp.task('dev', gulp.series('clean','build', gulp.parallel('watch', 'webserver')));
 
 
 
