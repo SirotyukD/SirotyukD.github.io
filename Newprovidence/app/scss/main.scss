@@ -703,7 +703,7 @@ text-align: center;
 	right: -200px;
 }
 
-.slick-next:hover{
+.slick-next:hover, .slick-next:hover::after, .slick-next:focus, .slick-next:focus::after{
 	background-image: url(..\img\Arrow.svg);
 }
 
@@ -712,7 +712,7 @@ text-align: center;
 	left: -200px;
 }
 
-.slick-prev:hover{
+.slick-prev:hover, .slick-prev:hover::after, .slick-prev:focus, .slick-prev:focus::after{
 	background-image: url(..\img\Arrow1.svg);
 }
 
@@ -750,6 +750,60 @@ text-align: center;
 	text-align: center;
 	text-transform: uppercase;
 	margin-top: 68px;
+}
+
+
+//plan
+
+#plan{
+	background-color: #f4f4f5;
+	padding-top: 159px;
+}
+
+.plan-choose__title{
+	font-size: 4.2rem;
+	font-family: $Lato-Regular;
+	font-weight: 400;
+	padding-top: 47px;
+}
+
+.plan-choose__tabs-title{
+	font-size: 1.2rem;
+	font-family: $Lato-Bold;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 67px 0 24px 0;
+}
+
+.plan-choose__inner{
+	width: 258px;
+	height: 50px;
+	border: 1px solid #ddddde;
+	border-radius: 25px;
+}
+
+.plan-choose__tabs{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.plan-choose__tab{
+	width: 124px;
+	height: 42px;
+	display: block;
+	text-align: center;
+	line-height: 42px;
+	color: #a2a3a5;
+	font-size: 1.6rem;
+	font-family: $Lato-Regular;
+	font-weight: 400;
+}
+
+
+.active{
+	background-color: #fff;
+	border-radius: 21px;
 }
 
 
