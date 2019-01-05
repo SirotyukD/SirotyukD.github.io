@@ -798,13 +798,103 @@ text-align: center;
 	font-size: 1.6rem;
 	font-family: $Lato-Regular;
 	font-weight: 400;
+	transition: .3s all ease;
 }
 
-
-.active{
-	background-color: #fff;
+.tab-content__active{
+	background-color: grey;
 	border-radius: 21px;
 }
+
+.tab-content{
+	display: flex; 
+	text-align: center;
+}
+
+.tab-item, .tab-item1{
+	padding: 43px 30px 50px 30px;
+}
+
+//увеличение картинки
+.tab-item-active{ 
+	-webkit-transform: scale(1.2,1.2);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 550ms;
+    -moz-transform: scale(1.2,1.2);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 550ms;
+}
+
+.tab-item-active .tab-item__butt{
+	background-color: #267df4;
+	color: #fff;
+}
+
+.tab-item__title{
+	font-family: $Lato-Light;
+	font-weight: 300;
+	font-size: 3.2rem;
+}
+
+.tab-item__price{
+	font-size: 1.1rem;
+	font-family: $Lato-Bold;
+	font-weight: 700;
+	width: 63px;
+	height: 28px;
+	line-height: 28px;
+	margin: 29px auto 56px auto;
+	border: 1px solid #d4d4d5;
+	border-radius: 10px;
+	
+}
+
+.tab-item__desc{
+	font-size: 2rem;
+	font-family: $Lato-Regular;
+	font-weight: 400;
+	color: #8c8f94;
+}
+
+.tab-item__advantages{
+	margin-top: 47px;
+}
+
+.tab-item__advantage{
+	display: flex;
+	justify-content: center;
+}
+
+.tab-item__advantage-img{
+	width: 14px;
+	height: 10px;
+	margin-right: 8px;
+	margin-top: 9px;
+}
+
+.tab-item__advantage-text{
+	font-family: $Lato-Regular;
+	font-size: 1.6rem;
+	font-weight: 400;
+}
+
+.tab-item__butt{
+	margin: 50px auto 0 auto;
+	border: 1px solid #267df4;
+	width: 202px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 1.6rem;
+	color: #267df4;
+}
+
+
+
+
+
+
+
+
 
 
 
