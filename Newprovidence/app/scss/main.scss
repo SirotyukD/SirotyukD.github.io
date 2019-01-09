@@ -927,13 +927,106 @@ text-align: center;
 
 //subscribe
 
+#subscribe{
+	margin: 89px 0 86px 0;
+}
+
 .subscribe-title{
 	font-size: 4.2rem;
 }
 
-.subscribe-form{
+.subscribe-form__input{
+	border: none;
+	margin-left: 30px;
+}
+
+.subscribe-btn__btn{
+	width: 132px;
+	height: 42px;
+	background-color: #6fc754;
+	color: #fff;
+	margin-right: 3px;
+}
+
+.subscribe-text{
+	color: #8c8f94;
+	font-family: $Lato-Regular;
+	font-weight: 400;
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+//footer
+
+#footer{
+	margin: 90px 0 36px 0;
+}
+
+.footer-wrap__text{
+	margin: 33px 0;
+	color: #8c8f94;
+	font-family: $Lato-Regular;
+	font-size: 1.4rem;
+	font-weight: 400;
+	width: 50%;
+}
+
+.footer-social{
+	margin: 41px 0 170px 0;
+	display: flex;
+	justify-content: space-between;
+	width: 225px;
+}
+
+.footer-items{
+	display: flex;
+	justify-content: space-around;
 	
 }
+
+.footer-item__title{
+	font-family: $Lato-Bold;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+.footer-item__item{
+	font-family: $Lato-Regular;
+	font-size: 1.6rem;
+	color: #8c8f94;
+	margin: 15px 0;
+}
+
+.footer-more{
+	font-size: 1.4rem;
+	font-family: $Lato-Regular;
+	font-weight: 400;
+	
+}
+
+.footer-more__text{
+	display: inline;	
+}
+
+.footer-author{
+	display: flex;
+	align-items: center;
+}
+
+.footer-author__img{
+margin-top: -15px;
+}
+
+.footer-author__text{
+	font-family: $Lato-Bold;
+	text-transform: uppercase;
+	margin-right: 12px;
+	
+}
+
+
+
+
 
 
 

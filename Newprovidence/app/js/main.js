@@ -53,36 +53,5 @@ $(function() {
 
 
 
-//1
-		
-		// $(document).ready(function() {
-		// 	$("#content div").hide(); // Скрываем содержание
-		// 	$("#tabs li:first").attr("id","current"); // Активируем первую закладку
-		// 	$("#content div:first").fadeIn(); // Выводим содержание
-				
-		// 		$('#tabs a').click(function(e) {
-		// 				e.preventDefault();        
-		// 				$("#content div").hide(); //Скрыть все сожержание
-		// 				$("#tabs li").attr("id",""); //Сброс ID
-		// 				$(this).parent().attr("id","current"); // Активируем закладку
-		// 				$('#' + $(this).attr('title')).fadeIn(); // Выводим содержание текущей закладки
-		// 		});
-
-		// 		$('.plan-choose__tab').addClass('active')
-		// 		$('.plan-choose__tab').on('click', 'li:not(.active)', function() {
-		// 			$(this)
-		// 				.addClass('active').siblings().removeClass('active')
-		// 				//.closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
-		// 		});
-				
-		//});
-
-		//2
-
-		// $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
-		// 	$(this)
-		// 		.addClass('active').siblings().removeClass('active')
-		// 		.closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
-		// });
 
 });
