@@ -1,0 +1,104 @@
+/* section header */
+
+body{
+	color: #000;
+}
+#header{
+	height: 330px;
+	color: #fff;
+}
+
+.header-title{
+	height: 270px;
+	align-items: baseline;
+}
+
+.header-arrow{
+	bottom: 30%;
+}
+
+/* section first */
+
+#first{
+	background-color: #f7f7f7;
+	margin-top: -170px;
+}
+
+.first-wrap{
+	padding: 49px 65px 72px 65px;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	background-color: #fff;
+	font-family: 'MuseoSansCyrl-100', sans-serif;
+}
+
+.cf-title{
+	font-size: 1.7rem;
+}
+
+.cf-items{
+	margin-top: 55px;
+}
+
+.cf-item{
+	width: 50%;
+	float: left;
+}
+
+.cf-box{
+	text-align: left;
+	margin-top: 50px;
+	background-image: url(../img/Email-48.png);
+	background-repeat: no-repeat;
+	padding-left: 60px;
+	background-position-y: 7px;
+}
+
+.cf-box:first-child{
+	margin-top: 78px;
+	background-image: url(../img/Cell_Phone-48.png);
+}
+
+.cf-box:last-child{
+	margin-top: 78px;
+	background-image: url(../img/Skype-48.png);
+}
+
+.cf-box__title{
+	font-family: 'MuseoSansCyrl-900', sans-serif;
+	font-size: 1.8rem;
+	text-transform: uppercase;
+}
+
+
+
+.cf-box__text{
+	margin-top: 15px;
+	font-size: 1.6rem;
+}
+
+.cf-item__left{
+	background-color: #11b2f5;
+	border-radius: 5px;
+	padding: 42px 0;
+}
+
+.cf-item__left_wrap{
+	width: 75%;
+	margin: 0 auto;
+}
+
+.cf-item__left_title{
+	font-size: 2rem;
+}
+
+.cf-item__left_title span{
+	font-size: 2.5rem;
+}
+
+.cf-item__left_subtitle{
+	font-size: 1.8rem;
+	margin-top: 15px;
+}
+

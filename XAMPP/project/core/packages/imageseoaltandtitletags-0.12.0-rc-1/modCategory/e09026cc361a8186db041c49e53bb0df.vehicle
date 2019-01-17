@@ -1,0 +1,120 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'unique_key' => 
+  array (
+    0 => 'category',
+  ),
+  'related_objects' => 
+  array (
+    'Plugins' => 
+    array (
+      '154a3582bd1241cee4865cc9f5c04149' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'related_object_attributes' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => false,
+            'unique_key' => 
+            array (
+              0 => 'pluginid',
+              1 => 'event',
+            ),
+          ),
+        ),
+        'class' => 'modPlugin',
+        'object' => '{"id":1,"source":0,"property_preprocess":0,"name":"Image SEO alt and title tags","description":"This is an example plugin.  List the events it attaches to in the PluginEvents.","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\n * @name Image SEO alt and title tags\\n * @description This is an example plugin.  List the events it attaches to in the PluginEvents.\\n * @PluginEvents OnWebPagePrerender\\n *\\/\\n\\n\\/\\/ Your core_path will change depending on whether your code is running on your development environment\\n\\/\\/ or on a production environment (deployed via a Transport Package).  Make sure you follow the pattern\\n\\/\\/ outlined here. See https:\\/\\/github.com\\/craftsmancoding\\/repoman\\/wiki\\/Conventions for more info\\n$core_path = $modx->getOption(\'imageseo.core_path\', null, MODX_CORE_PATH.\'components\\/imageseo\\/\');\\ninclude_once $core_path .\'vendor\\/autoload.php\';\\n\\nuse Masterminds\\\\HTML5;\\n\\nif($modx->resource->get(\'content_type\') == 1){ \\/\\/only run on HTML doc types\\n\\t$containerConfig = $modx->getOption(\'imageseo.containers\');\\n\\t$containerConfig = $containerConfig ? $containerConfig : \'article, section, header, footer, aside\';\\n\\n\\t$headerConfig = $modx->getOption(\'imageseo.headings\');\\n\\t$headerConfig = $headerConfig ? $headerConfig : \'h1,h2,h3,h4,h5,h6\';\\n\\n\\t$containers = explode(\',\', $containerConfig);\\n\\t$headers = explode(\',\', $headerConfig);\\n\\t$output = &$modx->resource->_output; \\/\\/ get a reference to the output\\n\\t$html5 = new HTML5();\\n\\t@$dom = $html5->loadHTML($output);\\n\\n\\tforeach ($dom->getElementsByTagName(\'img\') as $node) {\\n\\t\\t\\/\\/find parents matching container array\\n\\t\\tif(!$node->getAttribute(\'alt\')){\\n\\t\\t\\t\\/\\/ we do not have alt text\\n\\t\\t\\tsetAltText($node, $headers, $containers, $modx);\\n\\t\\t}\\n\\t\\tif(!$node->getAttribute(\'title\')){\\n\\t\\t\\t\\/\\/we do not have title text, set it to the same as the alt text\\n\\t\\t\\t$node->setAttribute(\'title\', $node->getAttribute(\'alt\'));\\n\\t\\t}\\n\\t}\\n\\n\\t$output = $html5->saveHTML($dom);\\n}\\n\\nfunction getParentNode($node, $types){\\n\\t$parent = $node->parentNode;\\n\\tif(in_array($parent->tagName, $types)){\\n\\t\\treturn $parent;\\n\\t} else {\\n\\t\\tif($parent->tagName == \'body\'){\\n\\t\\t\\treturn false;\\n\\t\\t} else {\\n\\t\\t\\treturn getParentNode($parent, $types);\\n\\t\\t}\\n\\t}\\n}\\n\\nfunction getHeadingNode($parent, $headers, $containers){\\n\\t$search = true;\\n\\t$index = 0;\\n\\tfor($index = 0; $index < count($headers); $index++){\\n\\t\\t$tmp = $parent->getElementsByTagName($headers[$index]);\\n\\t\\tif($tmp->length > 0){\\n\\t\\t\\t\\/\\/we have headings, return the first\\n\\t\\t\\treturn $tmp->item(0);\\n\\t\\t}\\n\\t}\\n\\t$nextParent = getParentNode($parent, $containers);\\n\\tif($nextParent){\\n\\t\\treturn getHeadingNode($nextParent, $headers, $containers);\\n\\t} else {\\n\\t\\t\\/\\/ no more parents\\n\\t\\treturn false;\\n\\t}\\n}\\n\\nfunction setAltText($node, $headers, $containers, $modx){\\n\\t$heading = getHeadingNode($node->parentNode, $headers, $containers);\\n\\tif($heading){\\n\\t\\t\\/\\/we\'ve found a heading, use it\'s value as image alt\\n\\t\\t$node->setAttribute(\'alt\', $heading->nodeValue);\\n\\t} else {\\n\\t\\t\\/\\/use pagetitle\\n\\t\\t$alt = $modx->resource->get(\'pagetitle\');\\n\\t\\t$longtitle = $modx->resource->get(\'longtitle\');\\n\\t\\tif($longtitle){\\n\\t\\t\\t$alt = $longtitle;\\n\\t\\t}\\n\\t\\t$node->setAttribute(\'alt\', $alt);\\n\\t}\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"","content":"\\/**\\n * @name Image SEO alt and title tags\\n * @description This is an example plugin.  List the events it attaches to in the PluginEvents.\\n * @PluginEvents OnWebPagePrerender\\n *\\/\\n\\n\\/\\/ Your core_path will change depending on whether your code is running on your development environment\\n\\/\\/ or on a production environment (deployed via a Transport Package).  Make sure you follow the pattern\\n\\/\\/ outlined here. See https:\\/\\/github.com\\/craftsmancoding\\/repoman\\/wiki\\/Conventions for more info\\n$core_path = $modx->getOption(\'imageseo.core_path\', null, MODX_CORE_PATH.\'components\\/imageseo\\/\');\\ninclude_once $core_path .\'vendor\\/autoload.php\';\\n\\nuse Masterminds\\\\HTML5;\\n\\nif($modx->resource->get(\'content_type\') == 1){ \\/\\/only run on HTML doc types\\n\\t$containerConfig = $modx->getOption(\'imageseo.containers\');\\n\\t$containerConfig = $containerConfig ? $containerConfig : \'article, section, header, footer, aside\';\\n\\n\\t$headerConfig = $modx->getOption(\'imageseo.headings\');\\n\\t$headerConfig = $headerConfig ? $headerConfig : \'h1,h2,h3,h4,h5,h6\';\\n\\n\\t$containers = explode(\',\', $containerConfig);\\n\\t$headers = explode(\',\', $headerConfig);\\n\\t$output = &$modx->resource->_output; \\/\\/ get a reference to the output\\n\\t$html5 = new HTML5();\\n\\t@$dom = $html5->loadHTML($output);\\n\\n\\tforeach ($dom->getElementsByTagName(\'img\') as $node) {\\n\\t\\t\\/\\/find parents matching container array\\n\\t\\tif(!$node->getAttribute(\'alt\')){\\n\\t\\t\\t\\/\\/ we do not have alt text\\n\\t\\t\\tsetAltText($node, $headers, $containers, $modx);\\n\\t\\t}\\n\\t\\tif(!$node->getAttribute(\'title\')){\\n\\t\\t\\t\\/\\/we do not have title text, set it to the same as the alt text\\n\\t\\t\\t$node->setAttribute(\'title\', $node->getAttribute(\'alt\'));\\n\\t\\t}\\n\\t}\\n\\n\\t$output = $html5->saveHTML($dom);\\n}\\n\\nfunction getParentNode($node, $types){\\n\\t$parent = $node->parentNode;\\n\\tif(in_array($parent->tagName, $types)){\\n\\t\\treturn $parent;\\n\\t} else {\\n\\t\\tif($parent->tagName == \'body\'){\\n\\t\\t\\treturn false;\\n\\t\\t} else {\\n\\t\\t\\treturn getParentNode($parent, $types);\\n\\t\\t}\\n\\t}\\n}\\n\\nfunction getHeadingNode($parent, $headers, $containers){\\n\\t$search = true;\\n\\t$index = 0;\\n\\tfor($index = 0; $index < count($headers); $index++){\\n\\t\\t$tmp = $parent->getElementsByTagName($headers[$index]);\\n\\t\\tif($tmp->length > 0){\\n\\t\\t\\t\\/\\/we have headings, return the first\\n\\t\\t\\treturn $tmp->item(0);\\n\\t\\t}\\n\\t}\\n\\t$nextParent = getParentNode($parent, $containers);\\n\\tif($nextParent){\\n\\t\\treturn getHeadingNode($nextParent, $headers, $containers);\\n\\t} else {\\n\\t\\t\\/\\/ no more parents\\n\\t\\treturn false;\\n\\t}\\n}\\n\\nfunction setAltText($node, $headers, $containers, $modx){\\n\\t$heading = getHeadingNode($node->parentNode, $headers, $containers);\\n\\tif($heading){\\n\\t\\t\\/\\/we\'ve found a heading, use it\'s value as image alt\\n\\t\\t$node->setAttribute(\'alt\', $heading->nodeValue);\\n\\t} else {\\n\\t\\t\\/\\/use pagetitle\\n\\t\\t$alt = $modx->resource->get(\'pagetitle\');\\n\\t\\t$longtitle = $modx->resource->get(\'longtitle\');\\n\\t\\tif($longtitle){\\n\\t\\t\\t$alt = $longtitle;\\n\\t\\t}\\n\\t\\t$node->setAttribute(\'alt\', $alt);\\n\\t}\\n}","PluginEvents":"OnWebPagePrerender"}',
+        'guid' => '3eaab812e4c8bfdb8528929eb5246093',
+        'native_key' => 1,
+        'signature' => '975c86a652bf2b0695142c78e5c9dfd9',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'c8e9b7648898cf94f756e9d5bb5bdfa4' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnWebPagePrerender","priority":0,"propertyset":0}',
+              'guid' => 'bd7e775c31ee6b499f3e6912af81b22e',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnWebPagePrerender',
+              ),
+              'signature' => '97c23c4fabe5a62113fe21f56bd823cd',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => false,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+    'modTemplate' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'templatename',
+    ),
+    'modTemplateVar' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'imageseo',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"imageseoaltandtitletags-0.12.0-rc-1\\/modCategory\\/e09026cc361a8186db041c49e53bb0df\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"imageseo"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '91a023bece8421b295f0886cd283dd89',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'e09026cc361a8186db041c49e53bb0df',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"Image SEO"}',
+);

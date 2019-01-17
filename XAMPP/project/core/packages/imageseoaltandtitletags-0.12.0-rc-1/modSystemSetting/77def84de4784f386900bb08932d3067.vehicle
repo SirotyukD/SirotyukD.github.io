@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'imageseo',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '80d53c534f8ab93f017c40e1876da06e',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '77def84de4784f386900bb08932d3067',
+  'native_key' => 'imageseo.headings',
+  'object' => '{"key":"imageseo.headings","value":"h1,h2,h3,h4,h5,h6","xtype":"textfield","namespace":"imageseo","area":"imageseo:default","editedon":null}',
+);

@@ -1,0 +1,46 @@
+Changelog for ImageSeo
+
+ImageSeo 0.12.0-rc1
+---------------------------------
+- Manually add commit 5d415a86f7465566967d8bb602a957010ae27d5b from Masterminds/html5-php to fix issues with IE conditional comments around the html tag
+
+ImageSeo 0.11.1-rc1
+---------------------------------
+- Bug fix for exporting HTML
+
+ImageSeo 0.11.0-rc1
+---------------------------------
+- Switch to Masterminds/html5-php for html parsing
+
+ImageSeo 0.10.4-rc1
+---------------------------------
+- Rename plugin file to force overwrite of old plugin on install
+
+ImageSeo 0.10.3-rc1
+---------------------------------
+- Fix for wrong order on explode(...);
+- Code refactor for readability (minor)
+
+ImageSeo 0.10.2-rc1
+---------------------------------
+- Fix for naming error
+
+ImageSeo 0.10.1-rc1
+---------------------------------
+- Update package name for compatability with older build
+
+ImageSeo 0.10.0-rc1
+---------------------------------
+- Move to repoman packaging system
+
+ImageSeo 0.9.2-rc1
+---------------------------------
+- Only run plugin on HTML doc types (This prevents Image SEO from breaking your other resource types such as sitemaps)
+
+ImageSeo 0.9.1-rc1
+---------------------------------
+- Suppress DOMDocument::LoadHTML() warnings
+
+ImageSeo 0.9.0-rc1
+---------------------------------
+- Initial commit

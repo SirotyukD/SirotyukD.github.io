@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'imageseo',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '071e22278bc5be073dfa897f3645468a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '0793ba1e0b339bfaad48bf950532902b',
+  'native_key' => 'imageseo.containers',
+  'object' => '{"key":"imageseo.containers","value":"article, section, header, footer, aside","xtype":"textfield","namespace":"imageseo","area":"imageseo:default","editedon":null}',
+);

@@ -1,0 +1,17 @@
+[2019-01-17 18:30:37] (ERROR @ C:\xampp\htdocs\project\core\xpdo\om\xpdoobject.class.php : 240) Error 3D000 executing statement: 
+Array
+(
+    [0] => 3D000
+    [1] => 1046
+    [2] => No database selected
+)
+
+[2019-01-17 18:30:37] (ERROR @ C:\xampp\htdocs\project\core\xpdo\om\xpdoobject.class.php : 240) Error 3D000 executing statement: 
+Array
+(
+    [0] => 3D000
+    [1] => 1046
+    [2] => No database selected
+)
+
+[2019-01-17 18:30:37] (FATAL) Could not load core MODX configuration!

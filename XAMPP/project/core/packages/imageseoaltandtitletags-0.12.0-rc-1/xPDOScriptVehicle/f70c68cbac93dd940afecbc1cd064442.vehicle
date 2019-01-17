@@ -1,0 +1,348 @@
+<?php return array (
+  'class' => 'xPDOScriptVehicle',
+  'object' => 
+  array (
+    'package_name' => 'ImageSeoAltAndTitleTags',
+    'namespace' => 'imageseo',
+    'description' => '',
+    'version' => '0.12.0',
+    'release' => 'rc-1',
+    'copyright' => '2015',
+    'category' => 'Image SEO',
+    'require_docblocks' => false,
+    'build_docs' => '*',
+    'overwrite' => false,
+    'log_level' => 3,
+    'author_name' => '',
+    'author_email' => '',
+    'author_homepage' => 'http://extras.modxau.local/',
+    'core_path' => '',
+    'assets_path' => 'assets/',
+    'docs_path' => 'docs/',
+    'chunks_path' => 'elements/chunks/',
+    'plugins_path' => 'elements/plugins/',
+    'snippets_path' => 'elements/snippets/',
+    'templates_path' => 'elements/templates/',
+    'tvs_path' => 'elements/tvs/',
+    'orm_path' => 'model/',
+    'migrations_path' => 'model/migrations/',
+    'seeds_path' => 
+    array (
+      0 => 'model/seeds/',
+    ),
+    'validators_path' => 'tests/',
+    'controllers_path' => '',
+    'omit' => 
+    array (
+      0 => 'assets',
+      1 => 'screenshots',
+      2 => 'tests',
+      3 => 'composer.json',
+      4 => 'composer.lock',
+      5 => 'phpunit.xml',
+      6 => '.git',
+      7 => '.gitignore',
+    ),
+    'limit' => 50,
+    'force_static' => false,
+    'move' => false,
+    'dry_run' => false,
+    'dir_mode' => 511,
+    'target' => 'model/seeds',
+    'abort_install_on_fail' => true,
+    'restrict_prefix' => true,
+    'packages' => 
+    array (
+    ),
+    'support' => 
+    array (
+      'email' => 'donotreply@yoursite.com',
+      'issues' => 'https://github.com/dashmedia/Image-SEO-alt-and-title-tags/issues',
+      'forum' => 'http://forums.modx.com/',
+      'source' => 'https://github.com/DashMedia/Image-SEO-alt-and-title-tags.git',
+    ),
+    'authors' => 
+    array (
+      0 => 
+      array (
+        'name' => 'Your Name Here',
+        'email' => 'you@email.com',
+        'homepage' => 'https://dashmedia.com/',
+      ),
+    ),
+    'build_attributes' => 
+    array (
+      'modCategory' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'category',
+        ),
+        'related_objects' => true,
+        'related_object_attributes' => 
+        array (
+          'Snippets' => 
+          array (
+            'preserve_keys' => false,
+            'update_object' => true,
+            'unique_key' => 'name',
+          ),
+          'Chunks' => 
+          array (
+            'preserve_keys' => false,
+            'update_object' => true,
+            'unique_key' => 'name',
+          ),
+          'Plugins' => 
+          array (
+            'preserve_keys' => false,
+            'update_object' => true,
+            'unique_key' => 'name',
+            'related_object_attributes' => 
+            array (
+              'PluginEvents' => 
+              array (
+                'preserve_keys' => true,
+                'update_object' => false,
+                'unique_key' => 
+                array (
+                  0 => 'pluginid',
+                  1 => 'event',
+                ),
+              ),
+            ),
+          ),
+          'modTemplate' => 
+          array (
+            'preserve_keys' => false,
+            'update_object' => true,
+            'unique_key' => 'templatename',
+          ),
+          'modTemplateVar' => 
+          array (
+            'preserve_keys' => false,
+            'update_object' => true,
+            'unique_key' => 'name',
+          ),
+        ),
+      ),
+      'modSystemSetting' => 
+      array (
+        'unique_key' => 'key',
+        'preserve_keys' => true,
+        'update_object' => false,
+      ),
+      'modMenu' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'unique_key' => 'text',
+        'related_objects' => true,
+        'related_object_attributes' => 
+        array (
+          'Action' => 
+          array (
+            'preserve_keys' => false,
+            'update_object' => true,
+            'unique_key' => 
+            array (
+              0 => 'namespace',
+              1 => 'controller',
+            ),
+          ),
+        ),
+      ),
+      'modSnippet' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+      ),
+      'modChunk' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+      ),
+      'modTemplate' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'templatename',
+      ),
+      'modTemplateVar' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+      ),
+      'modDocument' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'context_key',
+          1 => 'uri',
+        ),
+      ),
+      'modResource' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'context_key',
+          1 => 'uri',
+        ),
+      ),
+      'modPlugin' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'related_objects' => true,
+        'related_object_attributes' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => false,
+            'unique_key' => 
+            array (
+              0 => 'pluginid',
+              1 => 'event',
+            ),
+          ),
+        ),
+      ),
+      'modPluginEvent' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'pluginid',
+          1 => 'event',
+        ),
+      ),
+      'modAction' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'namespace',
+          1 => 'controller',
+        ),
+        'related_objects' => true,
+        'related_object_attributes' => 
+        array (
+          'Menus' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => true,
+            'unique_key' => 'text',
+          ),
+        ),
+      ),
+      'modContentType' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+      ),
+      'modDashboard' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+      ),
+      'modUserGroup' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+      ),
+      'modUserGroupRole' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+      ),
+      'modPropertySet' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+      ),
+      'modNamespace' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+      ),
+      'modUser' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'username',
+      ),
+      'modContext' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'key',
+      ),
+      'modDashboardWidget' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'name',
+          1 => 'namespace',
+        ),
+        'related_objects' => true,
+        'related_object_attributes' => 
+        array (
+          'Placements' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => true,
+            'unique_key' => 
+            array (
+              0 => 'dashboard',
+              1 => 'widget',
+            ),
+          ),
+        ),
+      ),
+      'modDashboardWidgetPlacement' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'dashboard',
+          1 => 'widget',
+        ),
+      ),
+    ),
+    'license' => 'GPL-2.0+',
+    'homepage' => 'https://github.com/dashmedia/Image-SEO-alt-and-title-tags',
+    'is_build' => true,
+    'source' => 'imageseoaltandtitletags-0.12.0-rc-1/xPDOScriptVehicle/f70c68cbac93dd940afecbc1cd064442.resolver.script',
+  ),
+  'vehicle_class' => 'xPDOScriptVehicle',
+  'namespace' => 'imageseo',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'guid' => '47bde6cdc20a683dc278c10ea5972291',
+  'package' => '',
+  'signature' => 'f70c68cbac93dd940afecbc1cd064442',
+  'native_key' => '47bde6cdc20a683dc278c10ea5972291',
+);
