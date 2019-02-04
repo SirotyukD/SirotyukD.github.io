@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-17 19:18:40
+/* Smarty version 3.1.33, created on 2019-02-04 08:42:37
   from 'C:\xampp\htdocs\project\manager\templates\default\resource\update.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c40c700306945_69529071',
+  'unifunc' => 'content_5c57eced3807f5_61495654',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9e87c62cc7d1e5c7ba8988b2c1599f6a94c2bfa2' => 
     array (
       0 => 'C:\\xampp\\htdocs\\project\\manager\\templates\\default\\resource\\update.tpl',
-      1 => 1543308732,
+      1 => 1549264311,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c40c700306945_69529071 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c57eced3807f5_61495654 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="modx-panel-resource-div"></div>
 <div id="modx-resource-tvs-div"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['tvOutput']->value)===null||$tmp==='' ? '' : $tmp);?>
 </div>

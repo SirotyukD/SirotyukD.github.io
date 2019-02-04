@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-17 18:33:34
+/* Smarty version 3.1.33, created on 2019-02-04 08:41:59
   from 'C:\xampp\htdocs\project\manager\templates\default\security\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c40bc6e2f8256_34230185',
+  'unifunc' => 'content_5c57ecc7991290_62999466',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9272ef65a58ba33ba4623e81605c12c00dd8b912' => 
     array (
       0 => 'C:\\xampp\\htdocs\\project\\manager\\templates\\default\\security\\login.tpl',
-      1 => 1543308732,
+      1 => 1549264311,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c40bc6e2f8256_34230185 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c57ecc7991290_62999466 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_checkPlugins(array(0=>array('file'=>'C:\\xampp\\htdocs\\project\\core\\model\\smarty\\plugins\\modifier.replace.php','function'=>'smarty_modifier_replace',),));
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">

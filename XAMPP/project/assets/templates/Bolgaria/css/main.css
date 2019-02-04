@@ -162,7 +162,7 @@ input:focus, input:active {
 	z-index: 10;
 }
 
-.main-menu_link{
+.main-menu a{
 	display: block;
 	width: 100%;
 	text-decoration: none;
@@ -173,7 +173,7 @@ input:focus, input:active {
 	text-transform: uppercase;
 }
 
-.main-menu_link:hover{
+.main-menu a:hover{
 	background-color: #5e5555;
 	transition: .5s all ease;
 
@@ -232,15 +232,15 @@ input:focus, input:active {
   .h-logo{
 	  text-align-last: left;
   }
-  .nav__item{
-	float: left;
-  }
 
-  .nav__item{
+  .nav__list li{
 	line-height: 5.8rem;
+	float: left;
+	
+	
   }
 
-.nav__link{
+.nav__list a{
 	color: #fff;
 	font-size: 1.1rem;
 	padding: 10px 10px;
@@ -248,12 +248,13 @@ input:focus, input:active {
 	letter-spacing: 1.1px;
   }
 
-.nav__link:hover{
+  .nav__list a:hover{
 	color: #fff;
 	background-color: #3E6377;
 }
 
-.nav__link:active{
+
+.nav__list a:active{
 	box-shadow: 0px 0px 15px rgba(0,0,0,0.5) inset;
 }
 

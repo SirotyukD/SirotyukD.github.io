@@ -95,8 +95,8 @@
     ),
     'OnRichTextEditorRegister' => 
     array (
-      9 => '9',
       1 => '1',
+      9 => '9',
     ),
     'OnSnipFormPrerender' => 
     array (

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-01-17 18:33:53
+/* Smarty version 3.1.33, created on 2019-02-04 08:42:09
   from 'C:\xampp\htdocs\project\manager\templates\default\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5c40bc810b8ac8_20416776',
+  'unifunc' => 'content_5c57ecd1a69151_96217465',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd7dcd97dd7674f0fc91c6800f453e721c83fb80b' => 
     array (
       0 => 'C:\\xampp\\htdocs\\project\\manager\\templates\\default\\header.tpl',
-      1 => 1543308730,
+      1 => 1549264310,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5c40bc810b8ac8_20416776 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5c57ecd1a69151_96217465 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" dir="<?php echo $_smarty_tpl->tpl_vars['_config']->value['manager_direction'];?>
 " lang="<?php echo $_smarty_tpl->tpl_vars['_config']->value['manager_lang_attribute'];?>

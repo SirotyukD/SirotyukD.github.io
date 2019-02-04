@@ -4,8 +4,14 @@
   ),
   'aliasMap' => 
   array (
-    'index' => 1,
+    'main' => 1,
     'about' => 2,
+    'moving' => 3,
+    'contacts' => 4,
+    'preimushhestva' => 5,
+    'preimushhestva/pervoe-preimushhestvo' => 6,
+    'preimushhestva/vtoroe-preimushhestvo' => 7,
+    'preimushhestva/trete-preimushhestvo' => 8,
   ),
   'resourceMap' => 
   array (
@@ -13,6 +19,15 @@
     array (
       0 => 1,
       1 => 2,
+      2 => 3,
+      3 => 4,
+      4 => 5,
+    ),
+    5 => 
+    array (
+      0 => 6,
+      1 => 7,
+      2 => 8,
     ),
   ),
   'webLinkMap' => 
