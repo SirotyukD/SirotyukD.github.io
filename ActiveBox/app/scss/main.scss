@@ -1,8 +1,8 @@
 @import "vars";
 @import "fonts";
 @import "libs";
-// @import "../libs/slick/slick.scss";
-// @import "../libs/slick/slick-theme.scss";
+//@import "../libs/slick/slick.css";
+//@import "../libs/slick/slick-theme.css";
 
 ::placeholder {
 	color: #666;
@@ -13,7 +13,8 @@
 // 	// color: #000;
 // }
 
-html{
+
+html {
 	font-size: 10px;
 }
 
@@ -21,15 +22,19 @@ body {
 	min-width: 320px;
 	position: relative;
 	//line-height: 1.65;
-	// font-family: $default-font;	
+	font-family: "Raleway"; //$default-font;	
 	overflow-x: hidden;
 	color: $text;
-	input, textarea {
+
+	input,
+	textarea {
 		border: #666 1px solid;
 		outline: none;
+
 		&:focus:required:invalid {
 			border-color: red;
 		}
+
 		&:required:valid {
 			border-color: green;
 		}
@@ -40,6 +45,7 @@ body {
 	display: block;
 	max-width: 100%;
 	height: auto;
+
 	&.img-width {
 		width: 100%;
 	}
@@ -49,18 +55,28 @@ body {
 	text-align: center;
 }
 
-b, strong {
+b,
+strong {
 	font-weight: bold;
 }
 
-a, a:hover, a:active, a:focus,
-button, input, button:hover, button:active, button:focus,
-input:focus, input:active {
+a,
+a:hover,
+a:active,
+a:focus,
+button,
+input,
+button:hover,
+button:active,
+button:focus,
+input:focus,
+input:active {
 	text-decoration: none;
 	outline: none;
 }
 
-ul, li {
+ul,
+li {
 	display: block;
 	padding: 0px;
 	margin: 0px;
@@ -69,7 +85,7 @@ ul, li {
 //m-menu
 
 
-.m-menu{
+.m-menu {
 	// display: none;
 	width: 20px;
 	height: 12px;
@@ -78,14 +94,14 @@ ul, li {
 	position: relative;
 	color: #000;
 	line-height: 20px;
-	
+
 }
 
-#check-menu{
+#check-menu {
 	display: none;
 }
 
-.label-menu{
+.label-menu {
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -97,7 +113,7 @@ ul, li {
 	line-height: 20px;
 }
 
-.burger-line{
+.burger-line {
 	position: absolute;
 	top: 0px;
 	right: 0px;
@@ -107,15 +123,16 @@ ul, li {
 	transition: .5s all ease;
 }
 
-.second, .third{
+.second,
+.third {
 	top: 6px;
 }
 
-.fourth{
+.fourth {
 	top: 12px;
 }
 
-.main-menu{
+.main-menu {
 	position: absolute;
 	top: 50px;
 	right: 0;
@@ -129,7 +146,7 @@ ul, li {
 	z-index: 10;
 }
 
-.main-menu_link{
+.main-menu_link {
 	display: block;
 	width: 100%;
 	text-decoration: none;
@@ -140,40 +157,40 @@ ul, li {
 	text-transform: uppercase;
 }
 
-.main-menu_link:hover{
+.main-menu_link:hover {
 	background-color: #5e5555;
 	transition: .5s all ease;
 
 }
 
-#check-menu:checked ~ .main-menu{
+#check-menu:checked~.main-menu {
 	max-height: 500px;
 	font-size: 16px;
 }
 
-#check-menu:checked ~ .first{
+#check-menu:checked~.first {
 	display: none;
 }
 
-#check-menu:checked ~ .second{
+#check-menu:checked~.second {
 	transform: rotate(45deg)
 }
 
-#check-menu:checked ~ .third{
+#check-menu:checked~.third {
 	transform: rotate(-45deg)
 }
 
-#check-menu:checked ~ .fourth{
+#check-menu:checked~.fourth {
 	display: none;
 }
 
 
-   .nav-trigger {
-	   position: absolute;
-	   clip: rect(0, 0, 0, 0);
-   }
+.nav-trigger {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
 
-.btn{
+.btn {
 	width: 205px;
 	height: 50px;
 	background-color: #eef0f2;
@@ -183,16 +200,16 @@ ul, li {
 	text-align: center;
 }
 
-.btn:hover{
+.btn:hover {
 	background-color: #b9bbbd;
 
 }
 
-.btn:active{
-	box-shadow: inset  0 0 3px 3px rgba(0,0,0,0.3);
+.btn:active {
+	box-shadow: inset 0 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-.btn-link{
+.btn-link {
 	text-decoration: none;
 	font-family: $Lato-Regular;
 	font-weight: 400;
@@ -203,13 +220,13 @@ ul, li {
 	text-align: center;
 }
 
-.padding0{
+.padding0 {
 	padding: 0;
 }
 
 
 //red button
-.button{
+.button {
 	width: 200px;
 	height: 45px;
 	background-color: red;
@@ -226,11 +243,11 @@ ul, li {
 	margin: 0 auto;
 }
 
-.button:active{
-	box-shadow: inset 0 0 15px   rgba(0, 0, 0, 0.4);
+.button:active {
+	box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
-.button:hover{
+.button:hover {
 	background-color: rgb(219, 41, 41);
 }
 
@@ -240,35 +257,35 @@ ul, li {
 //header
 
 
-.header{
+.header {
 	position: relative;
 }
 
-.header-row{
+.header-row {
 	position: absolute;
 	width: 100%;
 	height: 100px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 	font-weight: 400;
-	line-height: 100px;	
+	line-height: 100px;
 }
 
-.header-menu ul{
+.header-menu ul {
 	display: flex;
 	justify-content: space-between;
 }
 
-.header-menu a{
+.header-menu a {
 	font-size: 1.3rem;
 	text-transform: uppercase;
 	opacity: 0.75;
 	color: #fff;
 	font-family: "Raleway";
 	font-weight: 700;
-	padding-bottom: 3px;	
+	padding-bottom: 3px;
 }
 
-.header-menu a:hover{
+.header-menu a:hover {
 	transition: all 0.25s ease;
 	opacity: 1;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.75);
@@ -277,7 +294,7 @@ ul, li {
 
 //first
 
-#first{
+#first {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -287,11 +304,11 @@ ul, li {
 	background-size: cover;
 	color: #fff;
 	text-align: center;
-	
+
 }
 
-.first_title{
-	font-family:  "Open Sans";
+.first_title {
+	font-family: "Open Sans";
 	font-weight: 700;
 	font-size: 6.5rem;
 	text-transform: uppercase;
@@ -300,30 +317,251 @@ ul, li {
 
 }
 
-.first_subtitle{
+.first_subtitle {
 	font-size: 2.2rem;
 	font-family: "Raleway";
 	font-weight: 400;
 }
 
-.header-button{
+.header-button {
 	margin-top: 70px;
 }
 
 
 //features
-#features{
+#features {
 	padding: 120px 0;
 }
 
-.features-box{
+.features-upper{
+	margin-bottom: 60px;
+}
+
+.features-box {
 	text-align: center;
+}
+
+.features-box__title {
+	font-family: "Raleway";
+	font-size: 1.4rem;
+	font-weight: 700;
+	margin: 30px 0 18px 0;
+}
+
+.features-box__text {
+	font-family: "Raleway";
+	font-size: 1.4rem;
+	color: #6c7279;
+	margin: 0;
+}
+
+
+//works
+
+
+.works{
+	width: 100%;
+	display: flex;
+	flex-flow: wrap;
+}
+.work{
+	width: 25%;
+	height: 350px;
+	background-image: url(../img/work-1.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+	border: 1px solid #fff;
+	z-index: 1;
+}
+
+.work:nth-child(2){
+	background-image: url(../img/work-2.png);
+}
+
+.work:nth-child(3){
+	background-image: url(../img/work-3.png);
+}
+
+.work:nth-child(4){
+	background-image: url(../img/work-4.png);
+}
+
+.work:nth-child(5){
+	background-image: url(../img/work-5.png);
+}
+
+.work:nth-child(6){
+	background-image: url(../img/work-6.png);
+}
+
+.work:nth-child(7){
+	background-image: url(../img/work-7.png);
+}
+
+.work:nth-child(8){
+	background-image: url(../img/work-8.png);
+}
+
+.work-inner{
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	padding: 155px 0;
+	background-color: rgba(232, 69, 69, 0.9);
+}
+
+.work-inner h4{
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.work-inner p{
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.work-inner:hover{
+	opacity: 1;
+	transition: all 0.35s ease;
+	cursor: pointer;
+}
+
+//team
+
+
+.team{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+}
+
+.person-card{
+	margin: 0 15px;
+}
+
+.person-card:first-child{
+	margin-left: 0;
+}
+
+.person-card:last-child{
+	margin-right: 0;
+}
+
+
+.person-card h4{
+	font-size: 2.2rem;
+	color: #2d3033;
+	font-weight: 400;
+	margin-top: 30px;
+	margin-bottom: 0;
+}
+
+.person-card h5{
+	text-transform: uppercase;
+	color: #e84545;
+	font-size: 1.3rem;
+	font-weight: 400;
+} 
+
+.person-card p{
+	font-size: 1.4rem;
+	color: #6c7279;
+	margin-bottom: 0;
+}
+
+.person-social{
+	display: flex;
+}
+
+.person-social a{
+	display: block;
+	height: 40px;
+	width: 40px;
+}
+
+.person-fb{
+	background: url(../img/icon-fb.png) no-repeat top center;
+}
+
+.person-tw{
+	margin: 0 4px;
+	background: url(../img/icon-tw.png) no-repeat top center;
+}
+
+.person-in{
+	background: url(../img/icon-in.png) no-repeat top center;
+}
+
+//reviews
+
+
+.slick-slider{
+	width: 100%;
+	position: relative;
+}
+
+.review{
 
 }
 
-.features-box__img{
-	color: red;
+.review-photo{
+background-image: url(../img/review-1.png);
+background-position: top center;
+background-repeat: no-repeat;
+height: 500px;
+width: 50%;
+float: left;
 }
+
+.review-inner{
+	height: 500px;
+	background-color: #53354a;
+	padding: 110px 0 0 85px;
+	float: right;
+	width: 50%;
+	color: #fff;
+	
+}
+
+.review-inner p{
+	font-size: 3.6rem;
+	font-family: "Cardo";
+	font-weight: 400;
+	width: 500px;
+}
+
+.review-inner span{
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	font-weight: 700;
+}
+
+ul.slick-dots{
+	position: absolute;
+	margin-left: 300px;
+	bottom: 20%;
+	right: 20%;
+	width: 120px;
+}
+
+.slick-dots li{
+	width: 12px;
+}
+
+.slick-dots li button:before{
+	background-color: #fff;
+	content: "";
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	text-align: center;
+}
+
+
 
 
 
