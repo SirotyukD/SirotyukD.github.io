@@ -229,7 +229,7 @@ li {
 .button {
 	width: 200px;
 	height: 45px;
-	background-color: red;
+	background-color: #e84545;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -498,15 +498,15 @@ li {
 
 //reviews
 
+#reviews{
+	margin-top: 100px;
+}
 
 .slick-slider{
 	width: 100%;
 	position: relative;
 }
 
-.review{
-
-}
 
 .review-photo{
 background-image: url(../img/review-1.png);
@@ -560,6 +560,99 @@ ul.slick-dots{
 	height: 12px;
 	text-align: center;
 }
+
+.slick-dotted.slick-slider {
+	margin-bottom: 0;
+}
+
+//download
+
+.down-wrap{
+	text-align: center;
+	width: 100%;
+	margin: 100px 0;
+	color: #2d3033;
+}
+
+.down-title{
+	font-weight: 300;
+	font-size: 2.8rem;
+}
+
+.down-text{
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin: 11px 0 30px 0;
+}
+
+.button-down{
+	height: 46px;
+	width: 260px;
+}
+
+
+
+//footer
+#footer{
+	background-color: #3a3e64;
+}
+
+.footer-first{
+	padding: 70px 0 80px 0;
+}
+
+.location{
+	text-align: center;	
+}
+
+.footer-subtitle{
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.footer-text{
+	color: #9c9eb2;
+}
+
+.footer-social_link{
+	justify-content: center;
+}
+
+.location_text, .footer-text{
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
+.footer-P{
+ background-color: #313454;
+
+}
+
+.footer-PS{
+	padding: 30px 0;
+	color: #808080;
+	font-size: 1.4rem;
+}
+
+.footer-PS_text{
+	text-align: center;
+}
+
+.footer-icon{
+	color: #e84545;
+}
+
+.footer-autor{
+	color: #fff;
+}
+
+
+
+
 
 
 
