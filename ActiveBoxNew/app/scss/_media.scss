@@ -1,0 +1,240 @@
+@import "vars";
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+	
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+
+		//section first
+
+	.nav-list_link{
+		margin-left: 25px;
+	}
+
+	.first-title h1{
+		font-size: 5.3rem;
+	}
+
+	.first-subtitle{
+		font-size: 2rem;
+	}
+		//section features
+
+		//section works
+	.works-wrap{
+		justify-content: center;
+	}
+
+	.works-holder{
+		width: 33%;
+		margin-left: 2px;
+	}
+
+		//section team
+
+	.team-holder{
+		width: 45%;
+	}
+
+	.team-holder_img{
+		width: 85%;
+		margin-top: 50px;
+	}
+
+		//section clients
+
+	.client-rewiev_text {
+		width: 70%;
+		margin: 5% 0 0 40px;
+		font-size: 2rem;
+		line-height: 25px;
+	}
+
+		//footer
+
+	.footer-wrapper{
+	width: 60%;
+	}
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+
+		//section first
+
+	.nav{
+		display: none;
+	}
+	.m-menu{
+		display: block;
+	}
+	.first-title h1{
+		font-size: 4rem;
+	}
+
+	.first-subtitle{
+		font-size: 1.4rem;
+	}
+
+		//section features
+
+	.features-wrap{
+	flex-wrap: wrap;
+	}
+
+	.features-holder{
+		width: 47%;	
+	}
+
+	.works-holder{
+		width: 49%;
+		margin-left: 2px;
+	}
+
+		//section team
+
+	.team-holder{
+		width: 49%;
+	}
+
+	.team-holder_img{
+		width: 90%;
+	}
+
+		//section clients
+
+	.clients-wrap{
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.client-photo, .client-rewiev{
+		width: 100%;
+		overflow: hidden;
+	}
+
+	.client-rewiev_text {
+		margin: 5% 0 0 10%;
+		font-size: 2.5rem;
+		line-height: 30px;
+	}
+
+		//section download
+
+	.download-wrap_title{
+		font-size: 2.4rem;	
+	}
+
+		//footer
+
+	.footer-wrapper{
+	width: 60%;
+	}
+
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+
+	//section first
+
+	.first-title h1{
+		font-size: 2.2rem;
+	}
+
+		//section features
+
+	.features{
+	padding: 40px 0;
+	}
+
+	.features-wrap--down{
+	margin-top: 0;
+	}
+
+	.features-holder{
+		width: 60%;
+		margin-top: 40px;	
+	}
+
+	//section works
+	
+	.works-holder{
+		width: 90%;
+	}
+
+		//section team
+
+	.team-holder{
+		width: 80%;
+	}
+
+	.team-holder_img{
+		width: 90%;
+	}
+
+	.team-wrap{
+		justify-content: center;
+	}
+
+		//section clients
+
+	.client-rewiev_text {
+		margin: 5% 0 0 10%;
+		font-size: 2rem;
+		line-height: 25px;
+	}
+
+	.client-rewiev-author{
+		font-size: 1.1rem;
+	}
+
+		//section download
+
+	.download-wrap_title{
+		font-size: 2rem;	
+	}
+
+		//footer
+
+	.footer{
+		display: none;
+	}
+
+	.footer-wrapper{
+	width: 100%;
+	}
+
+
+
+	
+}
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
+@include media-breakpoint-up(sm) {
+
+}
+
+// ≤768px
+@include media-breakpoint-up(md) {
+
+}
+
+// ≤992px
+@include media-breakpoint-up(lg) {
+
+}
+
+// ≤1200px
+@include media-breakpoint-up(xl) {
+	
+}
