@@ -439,10 +439,10 @@ ul, li {
 
 	//section  clients
 
+
+
 .clients-wrap{
-	width: 100%;
 	display: flex;
-	justify-content: space-between;
 }
 
 .client-photo{
@@ -472,6 +472,23 @@ ul, li {
 	font-size: 1.3rem;
 	text-transform: uppercase;
 	margin-left: 10%;
+}
+
+//Slick-slider
+//перебивка Slick значения
+.slick-initialized .slick-slide {
+	display: flex;
+}
+
+.slick-dots {
+	bottom: 10%; 
+	right: -18%;
+}
+
+.slick-dots li button:before {
+    opacity: .5;
+    color: #fff;
+  
 }
 
 
@@ -559,6 +576,8 @@ ul, li {
 .footer-wrapper_design{
 	color: #fff;
 }
+
+
 
 
 

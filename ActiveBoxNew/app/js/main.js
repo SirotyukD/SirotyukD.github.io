@@ -1,6 +1,10 @@
 $(function() {
 
 	// Custom JS
+	// $(document).ready(function(){
+		
+	//   });
+
 
 	$(document).ready(function(){
 			$("#menu, #nav").on("click","a", function (event) {
@@ -13,6 +17,11 @@ $(function() {
 				//анимируем переход на расстояние - top за 1500 мс
 				$('body,html').animate({scrollTop: top}, 1000);
 			});
+
+			$('.slick-slider').slick({
+				dots: true
+			});
+
 		});
 		
 
