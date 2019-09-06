@@ -18,5 +18,13 @@ $(function() {
 	$('.header_slider').slick({
 	});
 
+	$('.box-slider').slick({
+		infinite: true,
+ 		slidesToShow: 3,
+		slidesToScroll: 1,
+		appendArrows: '.box-arrows',
+		
+	});
+
 
 });
