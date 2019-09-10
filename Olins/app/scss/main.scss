@@ -712,6 +712,139 @@ body {
 }
 
 
+//footer
+//=============
+
+.footer{
+	background-color: #73485c;
+	position: relative;
+	overflow: hidden;
+	z-index: 10;
+	box-sizing: border-box;
+}
+
+.footer::after{
+	content: 'olins';
+	display: block;
+	position: absolute;
+	bottom: -230px;
+	left: 20%;
+	font-size: 498px;
+	color: #865d71;
+	opacity: 0.2;
+	font-weight: 900;
+	font-style: italic;
+	z-index: -1;
+	
+}
+
+.footer-wrap{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 186px;
+	box-sizing: border-box;
+}
+
+.footer-wrap .left-box{
+	display: flex;
+	align-items: center;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.footer-wrap .left-box .left-box_item{
+	width: 33.3%;
+}
+
+.footer-wrap .left-box .footer-meta{
+	font-size: 1.1rem;
+	color: #9c7588;
+	padding-right: 60px;
+	margin-left: 125px;
+}
+
+.footer-wrap .left-box .footer-contact .footer-tell{
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: #fff;
+	line-height: 24px;
+}
+
+.footer-wrap .left-box .footer-contact .footer-adress{
+	color: #fff;
+	line-height: 20px;
+}
+
+.footer-wrap .left-box .footer-contact .footer-license{
+	font-size: 1.1rem;
+	color: #9c7588;
+	margin-top: 15px;
+}
+
+.footer-wrap .left-box .footer-nav .footer-list{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: 100px;
+	
+}
+
+.footer-wrap .left-box .footer-nav .footer-list .footer-item {
+	width: 45%;
+}
+
+.footer-wrap .left-box .footer-nav .footer-list .footer-item .footer-item_link{
+	font-size: 1rem;
+	color: #fee489;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 26px;
+}
+
+.footer-wrap .left-box .footer-nav .footer-list .footer-item .footer-item_link__right{
+	margin-left: 40px;
+}
+
+.footer-wrap .left-box .footer-nav .footer-list .footer-item .footer-item_link:hover{
+	border-bottom: 1px solid #fee489;
+}
+
+.footer-wrap .right-box{
+	width: 50%;
+}
+
+.footer-wrap .right-box .footer-social{
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 125px;
+}
+
+.footer-wrap .right-box .footer-social .footer-social_link{
+	height: 20px;
+	width: 20px;
+	margin-left: 27px;
+	background: url(../img/c-flickr.png) no-repeat center center;
+}
+
+.footer-wrap .right-box .footer-social .footer-social_link__twit{
+	background: url(../img/c-twitter.png) no-repeat center center;
+}
+
+.footer-wrap .right-box .footer-social .footer-social_link__fb{
+	background: url(../img/c-fb.png) no-repeat center center;
+	width: 21px;
+	height: 21px;
+}
+
+.footer-wrap .right-box .footer-social .footer-social_link__pint{
+	background: url(../img/c-pinterest.png) no-repeat center center;
+}
+
+
+
+
+
 
 
 
