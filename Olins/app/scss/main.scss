@@ -38,120 +38,12 @@ body {
 
 //Site
 
- //burger-menu	
- //===========
- 
-// .m-menu{
-// 	display: none;
-// 	width: 30px;
-// 	height: 20px;
-// 	background-color: #494141;
-// 	text-align: center;
-// 	position: relativ.header_slider .slide_1 .slide-boxe;
-// 	color: #000;
-// 	line-height: 20px;
-	
-// }
-
-// #check-menu{
-// 	display: none;
-// }
-
-// .label-menu{
-// 	display: block;
-// 	width: 100%;
-// 	height: 100%;
-// 	cursor: pointer;
-// 	position: absolute;
-// 	top: 0;
-// 	right: 40px;
-// 	z-index: 200;
-// 	line-height: 20px;
-// }
-
-// .burger-line{
-// 	position: absolute;
-// 	top: 0px;
-// 	right: 40px;
-// 	width: 30px;
-// 	height: 2px;
-// 	background-color: #CBCCCB;
-// 	transition: .5s all ease;
-// 	z-index: 201;
-// }
-
-// .second, .third{
-// 	top: 10px;
-// }
-
-// .fourth{
-// 	top: 20px;
-// }
-
-// .main-menu{
-// 	position: absolute;
-// 	top: 30px;
-// 	right: 0px;
-// 	display: block;
-// 	width: 100vw;
-// 	transform: translateX(0%);
-// 	max-height: 0;
-// 	font-size: 0;
-// 	overflow: hidden;
-// 	transition: .5s all ease;
-// 	z-index: 10;
-// }
-
-// .main-menu_link{
-// 	display: block;
-// 	width: 100%;
-// 	text-decoration: none;
-// 	background-color: #31344E;
-// 	border-top: 1px solid rgba(255, 255, 255, 0.3);
-// 	line-height: 40px;
-// 	color: #fff;
-// 	text-transform: uppercase;
-// }
-
-// .main-menu_link:hover{
-// 	background-color: #5e5555;
-// 	transition: .5s all ease;
-// 	color: #fff;
-
-// }
-
-// #check-menu:checked ~ .main-menu{
-// 	max-height: 500px;
-// 	font-size: 16px;
-// }
-
-// #check-menu:checked ~ .first{
-// 	display: none;
-// }
-
-// #check-menu:checked ~ .second{
-// 	transform: rotate(45deg)
-// }
-
-// #check-menu:checked ~ .third{
-// 	transform: rotate(-45deg)
-// }
-
-// #check-menu:checked ~ .fourth{
-// 	display: none;
-// }
-
-// .nav-trigger {
-// 	position: absolute;
-// 	clip: rect(0, 0, 0, 0);
-// }
-
-
 //header
 //=======
 
 .header_wrap{
 	position: relative;
+	overflow: hidden;
 }
 
 .header_slider .slide_1{
@@ -266,6 +158,11 @@ body {
 //nav
 //=============
 
+.header_wrap{
+	position: relative;
+	overflow: hidden;
+}
+
 .header-nav{
 	position: absolute;
 	left: 0;
@@ -329,6 +226,108 @@ body {
 	cursor: pointer;
 }
 
+ //burger-menu	
+ //===========
+	
+ .m-menu{
+	display: block;
+	width: 25px;
+	height: 20px;
+	//background-color: #494141;
+	text-align: center;
+	position: relative;
+	color: #fee489;
+	line-height: 20px;
+	margin-top: 3px;
+	margin-right: 20px;
+}
+
+#check-menu{
+	display: none;
+}
+
+.label-menu{
+	display: block;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 200;
+	line-height: 20px;
+}
+
+.burger-line{
+
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 20px;
+	height: 2px;
+	background-color: #fee489;
+	transition: .5s all ease;
+
+}
+
+.second, .third{
+	top: 6px;
+}
+
+.fourth{
+	top: 12px;
+}
+
+#check-menu:checked ~ .first{
+	display: none;
+}
+
+#check-menu:checked ~ .second{
+	transform: rotate(45deg)
+}
+
+#check-menu:checked ~ .third{
+	transform: rotate(-45deg)
+}
+
+#check-menu:checked ~ .fourth{
+	display: none;
+}
+
+.m-menu-box{
+	width: 100%;
+	text-align: center;
+	background-color: rgba(115,72,92,.9);
+	display: none;
+}
+
+
+.show{
+	display: block;
+}
+
+.m-menu-box .m-menu-list .m-menu-item a{
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	font-weight: 500;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.m-menu-box .m-menu-list .m-menu-item:nth-child(6) a{
+	border-bottom: none;
+}
+
+.m-menu-box .m-menu-list .m-menu-item a:hover{
+	color: #fee489;
+}
+ 
+
+
 
 //Section About
 //=============
@@ -377,6 +376,7 @@ body {
 .skills-and-team-wrap{
 	display: flex;
 	align-items: stretch;
+	overflow: hidden;
 }
 
 .skills-and-team-wrap .skills-box{
@@ -468,6 +468,7 @@ body {
 	padding-left: 90px;
 	box-sizing: border-box;
 	position: relative;
+	overflow: hidden;
 }
 
 
@@ -500,7 +501,6 @@ body {
 	text-transform: uppercase;
 	position:absolute;	
 	width: 75%;
-	max-width: 744px;
     height:100%;
 
   /* Using flexbox */
@@ -878,12 +878,6 @@ body {
 .footer-wrap .right-box .footer-social .footer-social_link__pint{
 	background: url(../img/c-pinterest.png) no-repeat center center;
 }
-
-
-
-
-
-
 
 
 

@@ -56,7 +56,7 @@
 
 	
 	.right-box .box-slider{
-		width: 100%;
+		width: 744px;
 		position: absolute;
 		left: 50%;
 		margin-left: -372px;
@@ -324,7 +324,185 @@
 
 // ≥576px
 @include media-breakpoint-down(xs) {
+			
+							//header
+							//=====
+
+	.m-menu{
+	display: block;
+		
+}
+
+	.header_slider .slide_1 .slide-box .sub_title{
+		display: none;
+	}
+
+	.header_slider .slide_1 .slide-box .title{
+		font-size: 1.4rem;
+		margin-bottom: 5px;
+		margin-left: -70px;
+	}
+
+	.header_slider .slide_1 .slide-box .readmore {
+		margin-left: -70px;
+	}
+
+	.header_slider .slide_1 .slide-box .readmore a{
+		font-size: 1.2rem;
+	}
+
+	.header-nav .nav-logo{
+		font-size: 3.5rem;
+	}
+
+	.header-nav .nav-menu{
+		display: none;
+	}
+
+	.header_slider .slick-arrow{
+		opacity: 0;
+		display: none;
+	}
+
+	.header_slider .slide_1::after{
+		font-size: 8rem;
+	}
+
+	//About
+	//=======
+	.about-wrap .left-box{
+		height: 230px;
+		padding: 0;
+	}
+
+	.about-wrap .right-box{
+		padding: 50px 5%;
+	}
+
+	.about-wrap .right-box .subtitle{
+		font-size: 1.6rem;
+	}
+
+	.about-wrap .right-box .title{
+		font-size: 2.2rem;
+		margin-bottom: 10px;
+	}
+
+	.about-wrap .right-box .text{
+		line-height: 20px;
+	}
+
+	//team
+	//=======
+	.right-box .box-arrows{
+		display: none;
+	}
+
+	.right-box .box-slider{
+		width: 300px;
+		margin-left: 0;
+		left: calc(50% - 150px);
+	}
+
+	.skills-and-team .right-box{
+		height: 230px;
+	}
+
+	.right-box .box-slider .box-slide .box-slide_img .social{
+		height: 35px;
+	}
+
+	.right-box .box-slider .box-slide_specialist {
+		font-weight: 800;
+		font-size: 1.5rem;
+		margin: 15px 0 5px 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.skills-and-team-wrap .skills-box{
+		padding-left: 0;
+	}
+
+	.skills-and-team-wrap .skills-box .skill:nth-child(1),
+	.skills-and-team-wrap .skills-box .skill:nth-child(2),
+	.skills-and-team-wrap .skills-box .skill:nth-child(3),
+	.skills-and-team-wrap .skills-box .skill:nth-child(4){
+		width: 100%;
+		margin: 25px 7%;
+	}
+
+						//story
+						//==========
+
+	.story .story-left{
+		padding-left: 10%;
+	}
+
+	.story .story-left .story-left_title{
+		font-size: 2.1rem;
+		margin-top: 100px;
+	}
+
+	.story .story-left .story-left_link{
+		margin-top: 10px;
+		margin-bottom: 80px;
+	}
+
+	.story .story-right .story-product{
+		margin-left: 10px;
+	}
+
+						//Contact
+						//==========
+
+	.contact{
+		padding: 25px 10%;
+		text-align: center;
+	}
+
+	.contact .form{
+		padding: 0;
+	}
+
+	.contact .form .form_title{
+		margin-bottom: 15px;
+	}
+
+	.contact .form form .submit{
+		margin-top: 0;
+	}
+
+							//footer
+							//======
+
+	.footer-wrap .left-box{
+		flex-wrap: wrap;
+	}
+
+	.footer-wrap .left-box .footer-contact{
+		width: 100%;
+		order: 2;
+	}
 	
+	.footer-wrap .left-box .footer-nav{
+		width: 100%;
+		margin: 0;
+		text-align: center;
+		height: auto;
+	}
+
+	.footer-wrap .left-box .footer-nav .footer-list{
+		height: 80px;
+	}
+
+	.footer-wrap .left-box .footer-contact .footer-license{
+		margin-top: 5px;
+	}
+
+	.footer::after{
+		display: none;	
+	}
 }
 
 

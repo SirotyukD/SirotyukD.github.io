@@ -14,6 +14,12 @@ $(function() {
 		$('body,html').animate({scrollTop: top}, 1000);
 	});
 
+	//m-menu
+		$('.m-menu').on('click',function(e){
+		e.preventDefault();
+		$('.m-menu-box').toggleClass('show');
+	});
+
 	//slick
 	$('.header_slider').slick({
 	});
