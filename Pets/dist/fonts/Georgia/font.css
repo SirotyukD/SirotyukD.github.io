@@ -1,0 +1,18 @@
+@font-face {
+  font-family: '9605';
+  src: url('9605.eot');
+  src: url('9605.eot?#iefix') format('embedded-opentype'),
+       url('9605.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('Georgia.svg#Georgia') format('svg'),
+       url('Georgia.ttf') format('truetype'),
+       url('Georgia.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
