@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>NewPage</title>
+	<title>Cozy House</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,32 +36,32 @@
 		<div class="container">
 			<div class="header-top">
 				<div class="header-logo">
-					<h3 class="header-logo_title">
+					<a href="index.html" class="header-logo_title">
 						Cozy House
-					</h3>
+					</a>
 					<span class="header-logo_subtitle">
 						Shelter for pets in Boston
 					</span>
 				</div>
-				<nav class="header-nav">
+				<nav class="header-nav nav" id="nav">
 					<ul>
 						<li>
-							<a href="#">
+							<a href="#about">
 								About the shelter
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="pets.html">
 								Our pets
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="#help">
 								To help the shelter
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="#footer">
 								Contacts
 							</a>
 						</li>
@@ -78,7 +78,7 @@
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras gravida est in porttitor
 						porttitor. Duis sodales elementum ipsum, vehicula condimentum erat fringilla et.
 					</p>
-					<a href="" class="header-box_link">
+					<a href="#pets" class="header-box_link">
 						Make a friend
 					</a>
 				</div>
@@ -130,9 +130,9 @@
 							<h4 class="pets-wrap-slider-slide_title pets-wrap-slider-slide_title__cat">
 								Katrine
 							</h4>
-							<a href="" class="pets-wrap-slider-slide_link">
+							<button class="pets-wrap-slider-slide_link modal-btn">
 								Learn More
-							</a>
+							</button>
 						</div>
 						<div class="pets-wrap-slider-slide">
 							<div class="pets-wrap-slider-slide_img pets-wrap-slider-slide_img__cat">
@@ -141,9 +141,9 @@
 							<h4 class="pets-wrap-slider-slide_title">
 								Jennifer
 							</h4>
-							<a href="" class="pets-wrap-slider-slide_link">
+							<button class="pets-wrap-slider-slide_link modal-btn">
 								Learn More
-							</a>
+							</button>
 						</div>
 						<div class="pets-wrap-slider-slide">
 							<div class="pets-wrap-slider-slide_img pets-wrap-slider-slide_img__cat">
@@ -152,9 +152,9 @@
 							<h4 class="pets-wrap-slider-slide_title">
 								Woody
 							</h4>
-							<a href="" class="pets-wrap-slider-slide_link">
+							<button class="pets-wrap-slider-slide_link modal-btn">
 								Learn More
-							</a>
+							</button>
 						</div>
 						<div class="pets-wrap-slider-slide">
 							<div class="pets-wrap-slider-slide_img pets-wrap-slider-slide_img__cat">
@@ -163,12 +163,12 @@
 							<h4 class="pets-wrap-slider-slide_title">
 								Jennifer
 							</h4>
-							<a href="" class="pets-wrap-slider-slide_link">
+							<button class="pets-wrap-slider-slide_link modal-btn">
 								Learn More
-							</a>
+							</button>
 						</div>
 					</div>
-					<a href="" class="pets-wrap_link btn">
+					<a href="#" class="pets-wrap_link btn">
 						Get to know the rest
 					</a>
 				</div>
@@ -272,7 +272,7 @@
 		</section>
 	</main>
 
-	<footer class="footer">
+	<footer id="footer" class="footer">
 		<div class="container">
 			<div class="footer-wrap">
 				<div class="footer-wrap-box">
@@ -304,6 +304,58 @@
 			</div>
 		</div>
 	</footer>
+
+
+	<!-- modal -->
+	<div class="modal-overlay">
+		<div class="modal">
+
+			<a class="close-modal">
+				<svg viewBox="0 0 20 20">
+					<path fill="#000000"
+						d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z">
+					</path>
+				</svg>
+			</a><!-- close modal -->
+
+			<div class="modal-content">
+				<div class="modal-content-wrap">
+					<div class="modal-content-wrap-left">
+						<img src="img/modal1.png" alt="Dog">
+					</div>
+					<div class="modal-content-wrap-right">
+						<h3 class="modal-content-wrap-right_title">
+							Jennifer
+						</h3>
+						<span class="modal-content-wrap-right_type">
+							Pooch + Labrador
+						</span>
+						<p class="modal-content-wrap-right_text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur blandit
+							condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut
+							pulvinar nunc. Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.
+						</p>
+						<ul class="modal-content-wrap-right_list">
+							<li class="modal-content-wrap-right_item">
+								<span>Age:</span> 2 months
+							</li>
+							<li class="modal-content-wrap-right_item">
+								<span>Inoculations:</span> none
+							</li>
+							<li class="modal-content-wrap-right_item">
+								<span>Diseases:</span> none
+							</li>
+							<li class="modal-content-wrap-right_item">
+								<span>Parasites:</span> none
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- content -->
+
+		</div><!-- modal -->
+	</div><!-- overlay -->
+
 
 	<script src="js/scripts.min.js"></script>
 </body>
