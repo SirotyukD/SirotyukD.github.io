@@ -35,8 +35,7 @@ body {
 //======
 
 .header {
-	height: 100vh;
-	min-height: 450px;
+	min-height: 100vh;
 	background: url(../img/Background.png) no-repeat center center,
 		url(../img/Dog.png) no-repeat bottom right;
 	background-size: cover, contain;
@@ -44,13 +43,29 @@ body {
 	background-blend-mode: overlay;
 	overflow: hidden;
 }
+
+.header-container{
+	min-height: 100vh;
+}
+
+.header-wrap{
+	min-height: inherit;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: stretch;
+	height: 100%;
+}
+
 .header-box-wrapper{
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
+
 .header-top {
+	align-self: flex-start;
 	padding-top: 60px;
 	display: flex;
-	align-items: stretch;
+	width: 100%;
 }
 
 .header-top .header-logo {
@@ -114,11 +129,87 @@ body {
 	opacity: 1
 }
 
-.header-box {
-	display: flex;
-	align-items: center;
+ //burger-menu	
+ //===========
+	
+ .burger{
+	display: none;
+	width: 30px;
+	height: 24px;
+	position: relative;
+	cursor: pointer;
+	transition: all 1s ease;
+}
+
+.burger-line{
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 30px;
+	height: 2px;
+	background-color: #f1cdb3;
+	transition: .5s all ease;
+}
+
+.burger-line-first{
+	top: 0;
+}
+
+.burger-line-second, .burger-line-third{
+	top: 8px;
+}
+
+.burger-line-fourth{
+	top: 16px;
+}
+
+.burger-active .burger-line-first, .burger-active .burger-line-fourth {
+    opacity: 0;
+}
+
+.burger-active .burger-line-second{
+    transform: rotate(45deg);
+}
+
+.burger-active .burger-line-third{
+    transform: rotate(-45deg);
+}
+
+.m-menu-box{
 	width: 100%;
-	height: calc(100vh - 120px);
+	height: auto;
+	margin-top: 30px;
+	text-align: center;
+	display: none;
+}
+
+.m-menu-box ul li{
+	background-color: #342b26;
+}
+
+.show{
+	display: block;
+
+}
+
+.m-menu-box .m-menu-list .m-menu-item a{
+	display: block;
+	width: 100%;
+	padding: 15px 0;
+	text-decoration: none;
+	color: #f1cdb3;
+	font-size: 1.6rem;
+	font-weight: 500;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	box-sizing: border-box;
+}
+
+.m-menu-box .m-menu-list .m-menu-item:nth-child(6) a{
+	border-bottom: none;
+}
+
+.m-menu-box .m-menu-list .m-menu-item a:hover{
+	color: #fee489;
 }
 
 .header-box-wrapper .header-box_title {

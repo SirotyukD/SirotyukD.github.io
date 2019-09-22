@@ -95,12 +95,19 @@
 		display: none;
 	}
 
+	.burger{
+		display: block;
+   }
+
+
 	.header-box-wrapper .header-box-text {
 		max-width: 300px;
 		margin: 30px 0;
 	}
 
 	.header-top{
+		justify-content: space-between;
+		align-items: center;
 		padding: 50px 0 0 0;
 	}
 
@@ -337,8 +344,12 @@
 	//header
 	//======
 
-	.header {
-		background: url(../img/Background.png) no-repeat center center;
+	.header{
+		background: #322721;
+	}
+
+	.header-pets{
+		background: none;
 	}
 
 	.header-top .header-logo {
