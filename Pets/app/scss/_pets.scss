@@ -1,7 +1,12 @@
 .header-pets {
+    min-height: 100px;
     height: 100%;
     background: #fafafa;
     overflow: hidden;
+}
+
+.pets-burger-line{
+	background-color: #545454;
 }
 
 .header-top .header-logo .pets-header-logo_title {

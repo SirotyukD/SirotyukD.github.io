@@ -29,9 +29,10 @@ $(function () {
 
 
 	//m-menu
-	$('.m-menu').on('click', function (e) {
+	$('.burger').on('click', function (e) {
 		e.preventDefault();
 		$('.m-menu-box').toggleClass('show');
+		$('.burger').toggleClass('burger-active');
 	});
 
 	//slick слайдер
