@@ -1,0 +1,384 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+// common settings
+//================
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.4rem;
+	min-width: 320px;
+	position: relative;
+	line-height: 1;
+	font-family: $roboto-regular;
+	font-weight: 400;
+	overflow-x: hidden;
+	color: $myblack;
+}
+
+.container {
+	height: inherit;
+	padding: 0;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #000;
+	background-image: url(../img/overlay.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 6349px;
+	opacity: 0.4;
+	z-index: 10;
+	display: none;
+}
+
+//
+
+//заголовлк секции
+%sec-title {
+	color: $myblack;
+	font-family: $oswald-bold;
+	font-size: 3rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 60px;
+	padding-top: 50px;
+}
+
+
+
+
+//Site
+
+//nav-bar
+//===========
+.nav-bar-wrap {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+
+	//height: 44px;
+	.contacts {
+		display: flex;
+		align-items: center;
+		margin-left: 40px;
+
+		.item {
+			display: flex;
+			font-size: 1.2rem;
+			letter-spacing: 0;
+
+			&:last-child {
+				margin-left: 15px;
+			}
+
+			&-icon {
+				margin-right: 6px;
+			}
+		}
+	}
+
+	.socials {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		margin-right: 15px;
+
+		.item {
+			width: 24px;
+			height: 24px;
+			border-radius: 100%;
+			margin-left: 9px;
+			line-height: 24px;
+			text-align: center;
+			border: 1px solid rgba($myblack, 0.25);
+		}
+	}
+}
+
+//header
+//=========
+.header {
+	height: 100vh;
+	background: url(../img/header-bg.png) no-repeat center center;
+	background-size: cover;
+	background-position-y: -30px; //убрать для 1920px
+	overflow: hidden;
+
+	.nav-bg {
+		position: absolute;
+		width: 1366px;
+		height: 69px;
+		box-shadow: 0 0 13px #000000;
+		background-color: #003171;
+		opacity: 0.4;
+	}
+
+	&-wrap {
+		position: relative;
+		height: 100%;
+
+		.nav {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 69px;
+			display: flex;
+			justify-content: space-between;
+
+			.logo {
+				color: $navcolor;
+				font-family: $sans-bold;
+				font-size: 24px;
+				cursor: pointer;
+				padding-top: 20px;
+				padding-left: 39px;
+
+				span {
+					font-family: $sans-regular;
+				}
+			}
+
+			.menu {
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+
+				ul {
+					display: flex;
+					justify-content: space-around;
+					align-items: center;
+				}
+
+				li {
+					padding: 0 16.5px;
+				}
+
+				a {
+					text-decoration: none;
+					color: $navcolor;
+					font-family: $sans-regular;
+					font-size: 1.4rem;
+					text-transform: uppercase;
+					display: block;
+
+					&:hover {
+						transform: scale(1.15);
+						color: yellow;
+						transition: all .2s ease;
+					}
+				}
+
+			}
+
+
+		}
+
+		.left-box {
+			position: absolute;
+			left: 9px;
+			top: 48%; //50% для 1920px
+			transform: translateY(-50%);
+			max-width: 620px;
+
+			h1 {
+				color: $navcolor;
+				font-family: $poppins-extrabold;
+				font-size: 6rem;
+				text-transform: uppercase;
+				line-height: 70px;
+			}
+
+			.download {
+				display: flex;
+				align-items: center;
+			}
+
+			.download_btn {
+				display: block;
+				width: 192px;
+				height: 55px;
+				border: 1px solid $white;
+				border-radius: 10px;
+				padding-left: 80px;
+				padding-top: 13px;
+				font-size: 1.2rem;
+				margin-right: 25px;
+				margin-top: 70px;
+				color: $white;
+				font-family: "Poppins-Regular", serif;
+				position: relative;
+
+				&:hover {
+					background-color: rgba(0, 0, 0, 0.15);
+					transition: all .3s ease;
+				}
+
+				span {
+					font-family: "Poppins-SemiBold", serif;
+				}
+
+				&::before {
+					content: '';
+					display: block;
+					width: 32px;
+					height: 36px;
+					background: url(../img/header-google.png) no-repeat center center;
+					background-size: cover;
+					position: absolute;
+					left: 24px;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+
+			.download_apple::before {
+				background: url(../img/header-apple.png) no-repeat center center;
+
+			}
+
+		}
+
+		.right-box {
+			position: absolute;
+			right: 2%;
+			top: 58%; //60% для 1920px
+			transform: translateY(-50%);
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+
+}
+
+//features
+//==========
+
+.features {
+	padding-bottom: 57px;
+	h2 {
+		@extend %sec-title;
+		padding-top: 5px;
+	}
+
+	.features-wrap {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.box {
+
+		&-left {
+			padding-right: 77px;
+			padding-bottom: 70px;
+		}
+
+		&-right {
+			padding-left: 77px;
+			padding-bottom: 70px;
+
+		}
+
+		.item {
+			display: flex;
+			align-items: flex-start;
+			max-width: 300px;
+			margin-top: 60px;
+
+			&-img {
+				display: block;
+				width: 70px;
+				height: 70px;
+				border-radius: 100%;
+				border: 1px solid #bfbfbf;
+				color: $bgicon;
+				text-align: center;
+				font-size: 4.4rem;
+				line-height: 70px;
+				flex-shrink: 0;
+
+				&__right {
+					order: 1;
+				}
+			}
+
+			&-img__pc {
+				width: 70px;
+				height: 70px;
+				background: url(../img/features-pc.png) no-repeat center center;
+			}
+
+			&-content {
+				margin-left: 30px;
+				font-family: $roboto-regular;
+
+				&__right {
+					order: 0;
+				}
+			}
+
+			h4 {
+				color: $myblack;
+				font-size: 1.8rem;
+				position: relative;
+
+				&::after {
+					content: '';
+					position: absolute;
+					left: 0;
+					bottom: -6px;
+					display: block;
+					width: 70px;
+					height: 1px;
+					background-color: $myblack;
+				}
+			}
+
+			p {
+				color: $mygrey;
+				margin-top: 30px;
+
+			}
+
+			&-right {
+				text-align: right;
+				padding-right: 9px;
+
+				h4::after {
+					left: auto;
+					right: 0;
+					
+				}
+
+				.item-content{
+					margin-left: 0;
+					padding-right: 23px;
+				}
+			}
+
+		}
+	}
+
+
+}
+
+
+
+@import "media"; // Always at the end
