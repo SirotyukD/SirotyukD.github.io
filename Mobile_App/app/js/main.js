@@ -39,10 +39,28 @@ $(function () {
 		//infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		centerPadding: '60px',
+		centerPadding: '65px',
 		centerMode: true,
 		dots: true,
 		arrows: false,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerPadding: '10px',
+				}
+			},
+			// {
+			// 	breakpoint: 600,
+			// 	settings: {
+			// 		slidesToShow: 2,
+			// 		slidesToScroll: 2
+			// 	}
+			// }
+		
+		]
 	
 	});
 
