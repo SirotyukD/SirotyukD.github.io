@@ -29,10 +29,13 @@ $(function () {
 
 
 	//m-menu
-	$('.m-menu').on('click', function (e) {
+	$('.burger').on('click', function (e) {
 		e.preventDefault();
-		$('.m-menu-box').toggleClass('show');
+		$('.burger-line').toggleClass('burger-active');
+		$('.burger-list').toggleClass('burger-list-active');
 	});
+
+	
 
 	//slick слайдер
 	$('.slider').slick({

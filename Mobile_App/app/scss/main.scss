@@ -23,6 +23,7 @@ body {
 .container {
 	height: inherit;
 	padding: 0;
+	overflow: hidden;
 }
 
 .overlay {
@@ -42,6 +43,97 @@ body {
 }
 
 //
+
+//burger-menu
+
+.burger {
+	visibility: hidden;
+	width: 30px;
+	height: 24px;
+	position: relative;
+	cursor: pointer;
+	margin-top: 27px;
+	margin-right: 5%;
+	z-index: 99;
+}
+
+.burger-line {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 30px;
+	height: 2px;
+	background-color: #fff;
+	transition: .5s all ease;
+	opacity: 1;
+}
+
+.burger:hover .burger-line {
+	background-color: yellow;
+}
+
+.burger-line-first {
+	top: 0;
+}
+
+.burger-line-second,
+.burger-line-third {
+	top: 8px;
+}
+
+.burger-line-fourth {
+	top: 16px;
+}
+
+.burger-active:nth-child(1),
+.burger-active:nth-child(4) {
+	opacity: 0;
+}
+
+.burger-active:nth-child(2) {
+	transform: rotate(45deg);
+}
+
+.burger-active:nth-child(3) {
+	transform: rotate(-45deg);
+}
+
+.burger-list {
+	visibility: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 0;
+	overflow: hidden;
+	background-color: #003171;
+	height: 100vh;
+	z-index: 98;
+	transition: all 0.3s ease-in-out;
+
+	&-active {
+		width: 320px;
+		padding-right: 100px;
+		padding-left: 5%;
+	}
+
+	ul{
+		padding-top: 100px;
+	}
+
+	a{
+		color: #fff;
+		display: block;
+		padding: 20px 15px;
+		height: 20px;
+
+		&:hover{
+			color: yellow;
+		}
+	}
+
+}
+
+
 
 //заголовлк секции
 %sec-title {
@@ -126,11 +218,11 @@ body {
 	padding-bottom: 18px;
 	//height: 100vh;
 	background: url(../img/header-bg.png) no-repeat;
-	background-position-y: top;
+	background-position-y: 77%;
 	background-position-x: center;
 	background-size: cover;
 	//background-position-y: -50px; //убрать для 1920px
-	overflow: hidden;
+	//overflow: hidden;
 
 	.nav-bg {
 		position: absolute;
@@ -775,7 +867,7 @@ body {
 		margin-right: -60px;
 	}
 
-	&-item:last-child::after{
+	&-item:last-child::after {
 		display: none;
 	}
 
@@ -999,7 +1091,7 @@ body {
 	.partner {
 		text-align: center;
 
-		& img{
+		& img {
 			max-width: 100%;
 			height: auto;
 		}
@@ -1017,6 +1109,7 @@ body {
 	overflow: hidden;
 
 	&-wrap {
+		overflow: hidden;
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
@@ -1036,17 +1129,15 @@ body {
 		}
 	}
 
-
 	.box {
 		max-width: 301px;
+		width: 301px;
 		text-align: center;
 		border: 1px solid #174f9c;
 		padding-bottom: 41px;
 		margin-top: 70px;
 		transition: all 1s ease;
 	}
-
-
 
 	.box-wrap:last-child .cost i {
 		left: 103px;
@@ -1097,7 +1188,8 @@ body {
 
 	}
 
-	.box:hover {
+	.box-wrap:hover .box {
+		width: 301px;
 		transition: all .3s ease;
 		position: absolute;
 		top: -68px;
@@ -1218,7 +1310,7 @@ body {
 	&-features {
 
 		margin-left: 75px;
-		
+
 		li {
 			font-family: $sans-regular;
 			line-height: 30px;
@@ -1258,6 +1350,7 @@ body {
 	&-contact {
 
 		margin-left: 99px;
+
 		a {
 			font-family: $sans-regular;
 			display: block;

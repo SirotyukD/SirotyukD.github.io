@@ -200,6 +200,18 @@
 		padding-left: 10px;
 	}
 
+	.pricing .box-wrap {
+		max-width: 220px;
+
+		& .box {
+			max-width: 220px;
+		}
+
+		&:hover .box {
+			max-width: 220px;
+		}
+	}
+
 	.pricing .cost i {
 		left: 80px;
 	}
@@ -229,6 +241,14 @@
 
 	.header-wrap .nav .menu {
 		display: none;
+	}
+
+	.header-wrap .nav .burger {
+		visibility: visible;
+	}
+
+	.header-wrap .nav .burger-list {
+		visibility: visible;
 	}
 
 	.header-wrap .left-box {
@@ -364,10 +384,23 @@
 
 	.testimonials .slide-box {
 		padding-right: 20px;
+		
 	}
 
 	.testimonials .slide .slide-author {
 		margin-top: 20px;
+	}
+
+	.pricing .box-wrap {
+		width: 33%;
+
+		& .box {
+			width: 100%
+		}
+
+		&:hover .box {
+			width: 100%
+		}
 	}
 
 	.pricing .cost i {
@@ -616,56 +649,38 @@
 		margin-top: 15px;
 	}
 
-	.pricing {
+	.pricing-wrap {
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	.pricing .box {
 
 		&-wrap {
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: flex-start;
-		}
+			max-width: 301px;
+			width: 301px;
 
-		.box {
-			margin: 0 auto;
-			padding-bottom: 30px;
-			margin-top: 15px;
-		}
-
-		.box-wrap {
-			width: 100%;
-		}
-
-		.cost i {
-			left: 113px;
-		}
-
-		.box-wrap:last-child .cost i {
-			left: 100px;
-		}
-
-		.box:hover {
-			transition: all .3s ease;
-			position: relative;
-			top: 0;
-			left: 0;
-			box-shadow: 0 12px 19px 10px rgba(0, 0, 0, 0.2);
-
-			.title {
-				transition: all 0.25s ease-in-out;
-				box-shadow: 0 12px 19px 10px rgba(0, 0, 0, 0.2);
-				background-image: linear-gradient(to top, rgba(0, 32, 66, 0.32) 0%, rgba(82, 140, 203, 0.32) 50%, rgba(0, 32, 66, 0.32) 100%);
+			& .box {
+				width: 301px;
+				margin: 30px auto 0 auto;	
 			}
 
-			.cost {
-				height: 126px;
-				//transition: all 0.3s ease;
-				background: url(../img/pricing-cost.png) no-repeat;
-				background-position-y: -5px;
-				background-position: top center;
-				background-size: cover;
+			&:hover .box {
+				width: 301px;
+				position: relative;
+				top: 0;
 
+				.cost {
+					height: 126px;
+					background: url(../img/pricing-cost.png) no-repeat;
+					background-position-x: center;
+					background-position-y: -3px;
+				}
 			}
 		}
 	}
+
 
 	.footer {
 		padding-right: 15px;
@@ -687,10 +702,10 @@
 		}
 	}
 
-	.footer-newsletter button, .footer-newsletter input {
+	.footer-newsletter button,
+	.footer-newsletter input {
 		margin: 0 auto;
 	}
-
 
 }
 

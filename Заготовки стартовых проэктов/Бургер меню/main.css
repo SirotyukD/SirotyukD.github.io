@@ -36,15 +36,16 @@ body{
 	top: 16px;
 }
 
-.burger-active .burger-line-first, .burger-active .burger-line-fourth {
+.burger-active:nth-child(1), 
+.burger-active:nth-child(4){
     opacity: 0;
 }
 
-.burger-active .burger-line-second{
+.burger-active:nth-child(2){
     transform: rotate(45deg);
 }
 
-.burger-active .burger-line-third{
+.burger-active:nth-child(3){
     transform: rotate(-45deg);
 }
 
