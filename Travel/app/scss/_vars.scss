@@ -1,0 +1,65 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.4rem;
+	min-width: 320px;
+	position: relative;
+	line-height: 1;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+
+//переменные
+$text: #81858e;
+$title: #091e40;
+$nunito: 'Nunito', sans-serif;
+$light: 300;
+$regular: 400;
+$semi: 600;
+$bold: 700;
+$extra: 800;
+$eio: all 0.3s ease-in-out;
+
+
+//общие блоки, наследование и миксины
+
+@mixin btn {
+	display: inline-block;
+	font-size: 2rem;
+	padding: 16px 0;
+	border: 3px solid #3984f3;
+	background-color: #3984f3;
+	text-align: center;
+	color: #fff;
+	font-weight: $semi;
+	transition: box-shadow 0.2s ease-in-out;
+        &:hover{
+            box-shadow: -2px 3px 29px 6px rgba(0,0,0,0.3);
+        }
+
+}
+
+@mixin sec-title {
+	font-family: $nunito;
+	font-weight: $semi;
+	color: $title;
+	font-size: 5rem;
+	letter-spacing: 0.13px;
+	position: relative;
+	text-align: center;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 78px;
+		height: 7px;
+		background-color: #3984f3;
+		position: absolute;
+		bottom: -45px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

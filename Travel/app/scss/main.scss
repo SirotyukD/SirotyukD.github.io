@@ -1,0 +1,404 @@
+@import "vars"; //переменные, миксины
+// @import "fonts"; //шрифты
+@import "libs"; //reset.css
+@import "_mixins/global"; //container сетка
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000;
+    background-image: url(../img/overlay.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 6920px;
+    opacity: 0.4;
+    z-index: 10;
+    display: none;
+}
+
+//Site
+
+//header
+.header {
+    background: url(../img/header-bg.png) no-repeat bottom right;
+    padding-bottom: 310px;
+
+    &__wrap {
+        position: relative;
+    }
+
+    &__top {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__logo {
+        width: 50%;
+        min-width: 180px;
+        cursor: pointer;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &__nav {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__nav .nav {
+        width: 100%;
+        max-width: 510px;
+        margin-right: 60px;
+
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        a {
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: $regular;
+            line-height: 14.61px;
+            letter-spacing: 0.3px;
+            color: #bab8b8;
+            line-height: 57px;
+            transition: $eio;
+
+            &:hover {
+                color: #4497f3;
+            }
+        }
+    }
+
+    &__login {
+        a {
+            @include btn;
+            background-color: transparent;
+            color: #3984f3;
+            padding-left: 41px;
+            padding-right: 41px;
+            transition: $eio;
+
+            &:hover {
+                background-color: #3984f3;
+                color: #fff;
+                box-shadow: none;
+            }
+        }
+
+    }
+
+    &__box-title {
+        color: $title;
+        font-family: $nunito;
+        font-weight: $extra;
+        font-size: 7.5rem;
+        line-height: 80px;
+        letter-spacing: 2.9px;
+        padding-top: 440px;
+        max-width: 520px;
+    }
+
+    &__box-text {
+        color: $text;
+        margin-top: 53px;
+        font-family: $nunito;
+        font-weight: $regular;
+        font-size: 2.1rem;
+        line-height: 3.5rem;
+        letter-spacing: 0px;
+        max-width: 460px;
+    }
+
+    &__box-btn {
+        @include btn;
+        margin-top: 88px;
+        min-width: 202px;
+
+    }
+}
+
+//places
+.places {
+
+    padding-bottom: 200px;
+
+    &__wrap {
+        display: flex;
+        width: 100%;
+    }
+
+    &__left {
+        width: 60%;
+        position: relative;
+    }
+
+    &__slider {
+        position: absolute;
+        top: 170px;
+        left: -170px;
+        max-width: 1220px;
+    }
+
+    .slider-arrow {
+        display: block;
+        position: absolute;
+        bottom: -99px;
+        left: 347px;
+        transition: opacity 0.3s ease-in-out;
+        cursor: pointer;
+
+        &:last-child {
+            left: 447px;
+            transform: rotateY(180deg);
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    .slider-places {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .slider-item {
+        margin: 0 19px;
+        position: relative;
+        max-width: 375px;
+        height: 580px;
+        padding-top: 73px;
+        transition: $eio;
+        overflow: hidden;
+
+
+        &__price {
+            position: absolute;
+            top: 30px;
+            left: 0;
+            width: 110px;
+            height: 43px;
+            color: #ffffff;
+            font-size: 2.4rem;
+            font-weight: $semi;
+            line-height: 42px;
+            letter-spacing: 0.24px;
+           text-align: center;
+            background-color: #3984f3;
+        }
+
+        &__title {
+            color: #ffffff;
+            font-size: 2.3rem;
+            line-height: 42px;
+            font-weight: 300;
+            letter-spacing: -0.7px;
+            position: absolute;
+            bottom: 20px;
+            left: 22px;
+            z-index: 3;
+        }
+
+        &__box {
+            position: relative;
+            width: 372px;
+            height: 500px;
+        }
+
+        &__box img {
+            max-width: 100%;
+            height: 100%;
+        }
+
+        &__bg {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url(../img/places-bg.png) no-repeat top center;
+            background-size: cover;
+            z-index: 2;
+        }
+
+        &__desc {
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 22px 0;
+            display: none;
+        }
+
+        &__stars {
+            width: 50%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        &__star {
+            width: 22px;
+            height: 21px;
+            margin-right: 7px;
+            background: url(../img/slider-star.png) no-repeat center center;
+            background-size: cover;
+            color: #3984f3;
+            z-index: 4;
+        }
+
+        &__star-zero {
+            width: 22px;
+            height: 21px;
+            margin-right: 8px;
+            background: url(../img/slider-star1.png) no-repeat center center;
+            background-size: cover;
+            color: #3984f3;
+            z-index: 4;
+        }
+
+        &__duration {
+            width: 50%;
+            color: #a0a0a0;
+            font-size: 2.3rem;
+            font-weight: $semi;
+            letter-spacing: -0.5px;
+            padding-top: 2px;
+            text-align: right;
+        }
+
+        &.slick-slide.slick-active.slick-center {
+            padding-top: 0;
+
+            .slider-item__desc {
+                display: flex;
+            }
+        }
+    }
+
+    &__right {
+        width: 40%;
+        padding-left: 30px;
+    }
+
+    &__title {
+        @include sec-title;
+        margin-top: 250px;
+        padding-left: 4px;
+        text-align-last: left;
+        letter-spacing: 1.2px;
+        line-height: 59px;
+
+        &::after {
+            left: 40px;
+        }
+    }
+
+    &__text {
+        color: $text;
+        font-size: 2.2rem;
+        font-weight: $light ;
+        max-width: 600px;
+        line-height: 42px;
+        letter-spacing: 0px;
+        margin-top: 90px;
+        padding-left: 4px;
+    }
+
+    &__btn{
+        @include btn;
+        height: 57px;
+        line-height: 47px;
+        margin-top: 52px;
+        padding: 0 64px;
+    }
+
+
+}
+
+//video
+.video{
+    padding-top: 163px;
+
+    &__title{
+        @include sec-title;
+    }
+
+    &__text{
+        text-align: center;
+        color: $text;
+        font-size: 2.2rem;
+        line-height: 41.99px;
+        letter-spacing: 0.22px;
+        padding: 90px 17% 0;
+    }
+
+    &__slider{
+        padding-top: 120px;
+        padding-left: 8%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .slider-main{
+            width: 1070px;
+        }
+
+        .slider-main__video{
+            position: relative;
+        }
+
+        .slider-main__play{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            transform: translateY(-50%);
+            background: url(../img/video-play.png) no-repeat center center;
+            background-size: cover;
+            width: 85px;
+            height: 86px;
+            cursor: pointer;
+        }
+
+
+
+        .slider-sidebar{
+            width: 30%;
+
+            &__img{
+                padding: 15px;
+            }
+
+            .slider-sidebar__img.slick-slide.slick-current.slick-active img{
+                box-shadow: 0px 0px 37px -8px rgba(0,0,0,0.75);         }
+
+        }
+    }
+
+
+}
+
+
+
+
+
+
+@import "media"; // Always at the end

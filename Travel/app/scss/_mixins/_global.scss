@@ -1,0 +1,85 @@
+// отступы section
+// section,
+// header,
+// footer {
+//     padding: 0 15px;
+// }
+
+// @media (min-width: 575.98px) {
+
+//     section,
+//     header,
+//     footer {
+//         padding: 0 calc(50vw - 270px);
+//     }
+// }
+
+// @media (min-width: 767.98px) {
+
+//     section,
+//     header,
+//     footer {
+//         padding: 0 calc(50vw - 360px);
+//     }
+// }
+
+// @media (min-width: 991.98px) {
+
+//     section,
+//     header,
+//     footer {
+//         padding: 0 calc(50vw - 480px);
+//     }
+// }
+
+// @media (min-width: 1199.98px) {
+
+//     section,
+//     header,
+//     footer {
+//         padding: 0 calc(50vw - 585px);
+//     }
+// }
+
+//отступы container
+// отступы контейнера
+.container {
+    padding: 0 15px;
+}
+
+@media (min-width: 575.98px) {
+
+    .container {
+        padding: 0 calc(50vw - 270px);
+    }
+}
+
+@media (min-width: 767.98px) {
+
+    .container {
+        padding: 0 calc(50vw - 360px);
+    }
+}
+
+@media (min-width: 991.98px) {
+
+    .container {
+        padding: 0 calc(50vw - 480px);
+    }
+}
+
+@media (min-width: 1199.98px) {
+
+    .container {
+        padding: 0 calc(50vw - 808px);
+    }
+}
+
+
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+// $grid-gutter-width: 30px;
+// $grid-columns: 12;
+// $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+// $container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+// $gutter: $grid-gutter-width;
