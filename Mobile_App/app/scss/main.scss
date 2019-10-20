@@ -1,6 +1,8 @@
 @import "vars";
 @import "fonts";
 @import "libs";
+@import "reset";
+
 
 // common settings
 //================
@@ -19,6 +21,7 @@ body {
 	overflow-x: hidden;
 	color: $myblack;
 }
+
 
 .container {
 	height: inherit;
@@ -101,11 +104,11 @@ body {
 .burger-list {
 	visibility: hidden;
 	position: absolute;
-	right: 0;
+	right: -95px;
 	top: 0;
 	width: 0;
 	overflow: hidden;
-	background-color: #003171;
+	background-color: rgba(#003171, 0.9);
 	height: 100vh;
 	z-index: 98;
 	transition: all 0.3s ease-in-out;
@@ -224,6 +227,9 @@ body {
 	//background-position-y: -50px; //убрать для 1920px
 	//overflow: hidden;
 
+	.container{
+		overflow: visible;
+	}
 	.nav-bg {
 		position: absolute;
 		top: 45px;
@@ -326,7 +332,6 @@ body {
 				border: 1px solid $white;
 				border-radius: 10px;
 				padding-left: 80px;
-				padding-top: 13px;
 				font-size: 1.2rem;
 				margin-right: 25px;
 				margin-top: 70px;
@@ -626,6 +631,7 @@ body {
 	&-movie {
 		position: relative;
 		max-width: 697px;
+		cursor: pointer;
 	}
 
 	&-movie-play {
@@ -703,6 +709,7 @@ body {
 			display: flex;
 			align-items: center;
 			padding: 10px;
+			cursor: pointer;
 
 			& img {
 				box-shadow: 0px 0px 0px 2px #fff;
@@ -962,7 +969,7 @@ body {
 	.slick-dots {
 		display: flex;
 		justify-content: center;
-		bottom: -40px;
+		bottom: -30px;
 
 		li button:before {
 			display: none;
@@ -1239,7 +1246,7 @@ body {
 	.link {
 		margin-top: 27px;
 
-		a {
+		button {
 			display: block;
 			color: #ffffff;
 			font-family: 'OpenSans-Regular';
@@ -1369,14 +1376,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
+//стили страниц и доп элементов
+@import "modal"; //модальное окно
 @import "media"; // Always at the end

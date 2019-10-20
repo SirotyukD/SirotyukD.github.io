@@ -5,11 +5,19 @@
 
 // ≥1200px
 @include media-breakpoint-down(lg) {
-	
+	.if-iphone {
+        margin-left: -125px;
+        background-image: url(../img/iPhone_6,1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+       background-position-x: -85px;
+        background-position-y: 80%;
+    }
 }
 
 // ≥992px
 @include media-breakpoint-down(md) {
+    
 
 }
 

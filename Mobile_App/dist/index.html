@@ -14,9 +14,11 @@
 
 	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon/apple-touch-icon-180x180.png">
 	<!-- Template Basic Images End -->
+
 
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
@@ -26,8 +28,9 @@
 	<link rel="stylesheet" href="modules/slick/slick-theme.css">
 
 	<!-- Styles -->
-	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="modules/slick/slick.css">
+	<link rel="stylesheet" href="modules/animated/animated.css">
+	<link rel="stylesheet" href="css/main.css">
 
 	<!-- FontAwesome -->
 	<script src="https://kit.fontawesome.com/06e8b60721.js" crossorigin="anonymous"></script>
@@ -130,6 +133,7 @@
 							</li>
 						</ul>
 					</div>
+
 					<div class="burger">
 						<span class="burger-line burger-line-first"></span>
 						<span class="burger-line burger-line-second"></span>
@@ -138,7 +142,7 @@
 					</div>
 					<div class="burger-list ">
 						<ul>
-							<li>
+							<li class="wow fadeIn delay-2s">
 								<a href="#">
 									HOME
 								</a>
@@ -193,18 +197,18 @@
 							ANDROID AND IOS
 						</h1>
 						<div class="download">
-							<a href="#" class="download_btn download_google">
+							<button class="download_btn download_google modal-btn ">
 								Download on <br>
 								<span>
 									Google Play
 								</span>
-							</a>
-							<a href="#" class="download_btn download_apple">
+							</button>
+							<button href="#" class="download_btn download_apple modal-btn">
 								Download on <br>
 								<span>
 									App Store
 								</span>
-							</a>
+							</button>
 						</div>
 					</div>
 					<div class="right-box">
@@ -222,7 +226,7 @@
 			</h2>
 			<div class="features-wrap">
 				<div class="box box-left">
-					<div class="item">
+					<div class="item  wow fadeInLeft">
 						<div class="item-img item-img__pc"></div>
 						<div class="item-content">
 							<h4 class="item-content_title">
@@ -235,7 +239,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="item">
+					<div class="item wow fadeInLeft">
 						<div class="item-img">
 							<i class="fas fa-cog"></i>
 						</div>
@@ -255,7 +259,7 @@
 					<img src="img/features-iphone.png" alt="iphone" class="box-img">
 				</div>
 				<div class="box box-right">
-					<div class="item item-right">
+					<div class="item item-right wow fadeInRight">
 						<div class="item-img item-img__right">
 							<i class="fas fa-paint-brush"></i>
 						</div>
@@ -270,7 +274,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="item item-right">
+					<div class="item item-right wow fadeInRight">
 						<div class="item-img item-img__right">
 							<i class="fas fa-th"></i>
 						</div>
@@ -293,12 +297,12 @@
 	<section id="music" class="music">
 		<div class="container">
 			<div class="music-wrap">
-				<div class="music-wrap-left">
+				<div class="music-wrap-left wow fadeInLeft">
 					<img src="img/features-iphone.png" alt="iphone">
 					<img class="music-wrap-left_img" src="img/features-iphone.png" alt="iphone">
 					<img class="music-wrap-left_img" src="img/features-iphone.png" alt="iphone">
 				</div>
-				<div class="music-wrap-right">
+				<div class="music-wrap-right wow fadeInRight">
 					<h4 class="music-wrap-right-subtitle">
 						Future is here
 					</h4>
@@ -328,16 +332,16 @@
 				</h2>
 				<div class="screenshots-boxes">
 					<div class="screenshots-box">
-						<img src="img/screenshots1.png" alt="screenshot" class="screenshots-box_img">
+						<img src="img/screenshots1.png" alt="screenshot" class="screenshots-box_img wow fadeIn">
 					</div>
 					<div class="screenshots-box">
-						<img src="img/screenshots2.png" alt="screenshot" class="screenshots-box_img">
-						<img src="img/screenshots3.png" alt="screenshot" class="screenshots-box_img">
-						<img src="img/screenshots4.png" alt="screenshot" class="screenshots-box_img">
+						<img src="img/screenshots2.png" alt="screenshot" class="screenshots-box_img wow fadeIn">
+						<img src="img/screenshots3.png" alt="screenshot" class="screenshots-box_img wow fadeIn">
+						<img src="img/screenshots4.png" alt="screenshot" class="screenshots-box_img wow fadeIn">
 					</div>
 					<div class="screenshots-box">
-						<img src="img/screenshots5.png" alt="screenshot" class="screenshots-box_img">
-						<img src="img/screenshots6.png" alt="screenshot" class="screenshots-box_img">
+						<img src="img/screenshots5.png" alt="screenshot" class="screenshots-box_img wow fadeIn">
+						<img src="img/screenshots6.png" alt="screenshot" class="screenshots-box_img wow fadeIn">
 					</div>
 
 				</div>
@@ -430,7 +434,7 @@
 				</h2>
 
 				<div class="app-items">
-					<div class="app-item">
+					<div class="app-item wow fadeInDown">
 						<div class="app-item-box">
 							<i class="fas fa-cogs"></i>
 						</div>
@@ -442,7 +446,7 @@
 							tincidunt dui quis augue pulvinar
 						</p>
 					</div>
-					<div class="app-item">
+					<div class="app-item wow fadeInUp">
 						<div class="app-item-box">
 							<i class="far fa-clock"></i>
 						</div>
@@ -454,7 +458,7 @@
 							tincidunt dui quis augue pulvinar
 						</p>
 					</div>
-					<div class="app-item">
+					<div class="app-item wow fadeInDown">
 						<div class="app-item-box">
 							<i class="fas fa-mobile-alt"></i>
 						</div>
@@ -635,13 +639,13 @@
 							CEO
 						</span>
 						<div class="social">
-							<a href="#" class="fb">
+							<a href="#" class="fb wow fadeIn delay-1s">
 								<i class="fab fa-facebook-f"></i>
 							</a>
-							<a href="#" class="tw">
+							<a href="#" class="tw wow fadeIn ">
 								<i class="fab fa-twitter"></i>
 							</a>
-							<a href="#" class="google">
+							<a href="#" class="google wow fadeIn delay-2s">
 								<i class="fab fa-google-plus-g"></i>
 							</a>
 						</div>
@@ -655,13 +659,13 @@
 							Marketing Specialist
 						</span>
 						<div class="social">
-							<a href="#" class="fb">
+							<a href="#" class="fb wow fadeIn delay-1s">
 								<i class="fab fa-facebook-f"></i>
 							</a>
-							<a href="#" class="tw">
-								<i class="fab fa-google"></i>
+							<a href="#" class="tw wow fadeIn">
+								<i class="fab fa-google "></i>
 							</a>
-							<a href="#" class="google">
+							<a href="#" class="google wow fadeIn delay-2s">
 								<i class="fab fa-pinterest-p"></i>
 							</a>
 						</div>
@@ -675,13 +679,13 @@
 							Senior Developer
 						</span>
 						<div class="social">
-							<a href="#" class="fb">
+							<a href="#" class="fb wow fadeIn delay-1s">
 								<i class="fab fa-facebook-f"></i>
 							</a>
-							<a href="#" class="tw">
+							<a href="#" class="tw wow fadeIn">
 								<i class="fab fa-twitter"></i>
 							</a>
-							<a href="#" class="google">
+							<a href="#" class="google wow fadeIn delay-2s">
 								<i class="fab fa-pinterest-p"></i>
 							</a>
 						</div>
@@ -697,7 +701,7 @@
 				OUR PARTNERS
 			</h2>
 
-			<div class="partner">
+			<div class="partner wow fadeIn slow">
 				<img src="img/partner.png" alt="partner">
 			</div>
 		</div>
@@ -734,7 +738,9 @@
 							</p>
 						</div>
 						<div class="link">
-							<a href="#">sing up</a>
+							<button class="modal-btn">
+								sing up
+							</button>
 						</div>
 					</div>
 				</div>
@@ -763,7 +769,9 @@
 							</p>
 						</div>
 						<div class="link">
-							<a href="#">sing up</a>
+							<button class="modal-btn">
+								sing up
+							</button>
 						</div>
 					</div>
 				</div>
@@ -792,7 +800,9 @@
 							</p>
 						</div>
 						<div class="link">
-							<a href="#">sing up</a>
+							<button class="modal-btn">
+								sing up
+							</button>
 						</div>
 					</div>
 				</div>
@@ -874,6 +884,25 @@
 			</div>
 		</div>
 	</footer>
+
+	<!-- modal -->
+	<div class="modal-overlay">
+		<div class="modal">
+
+			<a class="close-modal">
+				<svg viewBox="0 0 20 20">
+					<path fill="#000000"
+						d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z">
+					</path>
+				</svg>
+			</a><!-- close modal -->
+
+			<div class="modal-content">
+				<h3>Some content here</h3>
+			</div><!-- content -->
+
+		</div><!-- modal -->
+	</div><!-- overlay -->
 
 	<script src="js/scripts.min.js"></script>
 </body>

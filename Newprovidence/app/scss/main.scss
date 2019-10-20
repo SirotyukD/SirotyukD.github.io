@@ -38,6 +38,7 @@ body {
 button {
 	background-color: transparent;
 	border: none;
+	cursor: pointer;
 }
 
 b,
@@ -266,6 +267,8 @@ li {
 
 .h-right-link {
 	text-decoration: none;
+	cursor: pointer;
+
 }
 
 .get-link {
@@ -275,7 +278,7 @@ li {
 	display: flex;
 	justify-content: space-around;
 	border-radius: 30px;
-	cursor: pointer;
+	cursor: pointer !important;
 	background-image: url(..\img\Apple_Icon.png);
 	background-repeat: no-repeat;
 	background-position: 10px 9px;
@@ -359,8 +362,8 @@ li {
 //features
 
 #features {
-	margin-top: 120px;
-	margin-bottom: 160px;
+	margin-top: 80px;
+	margin-bottom: 80px;
 }
 
 .feature_title {
@@ -384,19 +387,22 @@ li {
 
 // iphone-feature
 
+.iphone-feature__wrap{
+	display: flex;
+}
 .if-iphone {
 	width: 100%;
-	min-height: 850px;
-	//margin-left: -135px;
+	height: 100%;
+	//margin-left: -105px;
 	background-image: url(../img/iPhone_6,1.png);
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-position-x: -135px;
+	//background-position-x: -105px;
 	background-position-y: 80%;
 }
 
 .if-content {
-	padding-right: calc(50vw - 585px);
+	//padding-right: calc(50vw - 585px);
 }
 
 .if-content_title,
@@ -460,7 +466,7 @@ li {
 //map
 
 #map {
-	margin: 120px 0 224px 0;
+	margin: 80px 0 80px 0;
 }
 
 .map-wrap {
@@ -537,7 +543,7 @@ li {
 	background-size: contain;
 	background-position: center;
 	width: 25%;
-	height: 863px;
+	height: 480px;
 }
 
 .screen-phone:nth-child(1) {
@@ -633,6 +639,7 @@ li {
 }
 
 .rtb-dowload__btn {
+	display: block;
 	width: 210px;
 	height: 60px;
 	background-color: #131315;
@@ -647,7 +654,6 @@ li {
 
 .rtb-dowload__text {
 	width: 100px;
-	height: 36px;
 	margin-left: 68px;
 	display: block;
 	font-family: $Lato-Regular;
@@ -666,7 +672,7 @@ li {
 //slider
 
 #slider {
-	padding: 130px 0;
+	padding: 80px 0;
 	text-align: center;
 }
 
@@ -783,7 +789,7 @@ li {
 
 #plan {
 	background-color: #f4f4f5;
-	padding: 159px 0 212px 0;
+	padding: 90px 0 90px 0;
 }
 
 .plan-choose__title {
@@ -812,6 +818,7 @@ li {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	cursor: pointer;
 }
 
 .plan-choose__tab {
@@ -845,6 +852,7 @@ li {
 	padding: 43px 30px 50px 30px;
 	background-color: #EBEBED;
 	border-radius: 10px;
+	cursor: pointer;
 
 
 }

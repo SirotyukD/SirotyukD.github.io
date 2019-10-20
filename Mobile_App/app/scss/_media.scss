@@ -434,6 +434,15 @@
 // ≥576px
 @include media-breakpoint-down(xs) {
 
+	.burger {
+		margin-top: 20px;
+	}
+
+	.burger-list {
+		right: 0px;
+	}
+	
+
 	.nav-bar-wrap .contacts {
 		margin-left: 9px;
 	}
