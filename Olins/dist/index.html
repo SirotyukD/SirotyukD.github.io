@@ -14,8 +14,8 @@
 
 	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<link rel="icon" href="img/favicon/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<!-- Template Basic Images End -->
 
 	<!-- Custom Browsers Color Start -->
@@ -23,12 +23,16 @@
 	<!-- Custom Browsers Color End -->
 
 	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display:400i|Raleway:400,500,500i,600,700,900,900i&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,500i,600,700,900,900i&display=swap" rel="stylesheet">
+
 
 	<!-- Styles -->
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="modules/animated/animated.css">
 	<link rel="stylesheet" href="modules/slick/slick.css">
+	<link rel="stylesheet" href="css/main.css">
 
 </head>
 
@@ -59,7 +63,7 @@
 				</div>
 				<div class="slide slide_1">
 					<div class="slide-img">
-						<img src="img/slider_1.jpg" alt="slide_1">
+						<img src="img/slider_2.jpg" alt="slide_1">
 					</div>
 					<div class="slide-box">
 						<div class="slide-box_wrapper">
@@ -80,10 +84,10 @@
 				</div>
 			</div>
 			<nav id="nav" class="header-nav">
-				<div class="nav-logo">
+				<div class="nav-logo wow fadeInLeft">
 					olins
 				</div>
-				<div class="nav-menu">
+				<div class="nav-menu wow fadeInUp">
 					<ul class="menu-list">
 						<li class="menu-item">
 							<a href="#about">home</a>
@@ -106,7 +110,7 @@
 					</ul>
 				</div>
 
-				<div class="nav-cart">
+				<div class="nav-cart wow fadeInRight">
 					<div class="m-menu">
 						<input type="checkbox" id="check-menu" class="nav-trigger">
 						<label for="check-menu" class="label-menu"></label>
@@ -146,8 +150,8 @@
 	<main>
 		<section id="about" class="about">
 			<div class="about-wrap">
-				<div class="left-box"></div>
-				<div class="right-box">
+				<div class="left-box wow fadeInLeft" data-wow-offset="250"></div>
+				<div class="right-box wow fadeInRight">
 					<span class="subtitle">
 						hello!
 					</span>
@@ -168,7 +172,7 @@
 			<div class="skills-and-team-wrap">
 				<div class="skills-box">
 					<!-- <div class="skills-box-top"> -->
-					<div class="skill">
+					<div class="skill wow fadeInLeft">
 						<h3 class="skill_title">
 							Our adventages
 						</h3>
@@ -178,7 +182,7 @@
 							even slightly
 						</p>
 					</div>
-					<div class="skill">
+					<div class="skill wow fadeInRight" data-wow-delay="0.5s">
 						<h3 class="skill_title">
 							Skills
 						</h3>
@@ -189,7 +193,7 @@
 					</div>
 					<!-- </div> -->
 					<!-- <div class="skills-box-bott"> -->
-					<div class="skill">
+					<div class="skill wow fadeInLeft" data-wow-delay="1s">
 						<h3 class="skill_title">
 							Experience
 						</h3>
@@ -198,7 +202,7 @@
 							suffered alteration in some form, by injected humour, or
 						</p>
 					</div>
-					<div class="skill">
+					<div class="skill wow fadeInRight" data-wow-delay="1.5s">
 						<h3 class="skill_title">
 							Professional team
 						</h3>
@@ -307,12 +311,12 @@
 					</a>
 				</div>
 				<div class="story-right">
-					<div class="story-product">
+					<div class="story-product wow fadeIn">
 						Red
 						<br>
 						Blouse
 					</div>
-					<div class="story-price">
+					<div class="story-price wow pulse infinite">
 						€25
 					</div>
 				</div>

@@ -27,12 +27,11 @@ $(function () {
 		return false;
 	});
 
-
 	//m-menu
 	$('.burger').on('click', function (e) {
 		e.preventDefault();
-		$('.m-menu-box').toggleClass('show');
-		$('.burger').toggleClass('burger-active');
+		$('.burger-line').toggleClass('burger-active');
+		$('.burger-list').toggleClass('burger-list-active');
 	});
 
 	//slick слайдер

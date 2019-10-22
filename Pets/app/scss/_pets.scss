@@ -1,11 +1,14 @@
+
+
 .header-pets {
-    min-height: 100px;
     height: 100%;
     background: #fafafa;
-    overflow: hidden;
+		//overflow: hidden;
+		min-height: 105px;
 }
 
-.pets-burger-line{
+
+.burger--pets .burger-line {
 	background-color: #545454;
 }
 
