@@ -113,6 +113,8 @@
 }
 
 .modal .modal-content {
+	max-height: 90vh;
+	overflow: scroll;
 	opacity: 0;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
