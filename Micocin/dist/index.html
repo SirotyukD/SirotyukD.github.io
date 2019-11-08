@@ -31,6 +31,7 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="modules/slick/slick.css">
 	<link rel="stylesheet" href="modules/animated/animated.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -40,23 +41,33 @@
 	<div class="overlay"></div>
 
 	<header class="header">
-		<div class="header__line"></div>
+		<div class="header__lin sec-line-bott"></div>
 		<div class="container">
 			<div class="header__wrap">
 				<div class="header__left">
-					<div class="header__logo">
-						<a href="#">
-							Микоцин
-						</a>
+					<div class="header__left-wrap">
+						<div class="header__logo">
+							<a href="#">
+								Микоцин
+							</a>
+						</div>
+						<div class="header__zoom">
+							<img src="img/header-zoom.png" alt="zoom">
+						</div>
+						<div class="header__legs">
+							<img src="img/header-legs.png" alt="legs">
+						</div>
+						<div class="header__micocin">
+							<div class="header__micocin-wrap">
+								<img src="img/header-micocin.png" alt="micocin">
+							</div>
+							<div class="header__micocin-price header__micocin-price--red">299</div>
+							<div class="header__micocin-price header__micocin-price--green">299</div>
+						</div>
 					</div>
-					<div class="header__zoom"></div>
-					<div class="header__legs"></div>
-					<div class="header__micocin"></div>
-					<div class="header__micocin-price header__micocin-price--red">299</div>
-					<div class="header__micocin-price header__micocin-price--green">299</div>
 				</div>
 				<div class="header__right">
-					<div class="header__bulits">
+					<div class="header__bulits" data-aos="fade-down" data-aos-duration="1500">
 						<div class="bulit">
 							<img src="img/bulit1.svg" alt="От грибка" class="bulit__img">
 							<p class="bulit__text">
@@ -81,7 +92,7 @@
 					</div>
 					<div class="header__box">
 						<div class="box-left">
-							<h1 class="header__title">
+							<h1 class="header__title" data-aos="fade-down" data-aos-duration="2000">
 								Комплексное
 								избавление <br>
 								от грибка — <br>
@@ -97,7 +108,7 @@
 							</h1>
 							<div class="box-left__desc">
 								<ul class="box-lef__listbox-lef__list">
-									<li class="box-lef__item">
+									<li class="box-lef__item" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000">
 										<div class="box-lef__item-elips">
 											2 в 1
 										</div>
@@ -110,7 +121,7 @@
 											и возвращает эстетичный вид
 										</p>
 									</li>
-									<li class="box-lef__item">
+									<li class="box-lef__item" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="2000">
 										<div class="box-lef__item-elips">
 											1
 										</div>
@@ -122,7 +133,7 @@
 											на ногтях и коже
 										</p>
 									</li>
-									<li class="box-lef__item">
+									<li class="box-lef__item" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="3000">
 										<div class="box-lef__item-elips">
 											2
 										</div>
@@ -141,12 +152,13 @@
 								</ul>
 							</div>
 						</div>
-						<div class="box-right">
+						<div class="box-right" data-aos="fade-left" data-aos-duration="2000">
 							<div class="box-right__head">
 								<img src="img/header-form-head.svg" alt="delivery">
 								<span>Бесплатно</span>
 							</div>
-							<div class="box-right__arrow"></div>
+							<div class="box-right__arrow">
+							</div>
 							<h3 class="box-right__title">
 								Успейте заказать <br>
 								со скидкой <br>
@@ -173,9 +185,9 @@
 							<form class="box-right__form">
 								<input class="box-right__input" type="text" name="name" id="name" placeholder="Имя">
 								<input class="box-right__input" type="tel" name="number" id="tel" placeholder="Телефон">
-								<button class="box-right__btn modal-btn" type="submit">
-									<span>Заказать</span> <br>
-									со скидкой
+								<button class="box-right__btn modal-btn" type="button">
+									<span class="box-right__btn-lg animated flash infinite slow">Заказать</span> <br>
+									<span class="animated flash infinite slow">со скидкой</span>
 								</button>
 							</form>
 							<div class="box-right__balance">
@@ -192,171 +204,277 @@
 		</div>
 	</header>
 
-	<section class="infection">
-		<div class="container">
-			<h2 class="infection__title sec-title">
-				Грибок – это опасная инфекция
-			</h2>
-			<p class="infection__text">
-				которая угрожает вам и вашим близким, ведь с каждым днем грибок приводит к:
-			</p>
-			<div class="infection__disease">
-				<div class="disease-item">
-					<div class="disease-item__top">
-						<div class="disease-item__img">
-							<img src="img/infection1.png" alt="infection">
-						</div>
-						<div class="disease-item__overlay"></div>
-						<div class="disease-item__numb">1</div>
-						<div class="disease-item__title">
-							Сложным
-							формам
-							аллергии
-						</div>
-					</div>
-					<div class="disease-item__desc">
-						Может появится сильная реакция
-						на на привычную пищу, одежду,
-						средства гигиены
-					</div>
-				</div>
-				<div class="disease-item">
-					<div class="disease-item__top">
-						<div class="disease-item__img">
-							<img src="img/infection2.png" alt="infection">
-						</div>
-						<div class="disease-item__overlay"></div>
-						<div class="disease-item__numb">2</div>
-						<div class="disease-item__title">
-							Потере ногтя
-							и ампутации
-							пальца
-						</div>
-					</div>
-					<div class="disease-item__desc">
-						После полного разрушения ногтя
-						грибок распространяется на палец,
-						что приводит к его ампутации
-					</div>
-				</div>
-				<div class="disease-item">
-					<div class="disease-item__top">
-						<div class="disease-item__img">
-							<img src="img/infection3.png" alt="infection">
-						</div>
-						<div class="disease-item__overlay"></div>
-						<div class="disease-item__numb">3</div>
-						<div class="disease-item__title">
-							Тяжелому
-							поражению
-							внутренних
-							органов
-						</div>
-					</div>
-					<div class="disease-item__desc">
-						Может привести к повреждениям
-						мозга, слепоте, отказу печени, почек
-						и сердца
-					</div>
-				</div>
-			</div>
-			<div class="infection__statistic">
-				<p>
-					<span>Статистика:</span> каждые 60 секунд врачи диагностируют опасные поражения внутренних органов, вызванные
-					грибком, у 1-го пациент
+	<main>
+		<section class="infection">
+			<div class="container">
+				<h2 class="infection__title sec-title" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">
+					Грибок – это опасная инфекция
+				</h2>
+				<p class="infection__text">
+					которая угрожает вам и вашим близким, ведь с каждым днем грибок приводит к:
 				</p>
-			</div>
-		</div>
-		<div class="sec-line-bott">
-
-		</div>
-	</section>
-
-	<section class="descr">
-		<div class="container">
-			<h2 class="descr__title sec-title">
-				Почему большинство средств против грибка <br>
-				малоэффективны
-			</h2>
-			<div class="descr__box">
-				<div class="descr-item">
-					<h3 class="descr-item_title">
-						Чудо-средства
-					</h3>
-					<p class="descr-item__subtitle">
-						Обещают, что избавят от грибка меньше, чем за месяц, хотя
-						это невозможно.
+				<div class="infection__disease">
+					<div class="disease-item">
+						<div class="disease-item__top">
+							<div class="disease-item__img">
+								<img src="img/infection1.png" alt="infection">
+							</div>
+							<div class="disease-item__overlay"></div>
+							<div class="disease-item__numb">1</div>
+							<div class="disease-item__title">
+								Сложным
+								формам
+								аллергии
+							</div>
+						</div>
+						<div class="disease-item__desc">
+							Может появится сильная реакция
+							на на привычную пищу, одежду,
+							средства гигиены
+						</div>
+					</div>
+					<div class="disease-item">
+						<div class="disease-item__top">
+							<div class="disease-item__img">
+								<img src="img/infection2.png" alt="infection">
+							</div>
+							<div class="disease-item__overlay"></div>
+							<div class="disease-item__numb">2</div>
+							<div class="disease-item__title">
+								Потере ногтя
+								и ампутации
+								пальца
+							</div>
+						</div>
+						<div class="disease-item__desc">
+							После полного разрушения ногтя
+							грибок распространяется на палец,
+							что приводит к его ампутации
+						</div>
+					</div>
+					<div class="disease-item">
+						<div class="disease-item__top">
+							<div class="disease-item__img">
+								<img src="img/infection3.png" alt="infection">
+							</div>
+							<div class="disease-item__overlay"></div>
+							<div class="disease-item__numb">3</div>
+							<div class="disease-item__title">
+								Тяжелому
+								поражению
+								внутренних
+								органов
+							</div>
+						</div>
+						<div class="disease-item__desc">
+							Может привести к повреждениям
+							мозга, слепоте, отказу печени, почек
+							и сердца
+						</div>
+					</div>
+				</div>
+				<div class="infection__statistic">
+					<p>
+						<span class="text-bold">Статистика:</span> каждые 60 секунд врачи диагностируют опасные поражения внутренних
+						органов, вызванные
+						грибком, у 1-го пациент
 					</p>
-					<div class="descr-item__overlay"></div>
-					<span class="descr-item__but">
-						Но
-					</span>
-					<p class="descr-item__text">
-						Ноготь – это роговой слой кожи.
-						Он не имеет живых клеток. Часть ногтя, которая уже поражена грибком, не может выздороветь
-						до полного его отрастания. Единственный способ вылечить грибок –
-						<span>подавлять его распространение все время,
-							пока ноготь не отрастет заново.
+				</div>
+			</div>
+			<div class="sec-line-bott">
+
+			</div>
+		</section>
+
+		<section class="descr">
+			<div class="container">
+				<h2 class="descr__title sec-title" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">
+					Почему большинство средств против грибка <br>
+					малоэффективны
+				</h2>
+				<div class="descr__box">
+					<div class="descr-item">
+						<h3 class="descr-item_title">
+							Чудо-средства
+						</h3>
+						<p class="descr-item__subtitle">
+							Обещают, что избавят от грибка меньше, чем за месяц, хотя
+							это невозможно.
+						</p>
+						<span class="descr-item__but">
+							Но
 						</span>
-						Для этого требуется 4-6 месяцев.
-					</p>
-				</div>
-				<div class="descr-item">
-					<h3 class="descr-item_title">
-						Наружные средства
-					</h3>
-					<p class="descr-item__subtitle">
-						Способны устранить внешние проявления грибка. <br>
-						<span>(кремы, лаки, пластыри)</span>
+						<p class="descr-item__text">
+							Ноготь – это роговой слой кожи.
+							Он не имеет живых клеток. Часть ногтя, которая уже поражена грибком, не может выздороветь
+							до полного его отрастания. Единственный способ вылечить грибок –
+							<span class="text-bold">подавлять его распространение все время,
+								пока ноготь не отрастет заново.
+							</span>
+							Для этого требуется 4-6 месяцев.
+						</p>
+					</div>
+					<div class="descr-item">
+						<h3 class="descr-item_title">
+							Наружные средства
+						</h3>
+						<p class="descr-item__subtitle">
+							Способны устранить внешние проявления грибка. <br>
+							<span>(кремы, лаки, пластыри)</span>
 
-					</p>
-					<div class="descr-item__overlay"></div>
-					<span class="descr-item__but">
-						Но
-					</span>
-					<p class="descr-item__text">
-						Очаг заражения находится
-						под ногтевой пластиной, а наружные средства не способны его достичь - они действуют только на на верхнем
-						слое ногтя, поэтому <span>не способны избавить от грибка.</span> Для повышения их эффективности
-						рекомендуется <span>спиливать
-							ноготь полностью</span>,
-						но это больно, некрасиво
-						и совершенно <span>не дает гарантий выздоровления</span>.
-					</p>
+						</p>
+						<span class="descr-item__but">
+							Но
+						</span>
+						<p class="descr-item__text">
+							Очаг заражения находится
+							под ногтевой пластиной, а наружные средства не способны его достичь - они действуют только на на верхнем
+							слое ногтя, поэтому <span class="text-bold">не способны избавить от грибка.</span> Для повышения их
+							эффективности
+							рекомендуется <span class="text-bold">спиливать
+								ноготь полностью</span>, но это больно, некрасиво
+							и совершенно <span class="text-bold">не дает гарантий выздоровления</span>.
+						</p>
+					</div>
+					<div class="descr-item">
+						<h3 class="descr-item_title">
+							Внутренние средства
+						</h3>
+						<p class="descr-item__subtitle">
+							Убивают грибковую инфекцию
+							в организме. <br>
+							<span>(таблетки, саше, капли)</span>
+						</p>
+						<span class="descr-item__but">
+							Но
+						</span>
+						<p class="descr-item__text">
+							<span class="text-bold">Могут подействовать только
+								при длительном использовании</span>
+							(6 - 8 месяцев). За это время внутренние средства в 93%
+							случаев наносят <span class="text-bold">серьезный
+								ущерб печени</span>, вызывают сыпь, отеки, диарею, рвоту. К тому же, каждое средство эффективно
+							только против одной группы
+							грибка из 4000 видов.
+						</p>
+					</div>
 				</div>
-				<div class="descr-item">
-					<h3 class="descr-item_title">
-						Внутренние средства
-					</h3>
-					<p class="descr-item__subtitle">
-						Убивают грибковую инфекцию
-						в организме. <br>
-						<span>(таблетки, саше, капли)</span>
-					</p>
-					<div class="descr-item__overlay"></div>
-					<span class="descr-item__but">
-						Но
-					</span>
-					<p class="descr-item__text">
-						<span>Могут подействовать только
-							при длительном использовании</span>
-						(6 - 8 месяцев). За это время внутренние средства в 93%
-						случаев наносят <span>серьезный
-							ущерб печени</span>, вызывают сыпь, отеки, диарею, рвоту. К тому же, каждое средство эффективно
-						только против одной группы
-						грибка из 4000 видов.
+				<div class="descr-item__result">
+					<p>
+						Даже если вы используете наружные и внутренние средства одновременно, это <span class="text-bold">не
+							гарантирует
+							избавления от грибка:</span> они могут конфликтовать между собой по составу и блокировать действие
+						друг друга или быть неэффективными против вашего типа грибка.
 					</p>
 				</div>
 			</div>
-			<div class="descr-item__result">
-				<p>
-					Даже если вы используете наружные и внутренние средства одновременно, это <span>не гарантирует
-						избавления от грибка:</span> они могут конфликтовать между собой по составу и блокировать действие
-					друг друга или быть неэффективными против вашего типа грибка.
+		</section>
+
+		<section class="advantages">
+			<div class="sec-line-top"></div>
+			<div class="container">
+				<h2 class="advantages__title sec-title" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">
+					Почему таблетки <span>Микоцин</span> от грибка
+					так эффективны?
+				</h2>
+				<p class="advantages__subtitle">
+					Другие средства не дают полную защиту от грибковых инфекций и могут быть опасны
 				</p>
+				<div class="advantages__box">
+					<div class="advantage-item">
+						<div class="advantage-item__bg">
+							<img src="img/advantages-item-bg.svg" alt="card">
+						</div>
+						<div class="advantages-item__wrap">
+							<h4 class="advantages-item__title">
+								Кремы и мази
+							</h4>
+							<p class="advantages-item__text">
+								<span class="text-bold">Не лечат грибок, потому
+									что не проникают в ногтевую пластину.</span> Только временно избавляют от симптомов инфекций. Могут
+								вызвать сильную аллергию и раздражения на коже.
+							</p>
+						</div>
+					</div>
+					<div class="advantage-item">
+						<div class="advantage-item__bg">
+							<img src="img/advantages-item-bg.svg" alt="card">
+						</div>
+						<div class="advantages-item__wrap">
+							<h4 class="advantages-item__title">
+								Народные методы
+							</h4>
+							<p class="advantages-item__text">
+								Помогают только в редких случаях. <span class="text-bold">Могут причинить вред коже
+									и ногтям.</span> Не предотвращают повторные заражения грибком.
+						</div>
+					</div>
+					<div class="advantage-item">
+						<div class="advantage-item__bg">
+							<img src="img/advantages-item-bg.svg" alt="card">
+						</div>
+						<div class="advantages-item__wrap">
+							<h4 class="advantages-item__title">
+								Таблетки
+							</h4>
+							<p class="advantages-item__text">
+								<span class="text-bold">Действуют против всех видов грибков.</span> Быстро снимают неприятные
+								симптомы и уничтожают инфекцию изнутри вне зависимости от области
+								заражения грибком. Надолго
+								защищают от повторных заражений.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="advantages__footer">
+					<p>
+						Зачем лечить сложнее, дольше и дороже, если есть <span>Микоцин?</span>
+					</p>
+				</div>
 			</div>
-		</div>
-	</section>
+			<div class="sec-line-bott"></div>
+		</section>
+
+		<section class="instruction">
+			<div class="container">
+				<h2 class="instruction__title sec-title" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="500">
+					Как применять <span>Микоцин</span>
+				</h2>
+				<div class="instruction__box">
+					<div class="instruction__left">
+						<img class="instruction__left-img" src="img/instruction-img.png" alt="instruction">
+					</div>
+					<div class="instruction__right">
+						<div class="instruction__step">
+							<div class="step__img">
+								<img src="img/instruction-step-bg.png" alt="instruction-icon">
+							</div>
+							<p class="step__text">
+								Принимать по 1 таблетке
+								утром и вечером
+							</p>
+						</div>
+						<div class="instruction__step">
+							<div class="step__img">
+								<img src="img/instruction-step-bg.png" alt="instruction-icon">
+							</div>
+							<p class="step__text">
+								Запивать стаканом воды
+							</p>
+						</div>
+						<div class="instruction__step">
+							<div class="step__img">
+								<img src="img/instruction-step-bg.png" alt="instruction-icon">
+							</div>
+							<p class="step__text">
+								Курс – от 30 дней
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
 
 	<!-- modal -->
 	<div class="modal-overlay">
@@ -377,6 +495,7 @@
 		</div><!-- modal -->
 	</div><!-- overlay -->
 
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
 

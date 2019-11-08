@@ -3,6 +3,8 @@
 @import "libs"; //reset.css
 @import "_mixins/global"; //container сетка
 
+
+//обертка pixel-perfect
 .overlay {
 	position: absolute;
 	top: 0;
@@ -27,26 +29,23 @@
 	background: url(../img/header-overlay.png) no-repeat center top,
 		url(../img/header-bg.png) no-repeat -200px top;
 	position: relative;
-	padding-bottom: 186px;
+	padding-bottom: 40px;
 
-	&__line {
-		position: absolute;
+	&__lin {
+
 		bottom: 15px;
-		left: 0;
-		right: 0;
-		height: 173px;
+		transform: rotateY(180deg);
 		background: url(../img/sec-line-top.png) no-repeat top center;
 	}
 
 	&__wrap {
 		display: flex;
 		width: 100%;
-
+		position: relative;
 	}
 
 	&__left {
 		width: 43%;
-		position: relative;
 	}
 
 	&__logo {
@@ -78,41 +77,45 @@
 		}
 	}
 
+	&__zoom,
+	&__legs,
+	&__micocin {
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
 	&__zoom {
 		position: absolute;
 		top: 105px;
-		left: -157px;
-		width: 630px;
-		height: 690px;
-		background: url(../img/header-zoom.png) no-repeat center center;
-		background-size: cover;
+		left: -13.4%;
+		width: 33vw;
+		max-width: 630px;
 	}
 
 	&__legs {
 		position: absolute;
-		top: -226px;
-		left: -259px;
-		width: 747px;
-		height: 807px;
-		background: url(../img/header-legs.png) no-repeat center center;
-		background-size: cover;
+		top: -34%;
+		left: -22%;
+		width: 40vw;
+		max-width: 747px;
 	}
 
 	&__micocin {
 		position: absolute;
 		top: 489px;
-		left: -102px;
-		width: 660px;
-		height: 400px;
-		background: url(../img/header-micocin.png) no-repeat center center;
-		background-size: cover;
+		left: -8%;
+		width: 33.5vw;
+		max-width: 660px;
 	}
 
+	.header__micocin-wrap {
+		position: relative;
+	}
 
 	.header__micocin-price {
 		position: absolute;
-		top: 474px;
-		left: 246px;
 		color: #ffffff;
 		font-size: 3.4rem;
 		font-weight: 900;
@@ -121,24 +124,19 @@
 		min-width: 100px;
 		height: 40px;
 		border-radius: 8px;
+	}
+
+	.header__micocin-price--red {
+		top: -13px;
+		left: 53%;
 		background: url(../img/micocin-rub.svg) no-repeat 70px center, $orange;
 	}
 
 	.header__micocin-price--green {
-		position: absolute;
-		top: 607px;
-		left: 349px;
-		color: #ffffff;
-		font-size: 3.4rem;
-		font-weight: 900;
-		line-height: 24px;
-		padding: 10px 5px;
-		min-width: 100px;
-		height: 40px;
-		border-radius: 8px;
+		top: 30%;
+		left: 69%;
 		background: url(../img/micocin-rub.svg) no-repeat 70px center, #a8ca3f;
 	}
-
 
 	&__right {
 		width: 57%;
@@ -181,10 +179,8 @@
 
 		.box-right {
 			max-width: 330px;
-			//width: 40%;
 			text-align: center;
 		}
-
 	}
 
 	.header__title {
@@ -202,10 +198,10 @@
 
 	.header__title-word {
 		display: inline-block;
-		border-bottom: 5px solid $orange;
+		border-bottom: 5px solid #ff6b00;
 
 		&:last-child {
-			border-bottom: 5px solid $green;
+			border-bottom: 5px solid #a7c93d;
 		}
 	}
 
@@ -244,8 +240,7 @@
 		font-size: 1.6rem;
 		font-weight: 700;
 		text-align: center;
-		background: url(../img/header-elips.png) no-repeat center center,
-			#e8edc9;
+		background: url(../img/header-elips.png) no-repeat center center, #e8edc9;
 	}
 
 	.box-lef__item-text {
@@ -263,12 +258,12 @@
 
 		b {
 			display: inline-block;
-			border-bottom: 3px solid $orange;
+			border-bottom: 3px solid #ff6b00;
 		}
 	}
 
 	.box-lef__item:last-child .box-lef__item-text b {
-		border-bottom: 3px solid $green;
+		border-bottom: 3px solid #a7c93d;
 	}
 
 	.header__box {
@@ -332,7 +327,6 @@
 
 	.box-right__price-item {
 
-
 		.price-item__title {
 			display: block;
 			color: $grey;
@@ -373,7 +367,6 @@
 		}
 	}
 
-
 	.box-right__price-item--new {
 		.price-item__title {
 			color: #000000;
@@ -395,7 +388,7 @@
 			&::after {
 				content: '';
 				position: absolute;
-				top: 12px;
+				top: 8px;
 				right: 12px;
 				background: url(../img/header-form-rub2.svg) no-repeat top center;
 				width: 25px;
@@ -440,7 +433,7 @@
 		font-weight: 700;
 		margin-top: 5px;
 
-		span {
+		.box-right__btn-lg {
 			font-size: 2.8rem;
 		}
 	}
@@ -468,11 +461,10 @@
 		border-bottom-right-radius: 10px;
 		background: url(../img/header-form-footer.svg) no-repeat 20px center, #eef2f7;
 	}
-
 }
 
 .infection {
-	padding-top: 86px;
+	padding-top: 235px;
 	padding-bottom: 110px;
 	position: relative;
 
@@ -486,6 +478,8 @@
 
 	&__disease {
 		margin-top: 47px;
+		display: flex;
+		justify-content: space-between;
 	}
 
 	.disease-item {
@@ -615,11 +609,6 @@
 			margin: 0 auto;
 			font-size: 22px;
 			line-height: 28px;
-
-			span {
-				color: #000000;
-				font-weight: 500;
-			}
 		}
 	}
 }
@@ -632,7 +621,7 @@
 	&__box {
 		display: flex;
 		justify-content: space-between;
-		margin-top: 85px;
+		margin-top: 55px;
 	}
 
 	.descr-item {
@@ -641,6 +630,7 @@
 		padding: 80px 30px 35px 30px;
 		position: relative;
 		background: url(../img/descr-item-bg.svg) no-repeat top center;
+		background-size: cover;
 
 		&::before {
 			content: '';
@@ -679,6 +669,18 @@
 		font-size: 1.8rem;
 		font-weight: 500;
 		line-height: 26px;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -26px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 330px;
+			height: 12px;
+			background: url(../img/desc-item-overlay.svg) no-repeat top center;
+		}
 
 		span {
 			color: $grey;
@@ -686,16 +688,6 @@
 			font-style: italic;
 			line-height: 28px;
 		}
-	}
-
-	.descr-item__overlay {
-		position: absolute;
-		top: 220px;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 330px;
-		height: 12px;
-		background: url(../img/desc-item-overlay.svg) no-repeat top center;
 	}
 
 	.descr-item__but {
@@ -707,11 +699,6 @@
 	.descr-item__text {
 		margin-top: 19px;
 		line-height: 25px;
-
-		span {
-			color: #000000;
-			font-weight: 500;
-		}
 	}
 
 	.descr-item__result {
@@ -750,7 +737,7 @@
 			color: #f4d3bb;
 			font-size: 70px;
 			font-weight: 700;
-			background-color: #f3f9ff;
+			background-color: #F1F9FB;
 			z-index: 1;
 		}
 
@@ -758,11 +745,234 @@
 			color: $text;
 			font-size: 2.1rem;
 			line-height: 28px;
+		}
+	}
+}
 
-			span {
-				color: #000000;
-				font-weight: 500;
+.advantages {
+	padding: 120px 0 50px;
+	text-align: center;
+	position: relative;
+
+	&__title {
+		max-width: 850px;
+		margin: 0 auto;
+		line-height: 1.1;
+
+		&::before {
+			display: none;
+		}
+
+		&::after {
+			@include circle-lg;
+			width: 60px;
+			height: 60px;
+			top: -70px;
+			left: 50%;
+		}
+
+		span {
+			color: #fa4f01;
+		}
+	}
+
+	&__subtitle {
+		margin: 24px 0 90px 0;
+		font-size: 2.3rem;
+	}
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.advantage-item {
+		width: 380px;
+		max-width: 32%;
+		border-radius: 10px;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: -40px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 105px;
+			height: 65px;
+			background: url(../img/advantage-item-top1.png) no-repeat center center;
+		}
+
+		&:nth-child(2)::before {
+			width: 160px;
+			height: 105px;
+			top: -80px;
+			background: url(../img/advantage-item-top2.png) no-repeat center center;
+		}
+
+		&:nth-child(3)::before {
+			top: -40px;
+			left: 50%;
+			background: url(../img/advantage-item-top3.png) no-repeat center center;
+		}
+	}
+
+	.advantage-item__bg {
+		img {
+			max-width: 100%;
+			height: auto;
+			border-radius: 10px;
+		}
+	}
+
+	.advantages-item__wrap {
+		position: absolute;
+		top: 0;
+		left: 5%;
+		max-width: 90%;
+	}
+
+	.advantages-item__title {
+		color: #000000;
+		font-size: 2.4rem;
+		font-weight: 700;
+		margin: 85px 0 16px;
+	}
+
+	.advantages-item__text {
+		line-height: 26px;
+	}
+
+	.advantages__footer {
+		width: 100%;
+		margin: 27px 0 10px;
+		min-height: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: url(../img/advantages-footer-bg.png) no-repeat top center;
+		color: #000000;
+		background-size: contain;
+
+		p {
+			font-size: 2.7rem;
+			font-weight: 500;
+			line-height: 40px;
+		}
+
+		span {
+			color: #f64d01;
+		}
+	}
+
+	.sec-line-bott {
+		bottom: -10px;
+	}
+}
+
+.instruction {
+	background-color: #f1f9f9;
+	padding: 120px 0 35px 0;
+
+	&__title {
+		span {
+			color: #fa4f01;
+		}
+	}
+
+	&__box {
+		margin-top: 65px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__left,
+	&__right {
+		width: 50%;
+	}
+
+	&__left {
+		img {
+			max-width: 100%;
+			height: auto;
+			margin-left: auto;
+			margin-right: 0;
+			display: block;
+		}
+	}
+
+	&__right {
+		margin-left: 30px;
+	}
+
+	&__step {
+		max-width: 390px;
+		display: flex;
+		align-items: center;
+		margin: 0 0 15px 0;
+
+		&:nth-child(2) {
+			margin: 0 0 20px 0;
+		}
+	}
+
+	.step__img {
+		min-width: 135px;
+		min-height: 135px;
+		border-radius: 50%;
+		background: rgba(#e5d0b9, 0.5);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+			background: url(../img/instruction-step1.svg) no-repeat center center;
+			width: 65px;
+			height: 65px;
+		}
+	}
+
+	&__step {
+		&:nth-child(2) .step__img {
+			&::after {
+				background: url(../img/instruction-step2.svg) no-repeat center center;
 			}
+		}
+
+		&:nth-child(3) .step__img {
+			&::after {
+				background: url(../img/instruction-step3.svg) no-repeat center center;
+			}
+		}
+	}
+
+	.step__text {
+		margin: 15px 0 0 28px;
+		color: #000000;
+		font-weight: 500;
+		line-height: 26px;
+		position: relative;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: -20px;
+			left: 0;
+			width: 20px;
+			height: 3px;
+			background-color: #7bbf1c;
 		}
 	}
 }

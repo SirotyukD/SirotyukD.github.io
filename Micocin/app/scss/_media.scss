@@ -1,45 +1,706 @@
- //@import "vars";
+/*==========  Desktop First  ==========*/
+
+@media screen and (max-width:1700px) {
+
+	.header__zoom {
+		top: 22%;
+		left: -8.4%;
+		width: 35vw;
+	}
+
+	.header__legs {
+		top: -15%;
+		left: -13%;
+		width: 37vw;
+	}
+
+	.header__micocin {
+		top: 489px;
+		left: -8%;
+		width: 37vw;
+	}
+}
+
+@media screen and (max-width:1400px) {
+
+	.header__zoom {
+		top: 25.5%;
+		left: -2.8%;
+		width: 38vw;
+	}
+
+	.header__legs {
+		top: -13%;
+		left: -11%;
+		width: 44vw;
+		max-width: 747px;
+	}
+
+	.header__micocin {
+		top: 520px;
+		left: 0%;
+		width: 40vw;
+	}
+
+	.header .header__title {
+		font-size: 4rem;
+	}
+
+	.header .box-lef__item-text {
+		font-size: 1.8rem;
+	}
+
+	.header .header__box .box-right {
+		width: 45%;
+		margin: auto;
+	}
+
+	.header .box-right__footer {
+		line-height: 44px;
+		max-width: 95%;
+		margin: 12px auto 8px;
+	}
+}
+
+// // ≥1200px
+//@media screen and (max-width:1200px) {}
+@include media-breakpoint-down(lg) {
+
+	.header .bulit:last-child {
+		margin-right: 0;
+	}
+
+	.header .bulit p {
+		font-size: 1.4rem;
+	}
+
+	.header__zoom {
+		top: 37.5%;
+		left: -0.8%;
+		width: 40vw;
+	}
+
+	.header__legs {
+		top: -3%;
+		left: -27%;
+		width: 50vw;
+	}
+
+	.header__micocin {
+		top: 530px;
+		left: 3%;
+		width: 42vw;
+	}
+
+	.header .header__box {
+		padding-top: 30px;
+		flex-wrap: wrap;
+
+		.box-left {
+			width: 100%;
+			max-width: 100%;
+			text-align: center;
+
+			.header__title {
+				font-size: 3rem;
+				line-height: 30px;
+				margin-bottom: 20px;
+
+				span {
+					font-size: 3rem;
+					line-height: 30px;
+				}
+			}
+
+			.box-left__desc {
+				display: none;
+			}
+		}
+
+		.box-right {
+			width: 100%;
+		}
+	}
+
+	.header .header__box .box-right {
+		max-height: 500px;
+	}
+
+	.header .box-right__title {
+		margin-top: 35px;
+	}
+
+	.header .box-right__price {
+		margin: 10px 23px 10px;
+	}
+
+	.header .box-right__form .box-right__input {
+		max-width: 210px;
+		height: 50px;
+		line-height: 30px;
+		padding: 10px 15px 10px 55px;
+		margin-bottom: 7px;
+	}
+
+	.header .box-right__btn {
+		width: 85%;
+	}
+
+	.header .box-right__footer {
+		max-width: 84%;
+		margin: 12px auto 4px;
+		background: url(../img/header-form-footer.svg) 5px center no-repeat, #eef2f7;
+	}
+
+	.sec-title::before {
+		left: 53%;
+	}
+
+	.sec-title::after {
+		left: 47%;
+	}
+
+	.infection {
+		padding-top: 150px;
+	}
+
+	.infection__disease {
+		padding: 0 20px;
+	}
+
+	.infection .disease-item__overlay {
+		top: -25px;
+		left: -35px;
+	}
+
+	.infection .disease-item__numb {
+		top: -16px;
+		left: 109px;
+	}
+
+	.descr .descr-item_title {
+		font-size: 23px;
+		padding: 0;
+	}
+
+	.descr .descr-item__result {
+		padding: 30px 95px;
+	}
+
+	.advantages .advantages-item__title {
+		font-size: 2rem;
+		margin: 45px 0 16px;
+	}
+
+	.advantages .advantages-item__text {
+		line-height: 20px;
+		font-size: 16px;
+	}
+
+	.advantages .advantage-item::before {
+		width: 70px;
+		height: 47px;
+		top: -27px;
+		background-size: cover;
+	}
+
+	.advantages .advantage-item:nth-child(2)::before {
+		width: 120px;
+		height: 79px;
+		top: -55px;
+		background-size: cover;
+	}
+
+	.advantages .advantage-item:nth-child(3)::before {
+		width: 65px;
+		height: 46px;
+		top: -30px;
+		background-size: cover;
+	}
+}
+
+// // ≥992px
+// @media screen and (max-width:992px) {}
+@include media-breakpoint-down(md) {
+
+	.header .bulit {
+		width: 100%;
+		max-width: 240px;
+	}
+
+	.header .bulit:nth-child(2) {
+		display: none;
+	}
+
+	.header__zoom {
+		top: 41.5%;
+		left: -7.8%;
+		width: 42vw;
+	}
+
+	.header__micocin {
+		top: 545px;
+		left: -6%;
+		width: 41vw;
+	}
+
+	.header__legs {
+		top: 7%;
+		left: -41%;
+		width: 52vw;
+	}
+
+	.sec-title {
+		font-size: 3.2rem;
+	}
+
+	.infection {
+		padding: 120px 0 40px;
+	}
+
+	.infection__text {
+		margin-top: 20px;
+	}
+
+	.infection .disease-item {
+		margin-right: 10px;
+	}
+
+	.infection .disease-item__top {
+		flex-wrap: wrap;
+	}
+
+	.infection .disease-item__img {
+		width: 100%;
+		height: auto;
+	}
+
+	.infection .disease-item__title {
+		max-width: 100%;
+		margin-left: 0;
+		font-size: 1.8rem;
+	}
+
+	.infection .disease-item__overlay {
+		top: -27px;
+		left: -22px;
+	}
+
+	.infection .disease-item__numb {
+		top: -18px;
+		left: 117px;
+	}
+
+	.infection .disease-item__desc {
+		margin-top: 30px;
+	}
+
+	.descr__box {
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 0;
+	}
+
+	.descr .descr-item {
+		width: 100%;
+		margin-top: 35px;
+	}
+
+	.advantages__subtitle {
+		margin: 24px 0 0 0;
+	}
+
+	.advantages__box {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.advantages .advantage-item {
+		width: 100%;
+		max-width: 380px;
+		margin-top: 55px;
+	}
+
+	.advantages .advantages-item__title {
+		font-size: 2.2rem;
+		margin: 65px 0 16px;
+	}
+
+	.advantages .advantages-item__text {
+		line-height: 24px;
+		font-size: 20px;
+	}
+
+	.advantages .advantages__footer {
+		min-height: 80px;
+
+		p {
+			font-size: 2.2rem;
+		}
+	}
+
+	.instruction__box {
+		margin-top: 25px;
+	}
+
+	.instruction .step__img {
+		min-width: 110px;
+		min-height: 110px;
+		max-width: 110px;
+		max-height: 110px;
+
+		img {
+			max-width: 90%;
+			height: auto;
+		}
+	}
+
+	.instruction .step__text::before {
+		top: -10px;
+	}
+}
 
 
+//890px
+@media screen and (max-width:890px) {
 
- /*==========  Desktop First  ==========*/
-
- // // ≥1200px
- //@media screen and (max-width:1200px) {}
- @include media-breakpoint-down(lg) {
-  
- }
-
-
- // // ≥992px
- // @media screen and (max-width:992px) {}
- @include media-breakpoint-down(md) {}
+	.header__legs {
+		top: 11%;
+		left: -30%;
+		width: 52vw;
+	}
+}
 
 
- // // ≥768px
- //@media screen and (max-width:768px) {}
- @include media-breakpoint-down(sm) {}
+// // ≥768px
+//@media screen and (max-width:768px) {}
+@include media-breakpoint-down(sm) {
+
+	.header {
+		padding-bottom: 0;
+	}
+
+	.header .bulit:last-child {
+		display: none;
+	}
+
+	.header__logo {
+		margin-right: 15%;
+	}
+
+	.header__logo a::before,
+	.header__logo a::after {
+		animation: none;
+	}
+
+	.header .bulit {
+		padding-left: 15%;
+	}
+
+	.header__lin {
+		bottom: 15px;
+	}
+
+	.sec-title::before,
+	.sec-title::after {
+		animation: none;
+	}
+
+	.header__micocin {
+		top: 581px;
+		left: -9%;
+		width: 37vw;
+	}
+
+	.header .header__micocin-price--red {
+		top: -23px;
+		left: 45%;
+		background: url(../img/micocin-rub.svg) 52px center no-repeat, #ff6b00;
+	}
+
+	.header .header__micocin-price {
+		font-size: 2.5rem;
+		min-width: 80px;
+		height: 30px;
+		line-height: 12px;
+	}
+
+	.header .header__micocin-price--green {
+		top: 38%;
+		left: 72%;
+		background: url(../img/micocin-rub.svg) 52px center no-repeat, #a8ca3f;
+	}
+
+	.header__zoom {
+		top: 55.5%;
+		left: -13.8%;
+		width: 40vw;
+	}
+
+	.header__legs {
+		top: 28%;
+		left: -44%;
+		width: 52vw;
+	}
+
+	.infection__disease {
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 0;
+	}
+
+	.infection .disease-item {
+		width: 100%;
+		max-width: 100%;
+		margin: 35px auto 0;
+	}
+
+	.infection .disease-item__top {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.infection .disease-item__overlay {
+		top: -27px;
+		left: 129px;
+	}
+
+	.infection .disease-item__numb {
+		top: -18px;
+		left: 274px;
+	}
+
+	.infection .disease-item__title {
+		margin: 0 auto;
+	}
+
+	.infection .disease-item__desc {
+		margin: 30px auto 0;
+	}
+
+	.infection__statistic {
+		padding: 25px 20px 20px;
+	}
+
+	.descr .descr-item__result {
+		padding: 30px 20px;
+	}
+
+	.advantages .advantages__footer p {
+		font-size: 16px;
+	}
+
+	.advantages .advantages__footer {
+		min-height: 60px;
+	}
+
+	.instruction .step__img::after {
+		background-size: cover;
+		width: 45px;
+		height: 45px;
+	}
+
+	.instruction__step:nth-child(2) .step__img::after,
+	.instruction__step:nth-child(3) .step__img::after {
+		background-size: cover;
+	}
+
+	.instruction .step__img {
+		min-width: 80px;
+		min-height: 80px;
+		max-width: 80px;
+		max-height: 80px;
+	}
+
+	.instruction .step__text {
+		margin: 15px 0 0 10px;
+		color: #000;
+		font-weight: 500;
+		line-height: 26px;
+		position: relative;
+	}
+
+	.sec-title {
+		line-height: 40px;
+	}
+}
+
+//700px
+@media screen and (max-width:700px) {
+
+	.header__legs {
+		top: 27%;
+		left: -36%;
+		width: 56vw;
+	}
+}
+
+// // ≥576px
+//@media screen and (max-width:576px) {}
+@include media-breakpoint-down(xs) {
+
+	.header__wrap {
+		flex-wrap: wrap;
+	}
+
+	.header__left,
+	.header__right {
+		width: 100%;
+	}
+
+	.header__logo {
+		margin: 0 auto;
+		margin-top: 30px;
+
+		a {
+			margin: 0 auto;
+		}
+	}
+
+	.header .bulit {
+		padding-left: 5%;
+		margin: 0 auto;
+	}
+
+	.header__zoom,
+	.header__legs,
+	.header__micocin {
+		display: none;
+	}
+
+	.header .header__box .box-left .header__title {
+		font-size: 2.3rem;
+
+		span {
+			font-size: 2.2rem;
+		}
+	}
+
+	.header .box-right__arrow {
+		display: none;
+	}
+
+	.sec-line-bott,
+	.sec-line-top {
+		display: none;
+	}
+
+	.sec-title {
+		font-size: 2.8rem;
+		line-height: 30px;
+		padding: 0 10px;
+	}
+
+	.infection .disease-item__overlay,
+	.infection .disease-item__numb {
+		display: none;
+	}
+
+	.infection__text {
+		margin-top: 15px;
+		font-size: 1.8rem;
+	}
+
+	.infection .disease-item {
+		margin: 20px auto 0;
+		text-align: center;
+	}
+
+	.infection .disease-item__desc::after {
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.infection__statistic {
+		margin: 0;
+		margin-top: 35px;
+	}
+
+	.descr {
+		padding: 100px 0 50px;
+	}
+
+	.descr__title {
+		padding: 0;
+		font-size: 2.5rem;
+	}
+
+	.descr .descr-item__text {
+		margin-top: 19px;
+		line-height: 20px;
+		font-size: 16px;
+	}
+
+	.descr .descr-item__subtitle {
+		margin: 10px 0 20px;
+		font-size: 1.6rem;
+		line-height: 24px;
+	}
+
+	.descr .descr-item__result {
+		padding: 30px 10px;
+	}
+
+	.descr .descr-item__result p {
+		color: #444;
+		font-size: 16px;
+		line-height: 22px;
+	}
+
+	.descr .descr-item__subtitle::after {
+		bottom: -15px;
+	}
+
+	.advantages {
+		padding: 90px 0 10px;
+	}
+
+	.advantages__subtitle {
+		margin: 15px 0 0;
+		font-size: 1.8rem;
+	}
+
+	.advantages .advantages-item__title {
+		font-size: 2rem;
+		margin: 50px 0 10px;
+	}
+
+	.advantages .advantages-item__text {
+		line-height: 19px;
+		font-size: 16px;
+	}
+
+	.advantages .advantages__footer {
+		background: none;
+		border: 3px solid #F64D01;
+		border-radius: 7px;
+	}
+
+	.instruction__box {
+		flex-wrap: wrap;
+	}
+
+	.instruction__left {
+		width: 80%;
+	}
+
+	.instruction__right {
+		width: 100%;
+		margin-top: 10px;
+	}
+}
 
 
+// /*==========  Mobile First  ==========*/
 
- // // ≥576px
- //@media screen and (max-width:576px) {}
- @include media-breakpoint-down(xs) {}
+// // ≤576px
+// @media screen and (min-width:576px) {}
 
+// // ≤768px
+// @media screen and (min-width:576px) {}
 
+// // ≤992px
+// @media screen and (min-width:576px) {}
 
-
- // /*==========  Mobile First  ==========*/
-
- // // ≤576px
- // @media screen and (min-width:576px) {}
-
-
- // // ≤768px
- // @media screen and (min-width:576px) {}
-
- // // ≤992px
- // @media screen and (min-width:576px) {}
-
- // // ≤1200px
- // @media screen and (min-width:576px) {}
+// // ≤1200px
+// @media screen and (min-width:576px) {}

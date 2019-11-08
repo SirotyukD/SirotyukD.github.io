@@ -5,9 +5,6 @@
  $delay: ($speed * .5);
  $easing: cubic-bezier(.55,0,.1,1);
  
- 
- 
- 
  /**
   * Overlay
   * -- only show for tablet and up
@@ -23,7 +20,7 @@
      left: 0;
      width: 100%;
      height: 100%;
-     z-index: 5;
+     z-index: 50;
      background-color: rgba(#000, 0.6);
      opacity: 0;
      visibility: hidden;
@@ -35,9 +32,7 @@
        visibility: visible;
      }
    }
- } // media query
- 
- 
+ } 
  
  /**
   * Modal
@@ -60,7 +55,8 @@
    box-shadow: 0 2px 10px rgba(#000, 0.1);
    backface-visibility: hidden;
    transform: scale(1.2);
-   transition: all $speed $easing;
+	 transition: all $speed $easing;
+	 z-index: 100;
    
    .close-modal {
      position: absolute;
@@ -100,8 +96,6 @@
      }
    }
  }
- 
- 
  
  /**
   * Mobile styling
