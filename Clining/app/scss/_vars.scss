@@ -1,0 +1,288 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 1.6rem;
+	min-width: 320px;
+	position: relative;
+	line-height: 1;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	overflow-x: hidden;
+	color: #777777;
+}
+
+body.lock{
+	overflow: hidden;
+}
+
+//переменные
+$text: #777777;
+$yellow: #f6a937;
+$title: #414141;
+$blue-bg: #038fd6;
+$blue-nav: #1175b7;
+$raleway-semi: 'Raleway',
+sans-serif;
+$raleway-bold: 'Raleway',
+sans-serif;
+
+
+
+
+//общие блоки, наследование и миксины
+
+section {
+	padding-top: 120px;
+}
+
+//логотип header + footer
+.logo {
+	color: $blue-nav;
+	font-size: 3.2rem;
+	font-weight: 700;
+	cursor: default;
+
+	a {
+		color: $blue-nav;
+	}
+
+	span {
+		color: $yellow;
+	}
+}
+
+
+//стиль заголовка секции
+.sec-title {
+	color: $title;
+	font-family: $raleway-semi;
+	font-size: 4.3rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.sec-subtitle {
+	text-align: center;
+	font-size: 1.8rem;
+	line-height: 24px;
+	display: block;
+	max-width: 550px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+//линия под subtitle
+@mixin subtitle-bottom {
+	content: '';
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -15px;
+	width: 60px;
+	height: 2px;
+	background-color: #efa639;
+}
+
+//линия над subtitle
+@mixin subtitle-line {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: -25px;
+	width: 30px;
+	height: 3px;
+	background-color: $yellow;
+}
+
+//бургер меню
+.burger-menu{
+	position: relative;
+}
+
+.burger{
+	width: 30px;
+	height: 20px;
+	position: relative;
+	cursor: pointer;
+	display: none;
+	z-index: 100;
+	&::after, &::before{
+		transition: all .3s ease;
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		background-color: $yellow;
+	}
+	&::before{
+		top: 0;
+	}
+	&::after{
+		bottom: 0;
+	}
+
+	span{
+		position: absolute;
+		left: 0;
+		top: 9px;
+		display: block;
+		width: 100%;
+		height: 2px;
+		background-color: $yellow;
+		transition: all .3s ease;
+	}
+
+	&.active{
+		span{
+			transform: scale(0);
+		}
+		&::before{
+			transform: rotate(-45deg);
+			top: 9px;
+		}
+		&::after{
+			transform: rotate(45deg);
+			bottom: 9px;
+		}
+	}
+}
+
+.m-menu{
+	position: fixed;
+	top: 0	;
+	right: -100%;
+	width: 100%;
+	height: 100%;
+	background-color: #1175B7;
+	z-index: 99;
+	transition: all .3s ease-in-out;
+	overflow: auto;
+	&.active{
+		right: 0;
+	}
+
+	.m-menu__list{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		li{
+			margin: 10px;
+			a{
+				color: #fff;
+				text-transform: uppercase;
+				font-family: $raleway-semi;
+				font-size: 2rem;
+				&:hover{
+					color: $yellow;
+				}
+			}
+		}
+	}
+}
+
+
+//общий стиль кнопки
+.btn {
+	display: inline-block;
+	background-color: $yellow;
+	padding: 16px 21px;
+	font-size: 1.8rem;
+	font-weight: 600;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	transition: all 300ms ease;
+	cursor: pointer;
+
+	&:hover {
+		box-shadow: 0px 4px 10px 2px rgba(black, 0.2);
+	}
+
+	&:active {
+		background: -moz-linear-gradient(center top, #f9c037, #f8a13b);
+		background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F9C037), to(#F8A13B));
+	}
+
+}
+
+//   анимация для кнопки при клике
+.ripple {
+	position: relative;
+	overflow: hidden;
+}
+
+.ripple-effect {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0;
+	width: 0;
+	border: 2px solid rgba(255, 255, 255, 0.3);
+	border-radius: 5000px;
+	animation: ripple 1s ease forwards;
+	z-index: 1;
+}
+
+@keyframes ripple {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(100);
+	}
+}
+
+
+//contact box секции about
+.contact__box {
+	color: #fff;
+	margin-left: 28px;
+}
+
+.contact__subtitle {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.8rem;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.contact__numb {
+	font-size: 3.5rem;
+	font-weight: 700;
+	padding-top: 10px;
+}
+
+
+//стилизация формы отправки в модальном окне и секции quote
+.quote-form__input {
+	display: block;
+	max-width: 412px;
+	width: 100%;
+	padding: 21px 30px;
+	margin-bottom: 13px;
+	border-radius: 5px;
+	border: none;
+	color: #414141;
+
+	&::placeholder {
+		color: #414141;
+	}
+
+	&:invalid {
+		color: red;
+	}
+
+}
+
+.quote-form__btn {
+	margin-top: 12px;
+	font-weight: 400;
+	padding: 20px 35px;
+}
