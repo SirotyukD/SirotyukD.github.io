@@ -112,6 +112,10 @@
 		}
 	}
 
+	&__slider{
+		margin-bottom: 120px;
+	}
+
 	.slide {
 		background-size: cover;
 		min-height: 800px;
@@ -191,6 +195,7 @@
 }
 
 .about {
+	padding-top: 0;
 	&__wrap {
 		display: flex;
 		justify-content: space-between;
@@ -199,21 +204,15 @@
 	}
 
 	&__left {
-		width: 57%;
+		width: 53%;
 		background-size: cover;
 		background-position: -350px top;
 		background-repeat: no-repeat;
-
-
-		// img {
-		// 	max-width: 100%;
-		// 	height: auto;
-		// }
 	}
 
 
 	&__right {
-		width: 43%;
+		width: 47%;
 		height: inherit;
 	}
 
@@ -224,12 +223,10 @@
 		width: 51%;
 		background-color: $blue-bg;
 		color: #fff;
-		padding: 171px 52px 103px 65px;
+		padding: 130px 52px 103px 65px;
 		font-family: 'Raleway', sans-serif;
 		border-left: 30px solid #fff;
 		border-bottom: 30px solid #fff;
-
-
 	}
 
 	.right-descr__subtitle {
@@ -267,6 +264,11 @@
 		display: flex;
 		align-items: center;
 	}
+
+	.contact__numb {
+		font-size: 2.4rem;
+	}
+
 
 
 }
@@ -381,6 +383,7 @@
 
 .overview {
 	padding: 103px 0 95px;
+	margin-bottom: 60px;
 	background-color: $blue-bg;
 
 	&__wrap {
@@ -568,7 +571,7 @@
 
 	background: url(../img/testimonials-bg.jpg) no-repeat top center;
 	padding-top: 105px;
-	margin: 105px 0 268px 0;
+	margin: 50px 0 327px 0;
 	text-align: center;
 	color: #fff;
 	max-height: 670px;
@@ -650,7 +653,8 @@
 		border-radius: 50%;
 		background-color: tomato;
 		margin: 20px;
-		//height: 60px;
+		width: 70px;
+		height: 70px;
 		transition: all .3s ease-in-out;
 		overflow: hidden;
 		position: relative;
@@ -748,6 +752,7 @@
 }
 
 .blog {
+	margin-top: 60px;
 	&__subtitle {
 		margin: 27px auto 22px;
 
@@ -873,11 +878,12 @@
 
 .quote {
 	padding-bottom: 120px;
+	padding-top: 60px;
 
 	.about__right-descr {
 		background-color: #fce5c3;
 		color: #414141;
-		padding: 80px 62px 50px;
+		padding: 30px 62px 30px;
 	}
 
 	.right-descr__subtitle {
