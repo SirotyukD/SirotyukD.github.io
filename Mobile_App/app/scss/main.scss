@@ -22,7 +22,6 @@ body {
 	color: $myblack;
 }
 
-
 .container {
 	height: inherit;
 	padding: 0;
@@ -46,7 +45,6 @@ body {
 }
 
 //
-
 //burger-menu
 
 .burger {
@@ -133,10 +131,7 @@ body {
 			color: yellow;
 		}
 	}
-
 }
-
-
 
 //заголовлк секции
 %sec-title {
@@ -159,8 +154,6 @@ body {
 	height: 1px;
 	background-color: $myblack;
 }
-
-
 
 
 //Site
@@ -219,13 +212,10 @@ body {
 .header {
 	margin-top: 10px;
 	padding-bottom: 18px;
-	//height: 100vh;
 	background: url(../img/header-bg.png) no-repeat;
 	background-position-y: 77%;
 	background-position-x: center;
 	background-size: cover;
-	//background-position-y: -50px; //убрать для 1920px
-	//overflow: hidden;
 
 	.container{
 		overflow: visible;
@@ -301,10 +291,6 @@ body {
 			}
 		}
 
-		// .header-box{
-		// 	padding-top: 70px;
-		// 	position: relative;
-		// }
 		.left-box {
 			position: absolute;
 			left: 9px;
@@ -489,8 +475,6 @@ body {
 
 		}
 	}
-
-
 }
 
 //music
@@ -568,10 +552,9 @@ body {
 				}
 			}
 		}
-
-
 	}
 }
+
 
 //screenshots
 //=============
@@ -582,20 +565,13 @@ body {
 
 	h2 {
 		@extend %sec-title;
-
 	}
 
 	&-boxes {
 		padding-left: 15px;
 		padding-right: 15px;
 		display: flex;
-		//justify-content: space-around;
-		//width: 33.3%;
 	}
-
-	// &-box{
-	// 	width: 33.3%;
-	// }
 
 	&-box img {
 		border: 1px solid transparent;
@@ -605,11 +581,6 @@ body {
 		display: flex;
 		flex-wrap: wrap;
 	}
-
-
-
-
-
 }
 
 
@@ -639,7 +610,6 @@ body {
 		top: calc(50% + 15px);
 		left: 50%;
 		transform: translateX(-50%);
-
 	}
 
 	&-movie-play i {
@@ -745,8 +715,6 @@ body {
 			opacity: 0.8;
 		}
 	}
-
-
 }
 
 //app
@@ -888,11 +856,6 @@ body {
 		font-family: "Poppins-Regular", sans-serif;
 		font-size: 1.8rem;
 	}
-
-
-
-
-
 }
 
 //testimonials
@@ -980,13 +943,6 @@ body {
 		}
 
 		button {
-			// background: none;
-			// color: inherit;
-			// border: none;
-			// padding: 0;
-			// font: inherit;
-			// cursor: pointer;
-			// outline: inherit;
 			font-size: 0;
 			width: 18px;
 			height: 18px;
@@ -994,13 +950,9 @@ body {
 			border-radius: 100%;
 			margin-right: 4px;
 		}
-
 	}
-
-
-
-
 }
+
 
 //team
 //==========
@@ -1010,10 +962,8 @@ body {
 	padding-top: 10px;
 	overflow: hidden;
 
-
 	h2 {
 		@extend %sec-title;
-
 	}
 
 	.items {
@@ -1103,8 +1053,6 @@ body {
 			height: auto;
 		}
 	}
-
-
 }
 
 
@@ -1192,7 +1140,6 @@ body {
 			}
 
 		}
-
 	}
 
 	.box-wrap:hover .box {
@@ -1216,7 +1163,6 @@ body {
 			background-position-y: -5px;
 			background-position: top center;
 			background-size: cover;
-
 		}
 	}
 
@@ -1261,7 +1207,6 @@ body {
 			margin: 0 auto;
 		}
 	}
-
 }
 
 //footer
@@ -1369,8 +1314,6 @@ body {
 			}
 		}
 	}
-
-
 }
 
 

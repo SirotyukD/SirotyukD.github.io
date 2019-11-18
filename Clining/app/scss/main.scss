@@ -3,6 +3,8 @@
 @import "libs"; //reset.css
 @import "_mixins/global"; //container сетка
 
+
+// обертка для pixel-perfect, что бы включить отключите	display: none;
 .overlay {
 	position: absolute;
 	top: 0;

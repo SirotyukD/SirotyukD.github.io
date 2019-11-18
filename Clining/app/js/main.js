@@ -2,21 +2,6 @@ $(function () {
 
 	// Custom JS
 
-	//плавные якоря для перехода внутри сайта
-	// $("#menu, #nav").on("click", "a", function (event) {
-	// 	//отменяем стандартную обработку нажатия по ссылке
-	// 	event.preventDefault();
-	// 	//забираем идентификатор бока с атрибута href
-	// 	var id = $(this).attr('href'),
-	// 		//узнаем высоту от начала страницы до блока на который ссылается якорь
-	// 		top = $(id).offset().top;
-	// 	//анимируем переход на расстояние - top за 1500 мс
-
-	// 	$('body,html').animate({
-	// 		scrollTop: top
-	// 	}, 1000);
-	// });
-
 	//плавные якоря для перехода по всем страницам
 	$('a[href*="#"]').on("click", function (e) {
 		var anchor = $(this);
@@ -197,9 +182,6 @@ $(function () {
 	});
 
 
-
-
-
 	//scrollBar
 	$('.scrollbar-macosx').scrollbar();
 
@@ -248,7 +230,5 @@ $(function () {
 		});
 		return false;
 	});
-
-
 
 });

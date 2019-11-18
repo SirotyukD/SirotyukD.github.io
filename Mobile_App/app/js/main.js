@@ -21,8 +21,6 @@ $(function () {
 	});
 
 
-
-
 	//slick слайдер
 	$('.slider').slick({
 		//infinite: true,
@@ -40,14 +38,6 @@ $(function () {
 					centerPadding: '10px',
 				}
 			},
-			// {
-			// 	breakpoint: 600,
-			// 	settings: {
-			// 		slidesToShow: 2,
-			// 		slidesToScroll: 2
-			// 	}
-			// }
-
 		]
 
 	});
