@@ -1,0 +1,83 @@
+ //@import "vars";
+
+ /*==========  Desktop First  ==========*/
+ // // ≥1200px
+ //@media screen and (max-width:1200px) {}
+ //@include media-breakpoint-down(lg) {}
+
+ // // ≥992px
+ // @media screen and (max-width:992px) {}
+ //@include media-breakpoint-down(md) {}
+
+ // // ≥768px
+ //@media screen and (max-width:768px) {}
+ //@include media-breakpoint-down(sm) {}
+
+ // // ≥576px
+ //@media screen and (max-width:576px) {}
+ //@include media-breakpoint-down(xs) {}
+
+
+
+
+ // /*==========  Mobile First  ==========*/
+
+ // // ≤600px
+ @media screen and (min-width:600px) {
+ 	.header-menu__btn {
+ 		margin-right: 25px;
+ 	}
+
+ 	.header-wrap {
+ 		padding: 0;
+ 	}
+ }
+
+ // // ≤900px
+ @media screen and (min-width:900px) {
+
+ 	.header-wrap {
+ 		flex-wrap: nowrap;
+ 	}
+
+ 	.header-contact {
+ 		order: 1;
+ 		width: auto;
+ 	}
+
+ 	.header-logo {
+ 		order: 2;
+ 	}
+
+ 	.header-menu {
+ 		order: 3;
+ 	}
+
+ 	.first {
+ 		margin-top: 50px;
+ 	}
+
+ 	.first-box {
+ 		flex-wrap: nowrap;
+ 	}
+
+ 	.first .first-content {
+ 		order: 1;
+ 	}
+
+ 	.first .first-seo {
+ 		order: 2;
+ 		margin-top: 0;
+ 	}
+ }
+
+ @media screen and (min-width:1200px) {
+ 	.first .first-lines {
+ 		margin-top: 127px;
+ 	}
+
+ 	.first .first-lines__graph {
+ 		height: 470px;
+ 		top: -261px;
+ 	}
+ }
