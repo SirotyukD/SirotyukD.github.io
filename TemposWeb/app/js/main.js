@@ -22,7 +22,7 @@ $(function () {
 	//m-menu
 	$('.burger').on('click', function (e) {
 		e.preventDefault();
-		$('.m-menu, .burger').toggleClass('active');
+		$('.m-menu, .burger, .burger--close').toggleClass('active');
 		$('body').toggleClass('lock');
 	});
 

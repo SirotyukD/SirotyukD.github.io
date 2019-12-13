@@ -87,8 +87,8 @@
    gulp.task('js:build', function () {
 	   return gulp.src(['app/libs/jquery/dist/jquery.min.js',
 						'app/modules/slick/slick.min.js',
-						'app/modules/animated/animated.min.js',
-						'app/modules/scrollbar/jquery.scrollbar.min.js',
+						//'app/modules/animated/animated.min.js',
+						//'app/modules/scrollbar/jquery.scrollbar.min.js',
 		   path.app.js]) //Найдем наш main файл
 		   .pipe(concat('scripts.min.js'))
 		   .pipe(sourcemaps.init()) //Инициализируем sourcemap
