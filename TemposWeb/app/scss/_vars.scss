@@ -26,6 +26,31 @@ body.lock {
 	overflow: hidden;
 }
 
+
+//сетка страницы
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+@media screen and (max-width:1200px) {
+	.container{
+		max-width: 970px;
+	}
+}
+
+@media screen and (max-width:992px) {
+	.container{
+		max-width: 750px;
+	}
+}
+
+@media screen and (max-width:767px) {
+	.container{
+		max-width: none;
+	}
+}
+
 //переменные
 $sans300: 'MuseoSansCyrl-300',
 sans-serif;
@@ -138,6 +163,18 @@ sans-serif;
 	background: url(../img/arrow-down.svg) no-repeat center center;
 }
 
+@mixin btn-phone {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 20px;
+	height: 20px;
+	background: url(../img/btn-phone.svg) no-repeat center center;
+	background-size: contain;
+}
+
 .btn-dark {
 	display: inline-block;
 	background-color: #000;
@@ -159,8 +196,8 @@ sans-serif;
 		width: 100%;
 		max-width: 310px;
 		height: 100%;
-		background: url(../img/btn-dark-bg.svg) no-repeat bottom center;
-		background-size: contain;
+		border: 1px solid #000;
+		border-radius: 100px;
 	}
 
 	&::before{
@@ -170,12 +207,11 @@ sans-serif;
 }
 
 	//стрелка перед заголовком
-	@mixin title-arrow{
-		content: '';
+	.text-line{
+		display: block;
 		position: absolute;
-		top: 50%;
+		top: 0;
 		left: 0;
-		transform: translateY(-50%);
 		width: 28px;
 		height: 1px;
 		background-color: #000;
