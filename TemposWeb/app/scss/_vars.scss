@@ -28,25 +28,26 @@ body.lock {
 
 
 //сетка страницы
-.container{
+.container {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
+
 @media screen and (max-width:1200px) {
-	.container{
+	.container {
 		max-width: 970px;
 	}
 }
 
 @media screen and (max-width:992px) {
-	.container{
+	.container {
 		max-width: 750px;
 	}
 }
 
 @media screen and (max-width:767px) {
-	.container{
+	.container {
 		max-width: none;
 	}
 }
@@ -74,7 +75,7 @@ sans-serif;
 
 
 //бургер меню
-.burger{
+.burger {
 	z-index: 100;
 }
 
@@ -106,7 +107,8 @@ sans-serif;
 			border-bottom: 2px dotted #ccc;
 			text-align: center;
 			letter-spacing: 2px;
-			&:last-child{
+
+			&:last-child {
 				border-bottom: none;
 			}
 
@@ -117,7 +119,8 @@ sans-serif;
 				font-size: 2.5rem;
 
 				&:hover {
-				transform: scale(1.2);;
+					transform: scale(1.2);
+					;
 				}
 			}
 		}
@@ -195,7 +198,9 @@ sans-serif;
 	text-align: center;
 	border-radius: 100px;
 	position: relative;
-	&::after, &::before{
+
+	&::after,
+	&::before {
 		content: '';
 		position: absolute;
 		top: 2px;
@@ -207,19 +212,100 @@ sans-serif;
 		border-radius: 100px;
 	}
 
-	&::before{
+	&::before {
 		top: 5px;
 		left: 4px;
 	}
 }
 
-	//стрелка перед заголовком
-	.text-line{
-		display: block;
+.btn-blue {
+	display: inline-block;
+	background-color: #4B7BB9;
+	min-width: 226px;
+	color: #000;
+	cursor: pointer;
+	padding: 12px 36px 12px 23px;
+	border-radius: 20px;
+	position: relative;
+	color: #fff;
+	font-family: $sans500;
+	font-size: 1.4rem;
+	line-height: 1.45;
+	text-align: center;
+	letter-spacing: 0.08em;
+	&::after{
 		position: absolute;
-		top: 0;
-		left: 0;
-		width: 28px;
-		height: 1px;
-		background-color: #000;
+		content: '';
+		top: 50%;
+		transform: translateY(-50%);
+		right: 12px;
+		width: 24px;
+		height: 24px;
+		background: url(../img/blue-btn-bg.svg) no-repeat center center;
 	}
+}
+
+.btn-green {
+	display: inline-block;
+	background-color: #319246;
+	min-width: 228px;
+	color: #fff;
+	cursor: pointer;
+	padding: 7px 36px 12px 23px;
+	border-radius: 20px;
+	position: relative;
+	color: #fff;
+	font-family: $sans500;
+	font-size: 1.4rem;
+	line-height: 1.45;
+	text-align: center;
+	letter-spacing: 0.08em;
+	&::after{
+		position: absolute;
+		content: '';
+		top: 50%;
+		transform: translateY(-50%);
+		right: 12px;
+		width: 24px;
+		height: 24px;
+		background: url(../img/tell-icon.svg) no-repeat center center;
+	}
+}
+
+.download-pdf{
+	display: inline-block;
+	min-width: 192px;
+	color: #000;
+	cursor: pointer;
+	padding: 7px 60px 12px 40px;
+	border-radius: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.7);
+	font-family: $sans500;
+	font-size: 1.4rem;
+	line-height: 1.45;
+	letter-spacing: 0.08em;
+	color: #000;
+	position: relative;
+	&::after{
+		content: '';
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 24px;
+		height: 24px;
+		background: url(../img/pdf-icon.svg) no-repeat center center, #ccc;
+		border-radius: 100%;
+	}
+}
+
+//стрелка перед заголовком
+.text-line {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 28px;
+	height: 1px;
+	background-color: #000;
+}
