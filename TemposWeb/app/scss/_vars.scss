@@ -101,13 +101,20 @@ sans-serif;
 		transform: translateX(-50%) translateY(-50%);
 
 		li {
-			margin: 15px;
+			margin: 20px;
+			padding-bottom: 10px;
+			border-bottom: 2px dotted #ccc;
+			text-align: center;
+			letter-spacing: 2px;
+			&:last-child{
+				border-bottom: none;
+			}
 
 			a {
 				display: inline-block;
 				color: #000;
 				text-transform: uppercase;
-				font-size: 2.2rem;
+				font-size: 2.5rem;
 
 				&:hover {
 				transform: scale(1.2);;
