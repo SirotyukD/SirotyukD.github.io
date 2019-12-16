@@ -175,6 +175,12 @@
 	line-height: 1.15;
 	font-weight: 900;
 	padding: 30px 0;
+	position: relative;
+}
+
+.first-content__title--line{
+	top: 20px;
+	left: -2px;
 }
 
 .first-content__subtitle {
