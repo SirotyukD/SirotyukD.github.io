@@ -34,8 +34,6 @@ $(document).ready(function () {
 	});
 
 
-
-
 	function isIE() {
 		ua = navigator.userAgent;
 		var is_ie = ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
@@ -57,4 +55,73 @@ $(document).ready(function () {
 	}
 	ibg();
 
+	initRlModals(jQuery);
 });
+
+
+function initRlModals($) {
+	$('body').on('click', '.rl-modal__close', function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		e.stopImmediatePropagation();
+		e.returnValue = false;
+		var $modal = $(this).closest('.rl-modal');
+		var id = $modal.attr('id') || $modal[0].getAttribute('data-rl-modal');
+		rlModalClose(id);
+		return false;
+	}).on('click', 'a.rl-modal-handle', function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		e.stopImmediatePropagation();
+		e.returnValue = false;
+		rlModalOpen($(this).attr('href').substr(1));
+		return false;
+	}).on('click', '[data-rl-modal-handle]', function (e) {
+		e.preventDefault();
+		e.stopPropagation();
+		e.stopImmediatePropagation();
+		e.returnValue = false;
+		rlModalOpen(this.getAttribute('data-rl-modal-handle'));
+		return false;
+	}).on('click', '.rl-modal:not(.rl-modal--disable-outer-closing)', function (e) {
+		if ($('body').hasClass('opened-rl-modal') && ($(e.target).is('.rl-modal__close') || !$(e.target).closest('.rl-modal__wrap').length)) {
+			e.preventDefault();
+			e.stopPropagation();
+			e.stopImmediatePropagation();
+			e.returnValue = false;
+
+			var $modal = $(e.target).closest('.rl-modal');
+			var id = $modal.attr('id') || $modal[0].getAttribute('data-rl-modal');
+			rlModalClose(id);
+
+			return false;
+		}
+	});
+}
+
+function rlModalGet(id) {
+	var $modal = jQuery('#' + id);
+	if (!$modal.length)
+		$modal = jQuery('[data-rl-modal="' + id + '"]');
+	return $modal;
+}
+
+function rlModalOpen(id) {
+	var $modal = rlModalGet(id);
+	if (!$modal.length) return false;
+	$modal.addClass('showed');
+	jQuery('body').addClass('opened-rl-modal');
+}
+
+function rlModalClose(id) {
+	var $modal = rlModalGet(id);
+	if (!$modal.length) return false;
+	$modal.removeClass('showed');
+	if (!jQuery('.rl-modal.showed').length)
+		jQuery('body').removeClass('opened-rl-modal');
+}
+
+function rlModalCloseAll() {
+	jQuery('.rl-modal.showed').removeClass('showed');
+	jQuery('body').removeClass('opened-rl-modal');
+}
