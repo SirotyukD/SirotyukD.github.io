@@ -1431,6 +1431,11 @@ button {
   gap: 0 1.5%;
 }
 
+body.corporate .preview-main {
+  grid-template: 1fr / 1fr 1fr;
+  gap: 0 3%;
+}
+
 .preview-main__item {
   padding: 1em;
   background: #343230;
@@ -1439,6 +1444,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: box-shadow .3s, background .3s;
 }
 
 .preview-main__item-counter {
@@ -2537,6 +2543,11 @@ body.daten .main__wrap {
 
   .consultant__contacts a:hover img {
     filter: invert(52%) sepia(1%) saturate(1854%) hue-rotate(7deg) brightness(101%) contrast(100%);
+  }
+
+  .preview-main__item:hover {
+    background: #4D4D4D;
+    box-shadow: 0px 8px 44px rgba(5, 11, 23, 0.4);
   }
 
   .cnt-box__link:hover,
