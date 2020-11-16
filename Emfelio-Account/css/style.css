@@ -2505,7 +2505,6 @@ body.corporate .preview-main__wrap {
 
 .bewerbungen {
   line-height: 1.1;
-  padding-bottom: 3rem;
 }
 
 .bewerbungen__title {
@@ -2861,7 +2860,7 @@ body.corporate .preview-main__wrap {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(20.65%, #2A2726), color-stop(85%, rgba(42, 39, 38, 0)));
   background: -o-linear-gradient(bottom, #2A2726 20.65%, rgba(42, 39, 38, 0) 85%);
   background: linear-gradient(0deg, #2A2726 20.65%, rgba(42, 39, 38, 0) 85%);
-  height: 60px;
+  height: 50px;
 }
 
 .mobile-nav__wrap {
@@ -4058,7 +4057,7 @@ body.daten .main__wrap {
   }
 
   .main__wrap {
-    padding: 1.5rem 0 6rem 0;
+    padding: 1.5rem 0 8rem 0;
   }
 
   .main .preview-main {
