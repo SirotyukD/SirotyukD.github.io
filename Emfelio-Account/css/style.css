@@ -2883,6 +2883,7 @@ body.corporate .preview-main__wrap {
   width: 14px;
   height: 14px;
   margin: 0 .85em;
+  overflow: hidden;
   -webkit-transition: -webkit-filter .3s;
   transition: -webkit-filter .3s;
   -o-transition: filter .3s;
